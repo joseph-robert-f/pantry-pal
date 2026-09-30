@@ -14,7 +14,7 @@ export default function DemoControls({ activeWeek, onSelect }: DemoControlsProps
       <button
         type="button"
         onClick={() => onSelect("week_1")}
-        className={`text-xs px-3 py-1 rounded-full ${
+        className={`text-xs min-h-6 px-3 py-1 rounded-full ${
           activeWeek === "week_1" ? "bg-ink text-cream" : "text-ink"
         }`}
       >
@@ -23,7 +23,7 @@ export default function DemoControls({ activeWeek, onSelect }: DemoControlsProps
       <button
         type="button"
         onClick={() => onSelect("week_3")}
-        className={`text-xs px-3 py-1 rounded-full ${
+        className={`text-xs min-h-6 px-3 py-1 rounded-full ${
           activeWeek === "week_3" ? "bg-ink text-cream" : "text-ink"
         }`}
       >

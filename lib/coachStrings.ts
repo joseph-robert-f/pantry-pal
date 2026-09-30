@@ -33,6 +33,7 @@ export const STRINGS = {
   recipe_macros_format: "{p}P · {c}C · {f}F · {kcal} cal · {min}min",
   recipe_section_ingredients: "Ingredients",
   recipe_section_instructions: "How to make it",
+  recipe_more_ingredients: "+ {n} more",
   recipe_button_swap: "Swap meal",
   recipe_button_cook: "Start cooking",
   recipe_cook_toast: "Locked in. Have at it.",
@@ -104,10 +105,16 @@ export const STRINGS = {
   // Error states
   error_plan_generation_headline: "Something didn't land right on my end.",
   error_plan_generation_sub: "Try again in a minute?",
+  nav_go_back: "Go back",
+  // Screen-reader labels
+  a11y_back: "Back",
+  a11y_close: "Close",
+  a11y_nav_primary: "Primary",
 
   // Trial accepted (paywall CTA post-click)
   trial_accepted_headline: "Glad to have you. Let's get into it.",
   trial_accepted_sub: "(Prototype — no card charged.)",
+  trial_accepted_back: "Back to your plan",
 } as const;
 
 export type StringKey = keyof typeof STRINGS;

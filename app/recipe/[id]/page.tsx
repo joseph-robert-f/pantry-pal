@@ -32,16 +32,16 @@ export default function RecipePage() {
     return (
       <PhoneFrame>
         <main className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-2">
-          <p className="text-lg font-semibold text-ink">
+          <h1 className="text-lg font-semibold text-ink">
             {STRINGS.error_plan_generation_headline}
-          </p>
+          </h1>
           <p className="text-sm text-muted">{STRINGS.error_plan_generation_sub}</p>
           <button
             type="button"
             onClick={() => router.back()}
-            className="mt-4 text-sm text-terracotta underline"
+            className="mt-4 min-h-6 py-1 text-sm text-terracotta underline"
           >
-            Go back
+            {STRINGS.nav_go_back}
           </button>
         </main>
       </PhoneFrame>
@@ -69,7 +69,7 @@ export default function RecipePage() {
           <button
             type="button"
             onClick={() => router.back()}
-            aria-label="Back"
+            aria-label={STRINGS.a11y_back}
             className="absolute top-3 left-3 text-white"
           >
             <ChevronLeft size={28} strokeWidth={2.25} />
@@ -125,9 +125,9 @@ export default function RecipePage() {
             <button
               type="button"
               onClick={() => setExpanded(true)}
-              className="mt-1 self-start text-sm text-terracotta underline"
+              className="mt-1 min-h-6 py-1 self-start text-sm text-terracotta underline"
             >
-              + {hiddenCount} more
+              {STRINGS.recipe_more_ingredients.replace("{n}", String(hiddenCount))}
             </button>
           ) : null}
 

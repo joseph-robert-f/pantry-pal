@@ -4,6 +4,7 @@ interface CoachBubbleProps {
   children: React.ReactNode;
   variant?: "sage" | "tan"; // sage default
   signature?: string; // optional italic line at bottom
+  as?: "p" | "h1"; // "h1" when the bubble is the page's main heading
 }
 
 // The coach's voice rendered as a soft bubble (spec §8). Used on onboarding and
@@ -12,12 +13,13 @@ export default function CoachBubble({
   children,
   variant = "sage",
   signature,
+  as: Text = "p",
 }: CoachBubbleProps) {
   const tone =
     variant === "tan" ? "bg-tan-soft text-tan-deep" : "bg-sage-soft text-sage-deep";
   return (
     <div className={`rounded-2xl px-4 py-2 text-base ${tone}`}>
-      <p>{children}</p>
+      <Text>{children}</Text>
       {signature ? (
         <p className="mt-1 text-sm italic text-muted">{signature}</p>
       ) : null}

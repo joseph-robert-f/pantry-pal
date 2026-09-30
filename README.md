@@ -37,6 +37,7 @@ npm run typecheck   # tsc --noEmit, strict mode
 npm test            # grocery engine unit tests (Node built-in runner)
 npm run eval:jev    # Jev accuracy eval (replays cached responses; see eval/jev/README.md)
 npm run judge:recipes  # Jev recipe judgments → lib/recipes/judgments.generated.ts (re-run after editing RECIPES)
+node scripts/qa-browser.cjs http://localhost:3000 /tmp/qa  # browser QA of every route (needs Playwright; see file header)
 npm run start       # serve the production build
 ```
 

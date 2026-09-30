@@ -28,7 +28,7 @@ export default function PaywallPage() {
           <button
             type="button"
             onClick={() => router.back()}
-            aria-label="Close"
+            aria-label={STRINGS.a11y_close}
             className="text-muted"
           >
             <X size={24} />

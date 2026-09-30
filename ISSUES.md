@@ -54,10 +54,11 @@ _All P0 build issues resolved — see Resolved._
 
 ### P1 — baseline polish / open follow-ups
 
-- **[#17] Real-browser visual QA** ([GH #4](https://github.com/joseph-robert-f/pantry-pal/issues/4)) — `test` — _status: blocked_ — macOS screen-recording
-  permission not granted, so automated screenshot QA couldn't run. Verified via
-  build + typecheck + SSR string assertions instead. Recommend a manual pass at
-  `npm run dev`.
+- **[#17] Real-browser visual QA** ([GH #4](https://github.com/joseph-robert-f/pantry-pal/issues/4)) — `test` — _status: done_ — 2026-09-30, Chromium, desktop 1280×900 + iPhone 13 emulation, on `next start` and `next dev` (hydration warnings). Script: `scripts/qa-browser.cjs`.
+  - Every route renders with no console errors, no hydration warnings, no failed requests, no horizontal overflow. Every interaction passes (onboarding + flag, day chips, demo toggle, recipe expand/toast/swap hint/swap, paywall toggle → accepted, list check/uncheck/add-item/Instacart link, tab bar, unknown recipe id).
+  - Fixed: missing favicon (404 on every page); tap targets < 24 px ("+ N more", "Go back", "Back to your plan", demo toggle); no `<h1>` on `/paywall/accepted` and the recipe error state; toast text never announced by screen readers (live region text was static); `maximum-scale=1` blocked pinch-zoom (WCAG 1.4.4); hard-coded UI text moved to the string catalogue ("Go back", "Back to your plan", "+ N more", aria-labels).
+  - axe-core (WCAG 2.2 AA + best practice) on every route: only colour contrast remains → #D8.
+  - Real iPhone Safari is still #9b.
 - **[#14] Replace placeholder recipes + photos with founder's actuals** — `chore` — _status: todo_ — Spec §5, §13.2.
   - Includes photo rights (was #D2): founder shoots or licenses photos. Blocks wide sharing, not F&F.
   - New recipe ingredients must be in `lib/grocery/catalogue.ts`, or #J3 must be live to classify them.
@@ -65,6 +66,8 @@ _All P0 build issues resolved — see Resolved._
 - **[#18] Lighthouse ≥85 on `/plan` (mobile)** ([GH #6](https://github.com/joseph-robert-f/pantry-pal/issues/6)) — `test` — _status: todo_ — Spec §10. Run after deploy.
 
 ### P2 — deferred / open decisions (spec §13)
+
+- **[#D8] Accent colour contrast** — `decision` — _status: open (founder)_ — axe-core: terracotta `#C56E47` and sage `#7A8B6F` are 3.7:1 on white; WCAG AA needs 4.5:1 for normal text. Affects links, "+ N more", "new" labels, "check aisle", and white text on terracotta buttons (Instacart CTA, active day chip). Proposal: add text-safe tokens and keep the current colours for fills and borders — `terracotta.ink #A75D3C` (4.56:1 on cream) and `sage.ink #67765E` (4.50:1 on cream); use them for text and for fills that carry white text. Brand call, so not changed yet.
 
 _None open — see Resolved (#D1–D4)._
 
@@ -144,3 +147,4 @@ _None open — see Resolved (#D1–D4)._
 - **2026-09-30** — #J4 engine + recipe tag pills done (PR #8). Swap suggestion UI waits on founder decision #J4a.
 - **2026-09-30** — PR #8 merged #J3 only; #J4 part 1 rebased onto main (Next 15). Fixed stale `DEMO_GROCERY` import in `tests/lib.test.ts` (main's typecheck and Vitest were red). Founder confirmed rubric `v1-draft` as a placeholder; expert skills deferred: #J4b nutritionist (GH #9), #J5 trainer (GH #10).
 - **2026-09-30** — #J4a done (recommended option: swap hint on recipe page → paywall). #J4 complete. Plan phases 0–4 done.
+- **2026-09-30** — #17 done: full browser QA (desktop + iPhone, prod + dev), 7 fixes, `scripts/qa-browser.cjs`. New #D8 (accent contrast, founder decision).
