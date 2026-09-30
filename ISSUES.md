@@ -45,20 +45,20 @@ Visual QA in a real browser is pending (macOS screen-recording permission not gr
 
 _All P0 build issues resolved — see Resolved._
 
-- **[#8b] Deploy to Vercel** — `chore` — _status: blocked (founder action)_ — Spec §10.
+- **[#8b] Deploy to Vercel** ([GH #2](https://github.com/joseph-robert-f/pantry-pal/issues/2)) — `chore` — _status: blocked (founder action)_ — Spec §10.
   - Needs a GitHub repo + Vercel account. Steps documented in README. Set
     `NEXT_PUBLIC_PROTOTYPE_VERSION=0.1` in Vercel env.
-- **[#9b] Founder walkthrough on real iPhone in Safari** — `test` — _status: blocked (founder action)_ — Spec §10, §12.9.
+- **[#9b] Founder walkthrough on real iPhone in Safari** ([GH #3](https://github.com/joseph-robert-f/pantry-pal/issues/3)) — `test` — _status: blocked (founder action)_ — Spec §10, §12.9.
 
 ### P1 — baseline polish / open follow-ups
 
-- **[#17] Real-browser visual QA** — `test` — _status: blocked_ — macOS screen-recording
+- **[#17] Real-browser visual QA** ([GH #4](https://github.com/joseph-robert-f/pantry-pal/issues/4)) — `test` — _status: blocked_ — macOS screen-recording
   permission not granted, so automated screenshot QA couldn't run. Verified via
   build + typecheck + SSR string assertions instead. Recommend a manual pass at
   `npm run dev`.
-- **[#14] Replace placeholder recipes + photos with founder's actuals** — `chore` — _status: todo_ — Spec §5, §13.2.
+- **[#14] Replace placeholder recipes + photos with founder's actuals** ([GH #5](https://github.com/joseph-robert-f/pantry-pal/issues/5)) — `chore` — _status: todo_ — Spec §5, §13.2.
   - Graceful `bg-tan` fallback implemented so missing photos never show broken images.
-- **[#18] Lighthouse ≥85 on `/plan` (mobile)** — `test` — _status: todo_ — Spec §10. Run after deploy.
+- **[#18] Lighthouse ≥85 on `/plan` (mobile)** ([GH #6](https://github.com/joseph-robert-f/pantry-pal/issues/6)) — `test` — _status: todo_ — Spec §10. Run after deploy.
 
 ### P2 — deferred / open decisions (spec §13)
 
@@ -100,3 +100,4 @@ _All P0 build issues resolved — see Resolved._
 - **2026-05-31** — Build-side baseline COMPLETE. Remaining: founder deploy (#8b), founder device walkthrough (#9b), and optional real-browser visual QA (#17, blocked on screen-recording permission).
 - **2026-09-30** — #19: `next` → 14.2.35. `npm ci` warning gone. Repo has no `test` script, so `npm test` has nothing to run. Opened #20 for advisories that need Next 15.5+.
 - **2026-09-30** — #20/#21: `next` → 15.5.26, React 19, Vitest added. `npm ci` (0 vulnerabilities), `tsc --noEmit`, `npm test` (8/8), `next build` all clean; all 8 routes return 200 under `next start`, same headings as before.
+- **2026-09-30** — Filed open action items as GitHub issues: #8b→GH #2, #9b→GH #3, #17→GH #4, #14→GH #5, #18→GH #6.
