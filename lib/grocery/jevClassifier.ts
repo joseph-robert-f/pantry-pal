@@ -20,6 +20,7 @@ export type JevClassifierOptions = {
   send: JevTransport;
   concurrency?: number; // stay under the 40 requests/s account limit
   cache?: Map<string, Classification>; // keyed by normalized name
+  maxCacheSize?: number; // oldest entries are dropped past this
 };
 
 function isSection(value: string): value is Section {
@@ -42,6 +43,7 @@ export function createJevClassifier({
   send,
   concurrency = 8,
   cache = new Map(),
+  maxCacheSize = 5000,
 }: JevClassifierOptions): ItemClassifier {
   async function classifyOne(name: string): Promise<Classification> {
     if (lookupCatalogue(name)) return classifyWithRules(name); // catalogue hit
@@ -53,6 +55,7 @@ export function createJevClassifier({
       const result = fromJevAnswer(response.answers.section);
       if (!result) return classifyWithRules(name);
       cache.set(key, result);
+      if (cache.size > maxCacheSize) cache.delete(cache.keys().next().value as string);
       return result;
     } catch {
       // Error, timeout, or rate limit: answer from rules, do not cache.

@@ -97,6 +97,14 @@ test("concurrency cap is respected", async () => {
   assert.ok(peak <= 3, `peak ${peak}`);
 });
 
+test("the cache stays bounded", async () => {
+  const table = Object.fromEntries(["a1", "a2", "a3"].map((n) => [n, ["PANTRY", 0.9] as [string, number]]));
+  const jev = fakeJev(table);
+  const cache = new Map();
+  await createJevClassifier({ send: jev.send, cache, maxCacheSize: 2 }).classify(["a1", "a2", "a3"]);
+  assert.equal(cache.size, 2);
+});
+
 // --- browser client -------------------------------------------------------
 
 test("api client returns the route's answers", async () => {
