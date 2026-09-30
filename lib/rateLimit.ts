@@ -21,27 +21,29 @@ export function createRateLimiter({ capacity, refillPerSec, maxKeys = 10_000 }: 
   const buckets = new Map<string, Bucket>();
 
   function take(key: string, nowMs: number, cost = 1): RateLimitResult {
+    if (cost > capacity) throw new RangeError(`cost ${cost} exceeds capacity ${capacity}`);
     const prev = buckets.get(key);
     const elapsedSec = prev ? Math.max(0, nowMs - prev.updatedMs) / 1000 : 0;
     const tokens = prev ? Math.min(capacity, prev.tokens + elapsedSec * refillPerSec) : capacity;
 
+    const ok = tokens >= cost;
     // Re-insert so Map order tracks recency; evict the least recent past maxKeys.
     buckets.delete(key);
-    if (tokens >= cost) {
-      buckets.set(key, { tokens: tokens - cost, updatedMs: nowMs });
-      if (buckets.size > maxKeys) buckets.delete(buckets.keys().next().value as string);
-      return { ok: true };
-    }
-    buckets.set(key, { tokens, updatedMs: nowMs });
-    return { ok: false, retryAfterSec: Math.ceil((cost - tokens) / refillPerSec) };
+    buckets.set(key, { tokens: ok ? tokens - cost : tokens, updatedMs: nowMs });
+    if (buckets.size > maxKeys) buckets.delete(buckets.keys().next().value as string);
+    return ok ? { ok: true } : { ok: false, retryAfterSec: Math.ceil((cost - tokens) / refillPerSec) };
   }
 
   return { take, size: () => buckets.size };
 }
 
-// Client key for a request. Vercel sets x-forwarded-for; the first address is
-// the client. Unknown callers share one bucket, which fails safe.
+// Client key for a request. Use the LAST x-forwarded-for entry: it is the one
+// added by the nearest proxy, so a client cannot choose it. (Vercel replaces
+// the header with the single real client address, so first == last there.
+// Proxies that append leave client-supplied entries in front.) Behind a CDN
+// plus load balancer this may be the CDN address — a shared, stricter bucket,
+// which fails safe. Unknown callers also share one bucket.
 export function clientKey(headers: Headers): string {
-  const forwarded = headers.get("x-forwarded-for")?.split(",")[0]?.trim();
+  const forwarded = headers.get("x-forwarded-for")?.split(",").at(-1)?.trim();
   return forwarded || headers.get("x-real-ip")?.trim() || "unknown";
 }

@@ -98,7 +98,7 @@ export function addItemToSections(
 ): GrocerySectionData[] {
   const name = text.trim();
   const id = lookupCatalogue(name)?.id ?? `added:${normalizeName(name)}`;
-  if (sections.some((s) => s.items.some((i) => i.id === id))) return sections;
+  if (isOnList(sections, id)) return sections;
 
   return insertItem(sections, classification.section, {
     id,
@@ -110,25 +110,39 @@ export function addItemToSections(
   });
 }
 
+// The /list screen's editable state: the shopping list plus the staples still
+// held back. One object, so every change updates both sides together.
+export type ListState = { sections: GrocerySectionData[]; staples: StapleData[] };
+
 // Move a staple the user is out of onto the list (#J1b), in its aisle,
-// marked new. Pure: returns the new sections and the remaining staples.
-export function moveStapleToList(
-  sections: GrocerySectionData[],
-  staples: StapleData[],
-  id: string,
-): { sections: GrocerySectionData[]; staples: StapleData[] } {
-  const staple = staples.find((s) => s.id === id);
-  if (!staple) return { sections, staples };
+// marked new. Pure. If the item is already on the list (typed earlier), it
+// only leaves the staples group.
+export function moveStapleToList(state: ListState, id: string): ListState {
+  const staple = state.staples.find((s) => s.id === id);
+  if (!staple) return state;
+  const staples = state.staples.filter((s) => s.id !== id);
+  if (isOnList(state.sections, id)) return { sections: state.sections, staples };
   return {
-    sections: insertItem(sections, staple.section, {
+    sections: insertItem(state.sections, staple.section, {
       id: staple.id,
       qty: "",
       name: staple.name,
       checked: false,
       status: "new",
     }),
-    staples: staples.filter((s) => s.id !== id),
+    staples,
   };
+}
+
+// Add a typed item (#J3) and drop it from the staples group if it was one.
+export function addTypedItem(state: ListState, text: string, classification: Classification): ListState {
+  const sections = addItemToSections(state.sections, text, classification);
+  const id = lookupCatalogue(text.trim())?.id;
+  return { sections, staples: id ? state.staples.filter((s) => s.id !== id) : state.staples };
+}
+
+function isOnList(sections: GrocerySectionData[], id: string): boolean {
+  return sections.some((s) => s.items.some((i) => i.id === id));
 }
 
 function insertItem(

@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { ChevronDown, Plus } from "lucide-react";
 import { STRINGS } from "@/lib/coachStrings";
 
@@ -12,6 +13,7 @@ interface StaplesGroupProps {
 // uses but most kitchens stock. Collapsed by default; tapping a staple moves
 // it onto the list. Presentational only: the route file owns the state.
 export default function StaplesGroup({ staples, expanded, onToggle, onPick }: StaplesGroupProps) {
+  const listId = useId();
   if (staples.length === 0) return null;
   return (
     <section className="mt-6 rounded-2xl border border-hairline">
@@ -21,7 +23,7 @@ export default function StaplesGroup({ staples, expanded, onToggle, onPick }: St
           type="button"
           onClick={onToggle}
           aria-expanded={expanded}
-          aria-controls="staples-list"
+          aria-controls={listId}
           className="w-full min-h-11 flex items-center justify-between px-4 py-2 text-left text-xs font-semibold text-muted uppercase tracking-wide"
         >
           {STRINGS.grocery_staples_title} ({staples.length})
@@ -32,8 +34,8 @@ export default function StaplesGroup({ staples, expanded, onToggle, onPick }: St
           />
         </button>
       </h2>
-      {expanded ? (
-        <div id="staples-list" className="px-4 pb-2">
+      {/* Always mounted (hidden when collapsed) so aria-controls resolves. */}
+      <div id={listId} hidden={!expanded} className="px-4 pb-2">
           <p className="text-xs text-muted">{STRINGS.grocery_staples_hint}</p>
           <ul className="mt-1">
             {staples.map((s) => (
@@ -49,8 +51,7 @@ export default function StaplesGroup({ staples, expanded, onToggle, onPick }: St
               </li>
             ))}
           </ul>
-        </div>
-      ) : null}
+      </div>
     </section>
   );
 }

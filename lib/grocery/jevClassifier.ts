@@ -49,7 +49,12 @@ export function createJevClassifier({
     if (lookupCatalogue(name)) return classifyWithRules(name); // catalogue hit
     const key = normalizeName(name);
     const cached = cache.get(key);
-    if (cached) return cached;
+    if (cached) {
+      // Refresh recency so eviction drops the least recently used entry.
+      cache.delete(key);
+      cache.set(key, cached);
+      return cached;
+    }
     try {
       const response = await send(singleItemRequest(name, SECTION_CRITERIA_V2));
       const result = fromJevAnswer(response.answers.section);

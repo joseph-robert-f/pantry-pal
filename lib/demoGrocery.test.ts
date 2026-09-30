@@ -1,6 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { DEMO_GROCERY, addItemToSections, moveStapleToList } from "./demoGrocery.ts";
+import { DEMO_GROCERY, addItemToSections, addTypedItem, moveStapleToList, type ListState } from "./demoGrocery.ts";
+
+const START: ListState = { sections: DEMO_GROCERY.sections, staples: DEMO_GROCERY.staples };
 
 // The demo week end to end: seed plan → engine → what /list renders.
 
@@ -72,7 +74,7 @@ test("staples are names only, grouped by their aisle", () => {
 });
 
 test("a picked staple moves onto the list in its aisle, marked new", () => {
-  const out = moveStapleToList(DEMO_GROCERY.sections, DEMO_GROCERY.staples, "olive_oil");
+  const out = moveStapleToList(START, "olive_oil");
   const pantry = out.sections.find((s) => s.section === "PANTRY");
   assert.deepEqual(pantry?.items.at(-1), { id: "olive_oil", qty: "", name: "olive oil", checked: false, status: "new" });
   assert.ok(!out.staples.some((s) => s.id === "olive_oil"));
@@ -80,12 +82,28 @@ test("a picked staple moves onto the list in its aisle, marked new", () => {
 });
 
 test("a staple from an aisle not on the list opens that section in order", () => {
-  const out = moveStapleToList(DEMO_GROCERY.sections, DEMO_GROCERY.staples, "salt");
+  const out = moveStapleToList(START, "salt");
   assert.deepEqual(out.sections.map((s) => s.name), ["PRODUCE", "PROTEIN", "DAIRY", "BAKERY", "PANTRY", "SPICES"]);
 });
 
 test("an unknown staple id changes nothing", () => {
-  const out = moveStapleToList(DEMO_GROCERY.sections, DEMO_GROCERY.staples, "nope");
-  assert.equal(out.sections, DEMO_GROCERY.sections);
-  assert.equal(out.staples, DEMO_GROCERY.staples);
+  assert.equal(moveStapleToList(START, "nope"), START);
+});
+
+const PANTRY_JEV = { section: "PANTRY" as const, isStaple: true, confidence: 1, source: "catalogue" as const, needsReview: false };
+
+test("typing a staple adds it once and removes it from the staples group", () => {
+  const out = addTypedItem(START, "Olive Oil", PANTRY_JEV);
+  const oils = out.sections.flatMap((s) => s.items).filter((i) => i.id === "olive_oil");
+  assert.equal(oils.length, 1);
+  assert.ok(!out.staples.some((s) => s.id === "olive_oil"));
+});
+
+test("typing a staple, then picking it, never lists it twice", () => {
+  const typed = addTypedItem(START, "olive oil", PANTRY_JEV);
+  // Even if the staple were still offered (stale UI), picking it is a no-op on the list.
+  const stale: ListState = { sections: typed.sections, staples: START.staples };
+  const out = moveStapleToList(stale, "olive_oil");
+  assert.equal(out.sections.flatMap((s) => s.items).filter((i) => i.id === "olive_oil").length, 1);
+  assert.ok(!out.staples.some((s) => s.id === "olive_oil"));
 });

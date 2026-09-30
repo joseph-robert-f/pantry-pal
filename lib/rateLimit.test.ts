@@ -41,8 +41,20 @@ test("memory stays bounded, dropping the least recent key", () => {
   assert.equal(rl.take("b", 4).ok, true); // b was evicted, so it starts fresh
 });
 
-test("clientKey uses the first forwarded address", () => {
-  assert.equal(clientKey(new Headers({ "x-forwarded-for": "203.0.113.7, 10.0.0.1" })), "203.0.113.7");
+test("refused new keys still respect the memory bound", () => {
+  const rl = createRateLimiter({ capacity: 1, refillPerSec: 0.001, maxKeys: 2 });
+  for (const k of ["a", "b", "c", "d"]) { rl.take(k, 0); rl.take(k, 0); }
+  assert.ok(rl.size() <= 2);
+});
+
+test("a cost above capacity is a programming error", () => {
+  const rl = createRateLimiter({ capacity: 2, refillPerSec: 1 });
+  assert.throws(() => rl.take("a", 0, 3), RangeError);
+});
+
+test("clientKey uses the proxy-added (last) forwarded address, so clients cannot spoof it", () => {
+  assert.equal(clientKey(new Headers({ "x-forwarded-for": "203.0.113.7" })), "203.0.113.7");
+  assert.equal(clientKey(new Headers({ "x-forwarded-for": "6.6.6.6, 203.0.113.7" })), "203.0.113.7");
   assert.equal(clientKey(new Headers({ "x-real-ip": "198.51.100.2" })), "198.51.100.2");
   assert.equal(clientKey(new Headers()), "unknown");
 });

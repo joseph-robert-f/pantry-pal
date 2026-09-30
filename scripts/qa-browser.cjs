@@ -120,10 +120,15 @@ async function layoutChecks(page, vp, route) {
     await more.click();
     check(vp, where, (await p.locator('main ul li').count()) > liBefore, 'ingredients expand');
     await p.getByRole('button', { name: 'Start cooking' }).click();
-    check(vp, where, await p.getByText('Locked in. Have at it.').isVisible(), 'cook toast shows');
-    await p.waitForTimeout(2300);
-    check(vp, where, (await p.getByText('Locked in. Have at it.').count()) === 0, 'cook toast hides after ~2s');
-    check(vp, where, (await p.getByRole('status').count()) >= 1, 'toast live region stays in the DOM');
+    const status = p.getByRole('status');
+    const toastLayer = p.locator('[aria-hidden="true"]', { hasText: 'Locked in. Have at it.' });
+    const opacity = () => toastLayer.evaluate((el) => getComputedStyle(el).opacity);
+    check(vp, where, (await status.textContent()) === 'Locked in. Have at it.', 'cook toast announced (live region text)');
+    await p.waitForTimeout(400);
+    check(vp, where, (await opacity()) === '1', 'cook toast visible');
+    await p.waitForTimeout(2000);
+    check(vp, where, (await status.textContent()) === '', 'live region clears after ~2s');
+    check(vp, where, (await opacity()) === '0', 'cook toast faded out');
     await p.getByRole('button', { name: /Better fit for a hard day/ }).click();
     await p.waitForURL('**/paywall');
     await p.goBack(); await p.waitForURL('**/recipe/**');
@@ -157,7 +162,7 @@ async function layoutChecks(page, vp, route) {
     check(vp, where, (await staplesBtn.getAttribute('aria-expanded')) === 'false', 'staples collapsed by default');
     await staplesBtn.click();
     check(vp, where, (await staplesBtn.getAttribute('aria-expanded')) === 'true', 'staples expand');
-    await p.locator('#staples-list').getByRole('button', { name: 'olive oil' }).click();
+    await p.locator('section', { has: staplesBtn }).getByRole('button', { name: 'olive oil' }).click();
     const pantry = p.locator('section', { has: p.locator('h2', { hasText: 'PANTRY' }) });
     check(vp, where, (await pantry.innerText()).includes('olive oil'), 'picked staple lands in PANTRY');
     check(vp, where, /Check you have \(8\)/i.test(await staplesBtn.innerText()) /* h2 is CSS-uppercased */, 'staple count drops to 8');
