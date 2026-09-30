@@ -193,42 +193,35 @@ export const RECIPES: Recipe[] = [
   },
 ];
 
-// Diff-based grocery list for the demo week.
-export type GroceryItemData = {
-  qty: string;
-  name: string;
-  checked: boolean;
-  status: "new" | null;
+// Grocery list inputs for the demo week (plan #J1). The list itself is built
+// by lib/grocery from these inputs — see lib/demoGrocery.ts. Nothing on the
+// list is hand-written any more.
+
+// Non-recipe plan events that add items to the list.
+export const TRAINING_EVENTS = [
+  {
+    id: "sat_long_run",
+    addItems: [
+      { qty: "4-pack", name: "bagels" },
+      { qty: "3", name: "bananas" },
+    ],
+  },
+];
+
+// Last week's version of the plan, before the Saturday long run was added.
+// The diff banner compares the list for DEMO_PLAN against this one.
+export const DEMO_PLAN_PREVIOUS = {
+  recipeIds: DEMO_WEEK.days.map((d) => d.dinner),
+  eventIds: [] as string[],
 };
 
-export const DEMO_GROCERY = {
-  weekOf: "May 25",
-  diffBanner: { trigger: "Added Saturday long run", items: ["bagels", "bananas"] },
-  sections: [
-    {
-      name: "PRODUCE",
-      items: [
-        { qty: "2", name: "sweet potatoes", checked: false, status: null },
-        { qty: "3", name: "lemons", checked: true, status: null },
-        { qty: "1 big bag", name: "spinach", checked: false, status: null },
-        { qty: "3", name: "bananas", checked: false, status: "new" },
-      ] as GroceryItemData[],
-    },
-    {
-      name: "PROTEIN",
-      items: [
-        { qty: "1.5 lb", name: "chicken thighs", checked: false, status: null },
-        { qty: "2", name: "salmon filets", checked: false, status: null },
-      ] as GroceryItemData[],
-    },
-    {
-      name: "PANTRY",
-      items: [
-        { qty: "4-pack", name: "bagels", checked: false, status: "new" },
-      ] as GroceryItemData[],
-    },
-  ],
+export const DEMO_PLAN = {
+  recipeIds: DEMO_WEEK.days.map((d) => d.dinner),
+  eventIds: ["sat_long_run"],
 };
+
+// Items shown pre-checked so the demo shows the strikethrough state.
+export const DEMO_CHECKED_IDS = ["lemon"];
 
 // Two-week demo toggle (spec §5) — demonstrates the felt-experience trend.
 export const DEMO_WEEKS = {

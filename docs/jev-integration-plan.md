@@ -1,7 +1,7 @@
 ---
 title: Pantry Pal — Jev Integration Plan
 plan_version: 0.1
-status: draft — needs founder decisions (section 8). Phase 0 done.
+status: draft — needs founder decisions (section 8). Phases 0–1 done.
 owner: Joe Fehr
 parent_spec: pantry_pal_web_prototype.spec.md (v0.1)
 date: 2026-09-30
@@ -271,12 +271,12 @@ that are not in the cache.
 | Phase | Work | Needs Jev? | Done when |
 |---|---|---|---|
 | **0. Access** ✅ done 2026-09-30 | Join the waitlist. Get a key. Test in the playground. Add `api.typesafe.ai` to the build environment's allowed domains. | Yes | A test request returns an answer. |
-| **1. Deterministic core** | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
+| **1. Deterministic core** ✅ done 2026-09-30 | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
 | **2. Shadow eval** | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
 | **3. Live classification** | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |
 | **4. Recipe tags and swaps** | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
 
-Phase 1 can start now.
+Phase 1 is done. Phase 2 (shadow eval) is next.
 
 ## 8. Decisions for the founder
 

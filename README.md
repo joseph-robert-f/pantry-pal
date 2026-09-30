@@ -32,6 +32,7 @@ Other scripts:
 ```bash
 npm run build       # production build (must pass before deploy)
 npm run typecheck   # tsc --noEmit, strict mode
+npm test            # grocery engine unit tests (Node built-in runner)
 npm run start       # serve the production build
 ```
 
@@ -53,6 +54,8 @@ npm run start       # serve the production build
 app/          # one route per screen (App Router)
 components/   # presentational components — no browser APIs, port to RN cleanly
 lib/          # seedData.ts (demo content) + coachStrings.ts (string catalogue)
+lib/grocery/  # grocery engine: plan → merged, classified list → diff (see docs/jev-integration-plan.md)
+lib/demoGrocery.ts  # builds the /list demo data with the engine
 public/recipes/  # placeholder for founder's recipe photos
 ```
 
