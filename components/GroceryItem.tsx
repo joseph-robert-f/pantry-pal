@@ -6,16 +6,19 @@ interface GroceryItemProps {
   name: string;
   checked: boolean;
   status?: "new" | null;
+  needsReview?: boolean;
   onToggle: () => void;
 }
 
 // One grocery row (spec §7.4, §8). Checked = strikethrough + filled checkbox.
 // status "new" = sage checkbox border + a "new" label on the right.
+// needsReview = the aisle is a low-confidence guess: a muted "check aisle" tag.
 export default function GroceryItem({
   qty,
   name,
   checked,
   status,
+  needsReview,
   onToggle,
 }: GroceryItemProps) {
   const isNew = status === "new";
@@ -42,8 +45,12 @@ export default function GroceryItem({
           checked ? "line-through text-muted" : "text-ink"
         }`}
       >
-        <span className="text-muted">{qty}</span> {name}
+        {qty ? <span className="text-muted">{qty} </span> : null}
+        {name}
       </span>
+      {needsReview ? (
+        <span className="text-xs text-muted">{STRINGS.grocery_review_tag}</span>
+      ) : null}
       {isNew ? (
         <span className="text-xs text-sage font-semibold">{STRINGS.grocery_new_tag}</span>
       ) : null}

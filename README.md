@@ -50,6 +50,7 @@ npm run start       # serve the production build
 | `/coach` | Coach stub |
 | `/discover` | Discover stub |
 | `/paywall` → `/paywall/accepted` | Plus paywall + trial-accepted state |
+| `POST /api/classify` | Server-only. Classifies grocery items into aisle sections with Jev; keyword-rules fallback with no key or on error |
 
 ## Project structure
 
@@ -64,6 +65,11 @@ public/recipes/  # placeholder for founder's recipe photos
 
 **Component invariant:** components never read `localStorage`, `window`, or
 `fetch`. Browser state lives in route-level files only (spec §1, §8).
+
+**Jev (optional):** set `TYPESAFE_API_KEY` in `.env.local` to classify items
+typed into the list with Jev. Without it, the keyword rules answer. Behind an
+HTTPS proxy, start Node with `NODE_USE_ENV_PROXY=1` so server-side `fetch`
+uses it.
 
 **String catalogue:** every visible string lives in `lib/coachStrings.ts`. No
 string in component code that isn't in the catalogue (spec §6).

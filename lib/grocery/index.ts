@@ -7,3 +7,6 @@ export { buildGroceryList, groupBySection, splitCompound } from "./buildList.ts"
 export type { SectionGroup } from "./buildList.ts";
 export { diffGroceryLists, describePlanChange } from "./diff.ts";
 export type { GroceryDiff, PlanChange } from "./diff.ts";
+export { createJevClassifier, fromJevAnswer, CONFIDENCE_THRESHOLD } from "./jevClassifier.ts";
+export type { JevTransport, JevClassifierOptions } from "./jevClassifier.ts";
+export { createApiClassifier, CLASSIFY_ENDPOINT } from "./apiClassifier.ts";

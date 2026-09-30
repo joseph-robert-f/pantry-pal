@@ -7,11 +7,15 @@ import {
   TRAINING_EVENTS,
 } from "./seedData.ts";
 import {
+  SECTION_ORDER,
   buildGroceryList,
   classifyWithRules,
   describePlanChange,
   diffGroceryLists,
   groupBySection,
+  lookupCatalogue,
+  normalizeName,
+  type Classification,
   type Section,
 } from "./grocery/index.ts";
 
@@ -24,6 +28,13 @@ export type GroceryItemData = {
   name: string;
   checked: boolean;
   status: "new" | null;
+  needsReview?: boolean; // low-confidence aisle (#J3): shows "check aisle"
+};
+
+export type GrocerySectionData = {
+  section: Section;
+  name: string; // display label from the string catalogue
+  items: GroceryItemData[];
 };
 
 const SECTION_LABEL: Record<Section, StringKey> = {
@@ -56,7 +67,8 @@ export const DEMO_GROCERY = {
     bannerKey && diff.added.length > 0
       ? { trigger: STRINGS[bannerKey], items: diff.added.map((l) => l.name) }
       : null,
-  sections: groupBySection(current.lines).map((group) => ({
+  sections: groupBySection(current.lines).map((group): GrocerySectionData => ({
+    section: group.section,
     name: STRINGS[SECTION_LABEL[group.section]],
     items: group.lines.map(
       (line): GroceryItemData => ({
@@ -70,3 +82,30 @@ export const DEMO_GROCERY = {
   })),
   staples: current.staples,
 };
+
+// Add an item the user typed (#J3). Pure: returns new sections in store-walk
+// order. An item already on the list (same canonical id) is not added twice.
+export function addItemToSections(
+  sections: GrocerySectionData[],
+  text: string,
+  classification: Classification,
+): GrocerySectionData[] {
+  const name = text.trim();
+  const id = lookupCatalogue(name)?.id ?? `added:${normalizeName(name)}`;
+  if (sections.some((s) => s.items.some((i) => i.id === id))) return sections;
+
+  const item: GroceryItemData = {
+    id,
+    qty: "",
+    name,
+    checked: false,
+    status: "new",
+    needsReview: classification.needsReview,
+  };
+  const target = classification.section;
+  const exists = sections.some((s) => s.section === target);
+  const next = exists
+    ? sections.map((s) => (s.section === target ? { ...s, items: [...s.items, item] } : s))
+    : [...sections, { section: target, name: STRINGS[SECTION_LABEL[target]], items: [item] }];
+  return next.sort((a, b) => SECTION_ORDER.indexOf(a.section) - SECTION_ORDER.indexOf(b.section));
+}
