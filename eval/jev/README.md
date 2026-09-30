@@ -75,3 +75,55 @@ generalize (99.2%).
   items once #J3 logs them.
 - One run per configuration. Self-consistency across repeated calls is not
   measured yet.
+
+---
+
+# Recipe judgments (#J4)
+
+`npm run judge:recipes` asks Jev about each recipe once and writes
+`lib/recipes/judgments.generated.ts`. The app reads that file: no runtime Jev
+calls for recipes. Re-run after changing `RECIPES` (a unit test fails if a
+recipe has no judgments).
+
+**One request per recipe.** State: title, ingredient names, method, cook time
+as words, and macros as named levels (protein/carbohydrate/fat: low,
+moderate, high). No raw numbers (jev-1.13 is weak at arithmetic). Questions,
+in parallel:
+
+- 5 × **Score** (4 concrete levels): fit as dinner for hard day, lift day,
+  pre long run, rest day, recovery day.
+- 2 × **Noul** with criteria: one pan; good leftovers.
+
+Code owns the rest: quick / high protein / carb-forward tags (numeric
+cutoffs), swap ranking (`MIN_SWAP_GAIN` 0.15 on a 0–1 scale), tag cutoff
+(`TAG_YES` 0.7).
+
+## Results (2026-09-30, `jev-1.13.0`, 18 requests, $0.0008)
+
+| Check | Result |
+|---|---|
+| Probe recipes (12, obvious best day): Jev's best day is an accepted one | **11 / 12**. Miss: steak + baked potato → lift day (hard/recovery expected; both close behind). |
+| Seed recipes: Jev's best day equals the founder's day tag | 3 / 6 |
+| Seed recipes: the founder's recipe is the best seed dinner for its tagged day (no swap suggested) | **4 / 6** |
+| One-pan tag on seed recipes | 6 / 6 plausible (sheet pan 0.98, stir-fry 0.88; pasta 0.11, salmon bowls 0.05) |
+
+**The 2 seed disagreements are both "hard day" dinners** that are moderate
+or low in carbohydrate by their own macros:
+
+- Ground beef stir-fry: 30 g carbs (24% of calories) unless served over the
+  optional rice. Jev rates it a rest-day dinner (2.1/3) and a poor hard-day
+  one (1.1/3).
+- Sheet-pan chicken & sweet potatoes: 38% carbs. Jev: good for hard day
+  (2.2/3), better for lift/recovery.
+
+For both, Jev prefers the carb-forward pasta on a hard day. This is a signal
+for the founder's real recipes (#14), not a model error: either add a
+carbohydrate portion or re-tag the day.
+
+## Limits
+
+- 18 recipes. The probe set was written with obvious answers; it checks the
+  rubric works, not fine-grained accuracy.
+- Day-fit rubrics are `v1-draft`: Claude's first draft of sports-nutrition
+  rules of thumb, confirmed by the founder as a placeholder. A nutritionist
+  (#J4b) and a trainer (#J5) will replace them.

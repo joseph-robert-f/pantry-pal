@@ -1,11 +1,6 @@
 import { lookupCatalogue, normalizeName } from "./catalogue.ts";
-import {
-  SECTION_CRITERIA_V2,
-  singleItemRequest,
-  type ChoiceAnswer,
-  type SystemOneRequest,
-  type SystemOneResponse,
-} from "./jevQuestions.ts";
+import { asChoice, type Answer, type SystemOneRequest, type SystemOneResponse } from "../jev/api.ts";
+import { SECTION_CRITERIA_V2, singleItemRequest } from "./jevQuestions.ts";
 import { classifyWithRules } from "./rulesClassifier.ts";
 import { SECTION_ORDER, type Classification, type ItemClassifier, type Section } from "./types.ts";
 
@@ -31,7 +26,8 @@ function isSection(value: string): value is Section {
   return (SECTION_ORDER as string[]).includes(value);
 }
 
-export function fromJevAnswer(answer: ChoiceAnswer | undefined): Classification | null {
+export function fromJevAnswer(raw: Answer | undefined): Classification | null {
+  const answer = asChoice(raw);
   if (!answer || !isSection(answer.choice)) return null;
   return {
     section: answer.choice,

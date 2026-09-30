@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { formatMacroLine } from "@/lib/format";
-import { DEMO_GROCERY, DEMO_WEEK, RECIPES, getRecipe } from "@/lib/seedData";
+import { DEMO_GROCERY } from "@/lib/demoGrocery";
+import { DEMO_WEEK, RECIPES, getRecipe } from "@/lib/seedData";
 
 // Guards the seed data and helpers that every screen reads from.
 
@@ -53,7 +54,8 @@ describe("seed data integrity", () => {
       .flatMap((s) => s.items)
       .filter((i) => i.status === "new")
       .map((i) => i.name);
-    for (const item of DEMO_GROCERY.diffBanner.items) {
+    expect(DEMO_GROCERY.diffBanner).not.toBeNull();
+    for (const item of DEMO_GROCERY.diffBanner?.items ?? []) {
       expect(newItems.some((n) => n.includes(item.replace(/s$/, "")))).toBe(true);
     }
   });

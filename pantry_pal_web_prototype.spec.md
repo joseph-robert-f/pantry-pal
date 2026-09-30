@@ -19,6 +19,7 @@ parent_spec: pantry_pal_spec_v0.1.html
 > - §7.4: acceptance criteria match the generated list (#J1a).
 > - §7.4: "Add something else…" field; typed items are classified by Jev via
 >   `POST /api/classify` (#J3).
+> - §7.3: attribute tag pills from code and stored Jev judgments (#J4).
 > - Appendix: new files for the grocery engine, the Jev eval, and the route.
 
 A clickable web prototype that lets the founder and a small circle of friends-and-family experience the Pantry Pal product flow before any iOS code is written. Built in Next.js + Tailwind so that components map cleanly to the eventual React Native + NativeWind iOS build.
@@ -571,7 +572,7 @@ then exactly one chip has the terracotta background indicating "today" (Tuesday 
 1. Hero photo: full-width, 160px tall, with the recipe `photoUrl` as background. If no image asset exists, fallback to a solid `bg-tan` block with a subtle radial shape. Back chevron `<` in `text-white` overlays at top-left.
 2. Title `text-lg font-bold` in `text-ink`, 16px below hero.
 3. Macro line formatted via `STRINGS.recipe_macros_format` in `text-xs text-muted`.
-4. Tag pills row: training-day tag in `bg-sage-soft text-sage-deep`, equipment tag in `bg-terracotta-soft text-terracotta-deep`.
+4. Tag pills row: training-day tag in `bg-sage-soft text-sage-deep`, equipment tag in `bg-terracotta-soft text-terracotta-deep`. v0.2 (#J4): then attribute pills in `border border-hairline text-muted` — Quick, High protein, Carb-forward (from the numbers, in code) and One pan, Good leftovers (judged by Jev, stored in `lib/recipes/judgments.generated.ts`). The founder's day tag is shown when present; otherwise Jev's best day.
 5. Section header `STRINGS.recipe_section_ingredients` in `text-sm font-semibold`.
 6. Ingredient list — first 5 visible, then a `+ N more` affordance in `text-terracotta underline`.
 7. Section header `STRINGS.recipe_section_instructions` in `text-sm font-semibold`.

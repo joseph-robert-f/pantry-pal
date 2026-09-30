@@ -9,6 +9,7 @@ import Toast from "@/components/Toast";
 import { STRINGS } from "@/lib/coachStrings";
 import { getRecipe } from "@/lib/seedData";
 import { formatMacroLine } from "@/lib/format";
+import { recipePills } from "@/lib/recipeTags";
 
 const EQUIPMENT_TAGS = new Set(["oven", "stovetop"]);
 
@@ -46,7 +47,7 @@ export default function RecipePage() {
     );
   }
 
-  const trainingTag = recipe.tags.find((t) => !EQUIPMENT_TAGS.has(t) && !/min$/.test(t));
+  const pills = recipePills(recipe);
   const equipmentTag = recipe.tags.find((t) => EQUIPMENT_TAGS.has(t));
   const visibleIngredients = expanded ? recipe.ingredients : recipe.ingredients.slice(0, 5);
   const hiddenCount = recipe.ingredients.length - 5;
@@ -81,9 +82,9 @@ export default function RecipePage() {
 
           {/* Tag pills */}
           <div className="mt-2 flex gap-2 flex-wrap">
-            {trainingTag ? (
+            {pills.trainingDay ? (
               <span className="rounded-full px-3 py-1 text-xs bg-sage-soft text-sage-deep">
-                {humanizeTag(trainingTag)}
+                {pills.trainingDay}
               </span>
             ) : null}
             {equipmentTag ? (
@@ -91,6 +92,15 @@ export default function RecipePage() {
                 {humanizeTag(equipmentTag)}
               </span>
             ) : null}
+            {/* Recipe attributes (#J4): code tags + Jev-judged tags */}
+            {pills.attributes.map((label) => (
+              <span
+                key={label}
+                className="rounded-full px-3 py-1 text-xs border border-hairline text-muted"
+              >
+                {label}
+              </span>
+            ))}
           </div>
 
           {/* Ingredients */}

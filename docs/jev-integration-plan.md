@@ -289,7 +289,7 @@ that are not in the cache.
 | **1. Deterministic core** ✅ done 2026-09-30 | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
 | **2. Shadow eval** ✅ done 2026-09-30 | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
 | **3. Live classification** ✅ done 2026-09-30 | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |
-| **4. Recipe tags and swaps** | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
+| **4. Recipe tags and swaps** 🔶 in progress — engine + tags done; swap UI waits on #J4a | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
 
 Phases 0–3 are done. Phase 4 (recipe tags and swaps) is next. Eval results and the #J3 decisions: `eval/jev/README.md`.
 
@@ -305,6 +305,21 @@ Phases 0–3 are done. Phase 4 (recipe tags and swaps) is next. Eval results and
 - **D7 — Vendor risk: approved.** Keep the `ItemClassifier` interface
   vendor-neutral, so an LLM or a local classifier can replace Jev with no UI
   change.
+
+### Expert skills (deferred, 2026-09-30)
+
+Jev supplies the judgment; experts supply the definitions it judges against.
+The founder confirmed the `v1-draft` recipe rubric as a placeholder. Two
+expert-authored "skills" replace the drafts later:
+
+- **Recipe skill — nutritionist (#J4b, GH #9).** Day-fit levels, recipe tag
+  definitions, macro cutoffs, and a labeled test set.
+- **Workout logic skill — trainer (#J5, GH #10).** Day types and their
+  definitions, training week → day type rules, and training events that
+  change the grocery list.
+
+Each skill is versioned (`RUBRIC_VERSION`); stored judgments record the
+version they were made with, and a test fails when they are stale.
 
 ## 9. Risks
 

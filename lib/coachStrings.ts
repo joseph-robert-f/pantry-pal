@@ -36,6 +36,18 @@ export const STRINGS = {
   recipe_button_swap: "Swap meal",
   recipe_button_cook: "Start cooking",
   recipe_cook_toast: "Locked in. Have at it.",
+  // Recipe tags (#J4) — code tags from the numbers, judged tags from Jev
+  recipe_tag_quick: "Quick",
+  recipe_tag_high_protein: "High protein",
+  recipe_tag_carb_forward: "Carb-forward",
+  recipe_tag_one_pan: "One pan",
+  recipe_tag_good_leftovers: "Good leftovers",
+  // Day types (#J4) — used when a recipe has no hand-written day tag
+  day_type_hard_day: "Hard day",
+  day_type_lift_day: "Lift day",
+  day_type_pre_long_run: "Pre long run",
+  day_type_rest_day: "Rest day",
+  day_type_recovery_day: "Recovery day",
 
   // Grocery list
   grocery_title: "Grocery list",

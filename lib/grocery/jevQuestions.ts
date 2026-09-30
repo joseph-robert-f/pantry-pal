@@ -1,11 +1,17 @@
+import { JEV_MODEL, type ChoiceQuestion, type SystemOneRequest } from "../jev/api.ts";
 import type { Section } from "./types.ts";
+
+export { JEV_MODEL };
+export type {
+  ChoiceAnswer,
+  ChoiceQuestion,
+  SystemOneRequest,
+  SystemOneResponse,
+} from "../jev/api.ts";
 
 // Jev question definitions for grocery sections (plan #J2/#J3). Pure data so
 // the eval script and the server route share one definition. No fetch here —
 // the caller sends the request (API key stays server-side, plan §4 rule 1).
-
-// Pin the version: thresholds are tuned against it (plan §4 rule 4).
-export const JEV_MODEL = "jev-1.13.0";
 
 export type SectionCriteria = Record<Section, string>;
 
@@ -46,18 +52,6 @@ export const SECTION_CRITERIA: Record<string, SectionCriteria> = {
 const INSTRUCTIONS = (path: string) =>
   `Which grocery store section sells ${path}?`;
 
-export type ChoiceQuestion = {
-  type: "choice";
-  instructions: string;
-  criteria: Record<string, string>;
-};
-
-export type SystemOneRequest = {
-  model: string;
-  state: unknown;
-  questions: Record<string, ChoiceQuestion>;
-};
-
 // One item per request: the smallest possible state.
 export function singleItemRequest(item: string, criteria: SectionCriteria): SystemOneRequest {
   return {
@@ -82,16 +76,3 @@ export function batchRequest(items: string[], criteria: SectionCriteria): System
   });
   return { model: JEV_MODEL, state: { items }, questions };
 }
-
-export type ChoiceAnswer = {
-  type: "choice";
-  choice: string;
-  confidence: number;
-  probabilities: Record<string, number>;
-};
-
-export type SystemOneResponse = {
-  model: string;
-  answers: Record<string, ChoiceAnswer>;
-  usage?: { input_tokens?: number; output_tokens?: number };
-};

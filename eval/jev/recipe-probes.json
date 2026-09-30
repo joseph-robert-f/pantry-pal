@@ -1,0 +1,513 @@
+[
+ {
+  "id": "probe_teriyaki_rice",
+  "title": "Teriyaki chicken over white rice",
+  "timeMin": 30,
+  "servings": 2,
+  "macros": {
+   "kcal": 650,
+   "protein": 35,
+   "carbs": 95,
+   "fat": 12
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "chicken breast"
+   },
+   {
+    "qty": "",
+    "name": "white rice"
+   },
+   {
+    "qty": "",
+    "name": "teriyaki sauce"
+   },
+   {
+    "qty": "",
+    "name": "green onions"
+   }
+  ],
+  "instructions": [
+   "Cook the rice.",
+   "Pan-cook chicken strips, add teriyaki sauce and simmer.",
+   "Serve over rice with green onions."
+  ],
+  "expectBest": [
+   "pre_long_run"
+  ]
+ },
+ {
+  "id": "probe_plain_pasta",
+  "title": "Pasta with simple tomato sauce and chicken",
+  "timeMin": 25,
+  "servings": 2,
+  "macros": {
+   "kcal": 700,
+   "protein": 35,
+   "carbs": 105,
+   "fat": 14
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "spaghetti"
+   },
+   {
+    "qty": "",
+    "name": "tomato sauce"
+   },
+   {
+    "qty": "",
+    "name": "chicken breast"
+   },
+   {
+    "qty": "",
+    "name": "parmesan"
+   }
+  ],
+  "instructions": [
+   "Boil spaghetti.",
+   "Warm tomato sauce with sliced cooked chicken.",
+   "Toss and top with a little parmesan."
+  ],
+  "expectBest": [
+   "pre_long_run"
+  ]
+ },
+ {
+  "id": "probe_bean_chili",
+  "title": "Three-bean chili with sausage",
+  "timeMin": 60,
+  "servings": 2,
+  "macros": {
+   "kcal": 720,
+   "protein": 38,
+   "carbs": 60,
+   "fat": 36
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "italian sausage"
+   },
+   {
+    "qty": "",
+    "name": "kidney beans"
+   },
+   {
+    "qty": "",
+    "name": "black beans"
+   },
+   {
+    "qty": "",
+    "name": "pinto beans"
+   },
+   {
+    "qty": "",
+    "name": "onion"
+   },
+   {
+    "qty": "",
+    "name": "chili powder"
+   },
+   {
+    "qty": "",
+    "name": "cheddar"
+   }
+  ],
+  "instructions": [
+   "Brown sausage and onion.",
+   "Add beans, tomatoes, and spices; simmer 45 minutes.",
+   "Top with cheddar."
+  ],
+  "expectBest": [
+   "hard_day",
+   "recovery_day"
+  ]
+ },
+ {
+  "id": "probe_big_salad",
+  "title": "Grilled chicken salad with lots of greens",
+  "timeMin": 20,
+  "servings": 2,
+  "macros": {
+   "kcal": 420,
+   "protein": 42,
+   "carbs": 14,
+   "fat": 22
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "chicken breast"
+   },
+   {
+    "qty": "",
+    "name": "mixed greens"
+   },
+   {
+    "qty": "",
+    "name": "cucumber"
+   },
+   {
+    "qty": "",
+    "name": "cherry tomatoes"
+   },
+   {
+    "qty": "",
+    "name": "olive oil"
+   },
+   {
+    "qty": "",
+    "name": "lemon"
+   }
+  ],
+  "instructions": [
+   "Grill the chicken.",
+   "Toss greens and vegetables with olive oil and lemon.",
+   "Slice chicken over the salad."
+  ],
+  "expectBest": [
+   "rest_day"
+  ]
+ },
+ {
+  "id": "probe_white_fish_veg",
+  "title": "Baked cod with roasted vegetables",
+  "timeMin": 30,
+  "servings": 2,
+  "macros": {
+   "kcal": 380,
+   "protein": 38,
+   "carbs": 22,
+   "fat": 14
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "cod"
+   },
+   {
+    "qty": "",
+    "name": "zucchini"
+   },
+   {
+    "qty": "",
+    "name": "bell peppers"
+   },
+   {
+    "qty": "",
+    "name": "olive oil"
+   },
+   {
+    "qty": "",
+    "name": "lemon"
+   }
+  ],
+  "instructions": [
+   "Roast vegetables at 425\u00b0F for 15 minutes.",
+   "Add cod and roast 10\u201312 minutes more.",
+   "Finish with lemon."
+  ],
+  "expectBest": [
+   "rest_day"
+  ]
+ },
+ {
+  "id": "probe_steak_potato",
+  "title": "Steak with baked potato and broccoli",
+  "timeMin": 45,
+  "servings": 2,
+  "macros": {
+   "kcal": 820,
+   "protein": 55,
+   "carbs": 70,
+   "fat": 32
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "sirloin steak"
+   },
+   {
+    "qty": "",
+    "name": "russet potato"
+   },
+   {
+    "qty": "",
+    "name": "broccoli"
+   },
+   {
+    "qty": "",
+    "name": "butter"
+   }
+  ],
+  "instructions": [
+   "Bake the potato for 45 minutes.",
+   "Sear the steak to your liking and rest.",
+   "Steam broccoli; serve with butter on the potato."
+  ],
+  "expectBest": [
+   "hard_day",
+   "recovery_day"
+  ]
+ },
+ {
+  "id": "probe_burrito_bowl",
+  "title": "Chicken burrito bowl",
+  "timeMin": 30,
+  "servings": 2,
+  "macros": {
+   "kcal": 760,
+   "protein": 48,
+   "carbs": 85,
+   "fat": 22
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "chicken thighs"
+   },
+   {
+    "qty": "",
+    "name": "rice"
+   },
+   {
+    "qty": "",
+    "name": "black beans"
+   },
+   {
+    "qty": "",
+    "name": "corn"
+   },
+   {
+    "qty": "",
+    "name": "salsa"
+   },
+   {
+    "qty": "",
+    "name": "avocado"
+   }
+  ],
+  "instructions": [
+   "Cook rice.",
+   "Season and cook chicken thighs.",
+   "Build bowls with beans, corn, salsa, and avocado."
+  ],
+  "expectBest": [
+   "hard_day",
+   "lift_day",
+   "recovery_day"
+  ]
+ },
+ {
+  "id": "probe_protein_eggs",
+  "title": "Egg white omelet with spinach",
+  "timeMin": 10,
+  "servings": 2,
+  "macros": {
+   "kcal": 250,
+   "protein": 30,
+   "carbs": 6,
+   "fat": 10
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "egg whites"
+   },
+   {
+    "qty": "",
+    "name": "spinach"
+   },
+   {
+    "qty": "",
+    "name": "feta"
+   }
+  ],
+  "instructions": [
+   "Whisk egg whites.",
+   "Cook with spinach in a nonstick pan.",
+   "Fold and top with feta."
+  ],
+  "expectBest": [
+   "rest_day"
+  ]
+ },
+ {
+  "id": "probe_mac_cheese",
+  "title": "Loaded mac and cheese with bacon",
+  "timeMin": 35,
+  "servings": 2,
+  "macros": {
+   "kcal": 950,
+   "protein": 32,
+   "carbs": 80,
+   "fat": 55
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "macaroni"
+   },
+   {
+    "qty": "",
+    "name": "cheddar"
+   },
+   {
+    "qty": "",
+    "name": "cream"
+   },
+   {
+    "qty": "",
+    "name": "bacon"
+   },
+   {
+    "qty": "",
+    "name": "breadcrumbs"
+   }
+  ],
+  "instructions": [
+   "Cook macaroni.",
+   "Make a cheese sauce with cream and cheddar.",
+   "Fold in bacon, top with breadcrumbs, bake 15 minutes."
+  ],
+  "expectBest": [
+   "recovery_day"
+  ]
+ },
+ {
+  "id": "probe_turkey_meatballs",
+  "title": "Turkey meatballs with rice and green beans",
+  "timeMin": 35,
+  "servings": 2,
+  "macros": {
+   "kcal": 600,
+   "protein": 45,
+   "carbs": 60,
+   "fat": 18
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "ground turkey"
+   },
+   {
+    "qty": "",
+    "name": "breadcrumbs"
+   },
+   {
+    "qty": "",
+    "name": "egg"
+   },
+   {
+    "qty": "",
+    "name": "rice"
+   },
+   {
+    "qty": "",
+    "name": "green beans"
+   },
+   {
+    "qty": "",
+    "name": "marinara"
+   }
+  ],
+  "instructions": [
+   "Mix and shape meatballs; bake 20 minutes.",
+   "Cook rice; steam green beans.",
+   "Serve meatballs in marinara over rice."
+  ],
+  "expectBest": [
+   "lift_day",
+   "hard_day"
+  ]
+ },
+ {
+  "id": "probe_pancakes",
+  "title": "Pancakes with banana and maple syrup",
+  "timeMin": 20,
+  "servings": 2,
+  "macros": {
+   "kcal": 620,
+   "protein": 14,
+   "carbs": 115,
+   "fat": 12
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "flour"
+   },
+   {
+    "qty": "",
+    "name": "milk"
+   },
+   {
+    "qty": "",
+    "name": "egg"
+   },
+   {
+    "qty": "",
+    "name": "banana"
+   },
+   {
+    "qty": "",
+    "name": "maple syrup"
+   }
+  ],
+  "instructions": [
+   "Mix batter.",
+   "Cook pancakes on a griddle.",
+   "Top with sliced banana and maple syrup."
+  ],
+  "expectBest": [
+   "pre_long_run"
+  ]
+ },
+ {
+  "id": "probe_tofu_stirfry",
+  "title": "Tofu and vegetable stir-fry over rice",
+  "timeMin": 25,
+  "servings": 2,
+  "macros": {
+   "kcal": 560,
+   "protein": 28,
+   "carbs": 70,
+   "fat": 18
+  },
+  "ingredients": [
+   {
+    "qty": "",
+    "name": "firm tofu"
+   },
+   {
+    "qty": "",
+    "name": "broccoli"
+   },
+   {
+    "qty": "",
+    "name": "bell peppers"
+   },
+   {
+    "qty": "",
+    "name": "soy sauce"
+   },
+   {
+    "qty": "",
+    "name": "rice"
+   }
+  ],
+  "instructions": [
+   "Press and cube tofu; pan-fry until crisp.",
+   "Stir-fry vegetables; add soy sauce.",
+   "Serve over rice."
+  ],
+  "expectBest": [
+   "lift_day",
+   "recovery_day",
+   "hard_day"
+  ]
+ }
+]
