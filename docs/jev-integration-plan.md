@@ -1,7 +1,7 @@
 ---
 title: Pantry Pal — Jev Integration Plan
 plan_version: 0.1
-status: draft — needs founder decisions (section 8)
+status: draft — needs founder decisions (section 8). Phase 0 done.
 owner: Joe Fehr
 parent_spec: pantry_pal_web_prototype.spec.md (v0.1)
 date: 2026-09-30
@@ -30,27 +30,25 @@ and recipe list up to date when the weekly plan changes.
 
 ## 2. What Jev is (research)
 
-> **Source quality:** The primary TypeSafe docs (`docs.typesafe.ai`) were
-> blocked by this build environment's network policy. The data below comes
-> from search-result summaries of the TypeSafe docs, the Pydantic AI docs,
-> and third-party write-ups. Verify each number against the primary docs
-> before you use it in code.
+> **Source quality:** Rows marked ✅ were verified on 2026-09-30 against the
+> primary docs (`docs.typesafe.ai`) and a live API call. Other rows come from
+> third-party write-ups.
 
 | Topic | Finding |
 |---|---|
 | Vendor | TypeSafe AI, San Francisco. Early access since 2026-09-15. |
 | Model type | "System One" decision model. Non-autoregressive. No text output. |
-| Output types | **Choice** — pick 1 of up to 255 options. **Score** — 2 to 10 ordered rubric levels. **Noul** — probability that a statement is true (0.0–1.0). |
+| Output types ✅ | **Choice** — pick 1 of up to 255 options. **Score** — 2 to 10 ordered rubric levels. **Noul** — probability that a statement is true (0.0–1.0). |
 | Output validity | Answers are constrained to the schema. Invalid values cannot occur. |
-| Request shape | `POST /api/v1/systemone` with `model`, `state` (the input), `questions` (named, typed). Response has `answers` (value, probabilities, confidence) and `usage`. |
+| Request shape ✅ | `POST https://api.typesafe.ai/v1/systemone`, `Authorization: Bearer <key>`. Body: `model`, `state` (string, object, or array), `questions` (map of id → `{type, instructions, criteria}`). Choice `criteria` is a map of option → description. Score `criteria` is an ordered array. Response: `model` (versioned ID), `answers` (Choice: `choice`, `confidence`, `probabilities`; Noul: `noul`), `usage`. |
 | Parallel questions | Many questions about one `state` run in parallel in one request. The state is billed once. TypeSafe's cookbook reports 13 questions in one call as ~12x cheaper and ~10x faster than 13 calls. |
 | Latency | ~70–500 ms per request. |
-| Price | $0.042 per 1M input tokens. Output is free. No caching or batch discount is documented. |
-| Context limits | 64k tokens for state + all questions. 32k for state + the longest question. |
-| Rate limits | 250k tokens/s, 1,200 requests/min. Can change without notice. |
+| Price ✅ | $0.042 per 1M input tokens. Output is free. No caching or batch discount is documented. |
+| Context limits ✅ | 64k tokens for state + all questions. 32k for state + the longest question. |
+| Rate limits ✅ | 100k tokens/s, 40 requests/s for `jev-1.13.0`. Over the limit returns `429` with `retry-after`. Can change without notice. |
 | Access | Early-access waitlist and a browser playground. API key in `TYPESAFE_API_KEY`. |
 | SDKs | TypeScript: `@typesafe-ai/sdk` (Node 20+), `TypeSafeClient` with `choice`, `score`, `noul` helpers. Python: `typesafe-sdk`, and `TypeSafeModel` in Pydantic AI. Also listed on Cloudflare AI and OpenRouter. |
-| Model IDs | `jev-latest`, `jev-preview`, and pinned versions (for example `jev-1.13.0`). |
+| Model IDs ✅ | `jev-1.13.0` is current. `jev-latest` and `jev-preview` are aliases that move without notice. The docs say to pin the version if you tune thresholds. |
 
 ### Accuracy and calibration — read this before you trust it
 
@@ -65,6 +63,28 @@ and recipe list up to date when the weekly plan changes.
   simple questions (one report: 62.6% asked once, 95% split five ways).
 - Jev is strongest on short, factual judgments. It is weakest on multi-step
   reasoning.
+
+### Known weak spots (TypeSafe's own "jev-1.13 jaggedness" page) ✅
+
+- Reads instructions literally. Write the exact condition and put edge cases in `criteria`.
+- Does not count or do math. Quantities and merges stay in code.
+- Compares dates badly. Keep date logic in code.
+- Accuracy drops with large, irrelevant state. Send only the fields the question needs.
+- Cannot generate text.
+
+### Live test — 2026-09-30 ✅
+
+One request: 12 grocery strings in `state.items`, 24 questions (a Choice for
+section and a Noul for "pantry staple" per item).
+
+| Result | Value |
+|---|---|
+| Round trip | 596 ms |
+| Input tokens | 3,286 (≈ $0.00014) |
+| Section accuracy | 12 of 12 correct, including messy input ("Greek yog" → DAIRY, "chx thighs bnls" → PROTEIN). Confidence 0.96–1.0. |
+| Staple question | **Weak.** Salt 0.72, but chicken thighs 0.54 and Greek yogurt 0.53. The values do not separate well. Rewrite the question with explicit criteria, or use a fixed staples list in code. |
+
+This is a small sample, not an eval. Phase 2 still applies.
 
 **Conclusion for Pantry Pal:** Aisle and tag classification are short,
 factual judgments with a small option set. This is Jev's best case. But you
@@ -164,31 +184,43 @@ only uses seed data.
 6. **Ask many questions per request.** Send section, staple, and perishable
    as three questions on one state. Batch up to the context limit.
 
-### Example request (from the TypeScript SDK docs, unverified)
+### Example request (HTTP, verified with a live call)
 
-```ts
-import { TypeSafeClient, choice, noul } from "@typesafe-ai/sdk";
+Batch many items in one request. Put the items in `state` as an array and
+point each question at one item by index.
 
-const client = new TypeSafeClient(); // reads TYPESAFE_API_KEY
-
-const res = await client.systemOne({
-  model: "jev-1.13.0",
-  state: { item: "1 big bag spinach" },
-  questions: {
-    section: choice({
-      instructions: "Which grocery store section sells this item?",
-      options: ["PRODUCE", "PROTEIN", "DAIRY", "BAKERY", "PANTRY",
-                "FROZEN", "SPICES", "BEVERAGES", "OTHER"],
-    }),
-    staple: noul({
-      instructions: "Do most home cooks already keep this item stocked?",
-    }),
-  },
-});
-// res.answers.section → { value, probabilities, confidence }
+```json
+POST https://api.typesafe.ai/v1/systemone
+{
+  "model": "jev-1.13.0",
+  "state": { "items": ["1 big bag spinach", "Greek yog"] },
+  "questions": {
+    "section_0": {
+      "type": "choice",
+      "instructions": "Which grocery store section sells `items[0]`?",
+      "criteria": {
+        "PRODUCE": "Fresh fruit, vegetables, herbs",
+        "PROTEIN": "Raw meat, poultry, fish, seafood, tofu",
+        "DAIRY": "Milk, yogurt, cheese, butter, eggs, plant-based milk and yogurt",
+        "BAKERY": "Bread, bagels, tortillas, baked goods",
+        "PANTRY": "Shelf-stable dry and canned goods, grains, pasta, oils, sauces",
+        "FROZEN": "Items sold frozen",
+        "SPICES": "Salt, pepper, dried herbs, spice blends",
+        "BEVERAGES": "Drinks other than milk",
+        "OTHER": "None of the above"
+      }
+    },
+    "section_1": { "...": "same, with `items[1]`" }
+  }
+}
 ```
 
-Check the exact helper signatures against the SDK before you use this.
+Response, per question:
+`{ "type": "choice", "choice": "PRODUCE", "confidence": 1.0, "probabilities": { "PRODUCE": 1.0, ... } }`
+
+The TypeScript SDK is `@typesafe-ai/sdk` (Node 20+). Check its helper
+signatures before you use it, or call the HTTP API with `fetch` from the
+route handler.
 
 ## 5. Evaluation and thresholds
 
@@ -238,7 +270,7 @@ that are not in the cache.
 
 | Phase | Work | Needs Jev? | Done when |
 |---|---|---|---|
-| **0. Access** | Join the waitlist. Get a key. Test in the playground. Add `api.typesafe.ai` to the build environment's allowed domains. | Yes | A test request returns an answer. |
+| **0. Access** ✅ done 2026-09-30 | Join the waitlist. Get a key. Test in the playground. Add `api.typesafe.ai` to the build environment's allowed domains. | Yes | A test request returns an answer. |
 | **1. Deterministic core** | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
 | **2. Shadow eval** | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
 | **3. Live classification** | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |

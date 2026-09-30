@@ -69,7 +69,7 @@ _All P0 build issues resolved — see Resolved._
 
 ### v0.2 — Jev integration (see `docs/jev-integration-plan.md`)
 
-- **[#J0] Get Jev early access + API key; allow `api.typesafe.ai` in build env** — `chore` — _status: todo (founder action)_ — Plan §7 phase 0.
+- **[#J0] Get Jev early access + API key; allow `api.typesafe.ai` in build env** — `chore` — _status: done_ — Plan §7 phase 0. Live call OK 2026-09-30 (12/12 sections correct, 596 ms).
 - **[#J1] Deterministic list engine: ingredient table, `buildGroceryList`, `diffGroceryList`, `RulesClassifier`** — `feature` — _status: todo_ — Plan §4, §6. No Jev needed. Diff banner generated, not seeded.
 - **[#J2] Jev shadow eval: labeled item set + `scripts/eval-jev.ts` + thresholds** — `test` — _status: todo_ — Plan §5. Blocked by #J0.
 - **[#J3] Live classification: `/api/classify`, `JevClassifier`, cache, fallback, pinned model** — `feature` — _status: todo_ — Plan §4. Blocked by #J2.
@@ -107,3 +107,4 @@ _All P0 build issues resolved — see Resolved._
 - **2026-05-31** — Full prototype built. `npm install`, `tsc --noEmit`, and `next build` all clean (10 routes). Started `next start` and asserted every spec-exact acceptance string renders on `/plan`, `/recipe/[id]`, `/list`, `/paywall`, `/paywall/accepted`, `/coach`, `/discover`. Code-audited each §7 Gherkin criterion. Onboarding `/` renders client-side (gates on localStorage check) — confirmed via logic review, not SSR grep.
 - **2026-05-31** — Build-side baseline COMPLETE. Remaining: founder deploy (#8b), founder device walkthrough (#9b), and optional real-browser visual QA (#17, blocked on screen-recording permission).
 - **2026-09-30** — Added Jev integration plan (`docs/jev-integration-plan.md`) and v0.2 issues #J0–#J4, #D5–#D7. Primary TypeSafe docs blocked by build-env network policy; plan data is from secondary sources — verify before coding against the SDK.
+- **2026-09-30** — #J0 done. Key + network confirmed in cloud env. Plan updated with verified API shape, limits (100k tok/s, 40 req/s), jev-1.13 weak spots, and live test results. Staple Noul question separates poorly — needs rework in #J2.
