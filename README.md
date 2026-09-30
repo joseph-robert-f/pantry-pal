@@ -6,8 +6,10 @@ so the component layer ports cleanly to React Native + NativeWind for the
 eventual iOS build.
 
 > **Not a shipped product.** Single anonymous demo experience, no real auth, no
-> LLM calls, no payments. All coach copy is hard-coded. See
-> `pantry_pal_web_prototype.spec.md` for the full specification (v0.1).
+> LLM calls, no payments. All coach copy is hard-coded. The one live model call
+> is TypeSafe's Jev for grocery item classification, server-side, with a
+> no-network fallback (spec v0.2, `docs/jev-integration-plan.md`). See
+> `pantry_pal_web_prototype.spec.md` for the full specification (v0.2).
 
 ## What it demonstrates
 

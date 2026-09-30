@@ -34,3 +34,10 @@ test("every item sits in a named section", () => {
   const all = DEMO_GROCERY.sections.flatMap((s) => s.items);
   assert.equal(new Set(all.map((i) => i.id)).size, all.length, "no duplicate lines");
 });
+
+test("spec v0.2 §7.4: 5 section headers in store-walk order", () => {
+  assert.deepEqual(
+    DEMO_GROCERY.sections.map((s) => s.name),
+    ["PRODUCE", "PROTEIN", "DAIRY", "BAKERY", "PANTRY"],
+  );
+});

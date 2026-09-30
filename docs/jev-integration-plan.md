@@ -1,9 +1,9 @@
 ---
 title: Pantry Pal — Jev Integration Plan
 plan_version: 0.1
-status: draft — needs founder decisions (section 8). Phases 0–2 done.
+status: approved — founder decisions made 2026-09-30 (section 8). Phases 0–2 done.
 owner: Joe Fehr
-parent_spec: pantry_pal_web_prototype.spec.md (v0.1)
+parent_spec: pantry_pal_web_prototype.spec.md (v0.2)
 date: 2026-09-30
 ---
 
@@ -293,18 +293,18 @@ that are not in the cache.
 
 Phases 0–2 are done. Phase 3 (live classification) is next. Eval results and the #J3 decisions: `eval/jev/README.md`.
 
-## 8. Decisions for the founder
+## 8. Founder decisions (2026-09-30)
 
-- **D5 — Scope change.** Spec v0.1 lists "no real LLM calls" as a non-goal.
-  Jev is not an LLM, but it is a live paid model call and it needs a server
-  route. Options: (a) keep the F&F prototype static and do this in a v0.2
-  branch; (b) allow Jev in the prototype with the rules fallback.
-  **Recommendation: (a) for Phases 1–2, then (b) for Phase 3.**
-- **D6 — Section taxonomy.** Use the 9 sections in section 4, or match the
-  Instacart department names so checkout maps cleanly later.
-- **D7 — Vendor risk.** TypeSafe is a seed-stage company in early access.
-  Keep the `ItemClassifier` interface so an LLM (for example Claude with
-  structured output) or a local classifier can replace Jev with no UI change.
+- **D5 — Scope change: approved.** Jev calls are allowed in the prototype,
+  server-side, with the keyword-rules fallback. Spec §0 updated (v0.2).
+- **J1a — List shape: update the spec.** Spec §5 and §7.4 now describe the
+  generated list (5 sections, 22 items for the seed week).
+- **D6 — Section taxonomy: keep the 9 sections for now.** When a grocery
+  partner is chosen, map to that partner's departments. The change stays in
+  one place: the `Section` type and the criteria map.
+- **D7 — Vendor risk: approved.** Keep the `ItemClassifier` interface
+  vendor-neutral, so an LLM or a local classifier can replace Jev with no UI
+  change.
 
 ## 9. Risks
 
