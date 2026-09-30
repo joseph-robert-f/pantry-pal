@@ -19,7 +19,8 @@ parent_spec: pantry_pal_spec_v0.1.html
 > - §7.4: acceptance criteria match the generated list (#J1a).
 > - §7.4: "Add something else…" field; typed items are classified by Jev via
 >   `POST /api/classify` (#J3).
-> - §7.3: attribute tag pills from code and stored Jev judgments (#J4).
+> - §7.3: attribute tag pills from code and stored Jev judgments (#J4), and a
+>   swap hint row that opens the paywall (#J4a).
 > - Appendix: new files for the grocery engine, the Jev eval, and the route.
 
 A clickable web prototype that lets the founder and a small circle of friends-and-family experience the Pantry Pal product flow before any iOS code is written. Built in Next.js + Tailwind so that components map cleanly to the eventual React Native + NativeWind iOS build.
@@ -573,6 +574,7 @@ then exactly one chip has the terracotta background indicating "today" (Tuesday 
 2. Title `text-lg font-bold` in `text-ink`, 16px below hero.
 3. Macro line formatted via `STRINGS.recipe_macros_format` in `text-xs text-muted`.
 4. Tag pills row: training-day tag in `bg-sage-soft text-sage-deep`, equipment tag in `bg-terracotta-soft text-terracotta-deep`. v0.2 (#J4): then attribute pills in `border border-hairline text-muted` — Quick, High protein, Carb-forward (from the numbers, in code) and One pan, Good leftovers (judged by Jev, stored in `lib/recipes/judgments.generated.ts`). The founder's day tag is shown when present; otherwise Jev's best day.
+4a. Swap hint (v0.2, #J4a): when another recipe fits this recipe's day tag clearly better (`rankSwaps`, minimum gain 0.15), a `bg-sage-soft` row shows `STRINGS.recipe_swap_hint` ("Better fit for a {day}:") and the recipe title, with a chevron. Tap → `/paywall` (swaps are Plus). No day tag or no better recipe → no row.
 5. Section header `STRINGS.recipe_section_ingredients` in `text-sm font-semibold`.
 6. Ingredient list — first 5 visible, then a `+ N more` affordance in `text-terracotta underline`.
 7. Section header `STRINGS.recipe_section_instructions` in `text-sm font-semibold`.
@@ -965,7 +967,8 @@ pantry-pal-prototype/
 │   ├── Button.tsx
 │   ├── Toast.tsx
 │   ├── DemoControls.tsx
-│   └── AddItemForm.tsx          # v0.2: add-item row on /list
+│   ├── AddItemForm.tsx          # v0.2: add-item row on /list
+│   └── SwapHint.tsx             # v0.2: "Better fit for a {day}" row on /recipe
 ├── lib/
 │   ├── seedData.ts              # DEMO_USER, DEMO_WEEK, RECIPES, DEMO_WEEKS, grocery plan inputs
 │   ├── coachStrings.ts          # STRINGS catalogue

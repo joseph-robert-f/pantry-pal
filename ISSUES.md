@@ -87,17 +87,17 @@ _None open — see Resolved (#D1–D4)._
   - `lib/grocery/apiClassifier.ts`: browser client; falls back to rules if the route fails or the device is offline.
   - `/list`: "Add something else…" field. Typed items go to their aisle, marked "new"; low-confidence ones show "check aisle".
   - Verified: 32 unit tests; live route (chx thighs bnls → PROTEIN 0.97, egg bites → FROZEN 0.53 flagged); cache hit 5 ms; no-key fallback; 400 on bad input; key not in client bundle; Chromium add-item flow.
-- **[#J3a] Voice review for new strings** — `chore` — _status: todo_ — `grocery_add_placeholder` ("Add something else…"), `grocery_add_button` ("Add"), `grocery_review_tag` ("check aisle"), `grocery_add_label`. Run spec §6 checklist.
+- **[#J3a] Voice review for new strings** — `chore` — _status: todo_ — `grocery_add_placeholder` ("Add something else…"), `grocery_add_button` ("Add"), `grocery_review_tag` ("check aisle"), `grocery_add_label`, `recipe_swap_hint` ("Better fit for a {day}:"), `recipe_tag_*`, `day_type_*`. Run spec §6 checklist.
 - **[#J3b] Abuse guard on `/api/classify`** — `chore` — _status: todo (before public sharing)_ — Route is public. Input caps + cache limit cost (~$0.00002/item), but add a per-IP rate limit before sharing beyond F&F.
-- **[#J4a] Swap suggestion placement** — `decision` — _status: open_ — "Swap meal" is a Plus feature (routes to paywall, spec §7.3). Decide where `rankSwaps` output shows and whether it is gated.
+- **[#J4a] Swap suggestion placement** — `feature` — _status: done_ — Built the recommended option (founder said "continue" without picking; easy to move): a "Better fit for a {day}: {recipe}" row under the recipe tags; tap → Plus paywall. Shows only when `rankSwaps` finds a clearly better dinner for the founder's day tag. Seed data: shows on the 2 low-carb "hard day" dinners → carb-forward pasta. New string `recipe_swap_hint` joins the #J3a voice review.
 - **[#J4b] Nutritionist-authored recipe judgment skill** ([GH #9](https://github.com/joseph-robert-f/pantry-pal/issues/9)) — `chore` — _status: deferred (needs a nutritionist)_ — Founder confirmed the `v1-draft` rubric wording on 2026-09-30 **as a placeholder only**. A nutritionist replaces the day-fit levels, tag definitions, and macro cutoffs, then bumps `RUBRIC_VERSION` and re-runs `judge:recipes`. Voice review of the new tag and day-type strings rides with #J3a.
 - **[#J5] Trainer-authored workout logic skill** ([GH #10](https://github.com/joseph-robert-f/pantry-pal/issues/10)) — `feature` — _status: deferred (needs a trainer)_ — Day types and definitions, training week → day type rules, and training events (e.g. long run → bagels, bananas) are hand-set today. A trainer defines them; the nutritionist's rubric (#J4b) builds on the trainer's day types.
 - **[#J3c] Added items do not persist** — `feature` — _status: todo (P2)_ — Like checkbox state (spec §9), added items reset on reload. Fine for the prototype.
-- **[#J4] Recipe tags + swap ranking (suggestion UI)** — `feature` — _status: in-progress_ — Plan §6. Report: `eval/jev/README.md` (Recipe judgments).
+- **[#J4] Recipe tags + swap ranking (suggestion UI)** — `feature` — _status: done_ — Plan §6. Report: `eval/jev/README.md` (Recipe judgments).
   - Done: `lib/recipes/` engine — Jev judges day fit (5 Scores) + one-pan / good-leftovers (Nouls) once per recipe, offline (`npm run judge:recipes` → `judgments.generated.ts`); code tags quick / high protein / carb-forward; `rankSwaps` with a minimum gain.
   - Done: recipe page shows attribute pills. Founder's day tag still wins; Jev's best day fills in only when a recipe has none.
   - Results: probes 11/12; seed recipes keep their slot 4/6 — the 2 misses are "hard day" dinners with moderate/low carbs.
-  - Open: **where the swap suggestion shows in the UI** (founder decision — see #J4a).
+  - Swap UI: done in #J4a.
   - Rubric: `v1-draft`, confirmed as a placeholder; stored with every judgment (`RECIPE_JUDGMENTS.rubric`). A test fails if judgments are stale.
 - **[#D5] Scope change: live model call vs spec v0.1 non-goal** — `decision` — _status: done_ — Founder: yes. Jev allowed server-side with rules fallback. Spec v0.2 §0.
 - **[#D6] Grocery section taxonomy (own 9 vs Instacart departments)** — `decision` — _status: done_ — Founder: keep the 9 for now; map to the grocery partner's departments once one is chosen. Spec v0.2 §5.
@@ -143,3 +143,4 @@ _None open — see Resolved (#D1–D4)._
 - **2026-09-30** — #J3 done. Jev classifies hand-added list items via `/api/classify`. New follow-ups: #J3a voice review, #J3b rate limit before public sharing, #J3c persistence.
 - **2026-09-30** — #J4 engine + recipe tag pills done (PR #8). Swap suggestion UI waits on founder decision #J4a.
 - **2026-09-30** — PR #8 merged #J3 only; #J4 part 1 rebased onto main (Next 15). Fixed stale `DEMO_GROCERY` import in `tests/lib.test.ts` (main's typecheck and Vitest were red). Founder confirmed rubric `v1-draft` as a placeholder; expert skills deferred: #J4b nutritionist (GH #9), #J5 trainer (GH #10).
+- **2026-09-30** — #J4a done (recommended option: swap hint on recipe page → paywall). #J4 complete. Plan phases 0–4 done.

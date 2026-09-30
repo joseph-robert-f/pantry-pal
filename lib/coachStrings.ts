@@ -36,6 +36,8 @@ export const STRINGS = {
   recipe_button_swap: "Swap meal",
   recipe_button_cook: "Start cooking",
   recipe_cook_toast: "Locked in. Have at it.",
+  // Swap hint (#J4a) — {day} is a lowercase day-type label
+  recipe_swap_hint: "Better fit for a {day}:",
   // Recipe tags (#J4) — code tags from the numbers, judged tags from Jev
   recipe_tag_quick: "Quick",
   recipe_tag_high_protein: "High protein",

@@ -9,7 +9,8 @@ import Toast from "@/components/Toast";
 import { STRINGS } from "@/lib/coachStrings";
 import { getRecipe } from "@/lib/seedData";
 import { formatMacroLine } from "@/lib/format";
-import { recipePills } from "@/lib/recipeTags";
+import { recipePills, swapHint } from "@/lib/recipeTags";
+import SwapHint from "@/components/SwapHint";
 
 const EQUIPMENT_TAGS = new Set(["oven", "stovetop"]);
 
@@ -48,6 +49,7 @@ export default function RecipePage() {
   }
 
   const pills = recipePills(recipe);
+  const hint = swapHint(recipe);
   const equipmentTag = recipe.tags.find((t) => EQUIPMENT_TAGS.has(t));
   const visibleIngredients = expanded ? recipe.ingredients : recipe.ingredients.slice(0, 5);
   const hiddenCount = recipe.ingredients.length - 5;
@@ -102,6 +104,11 @@ export default function RecipePage() {
               </span>
             ))}
           </div>
+
+          {/* Swap hint (#J4a): a better dinner for this training day → Plus */}
+          {hint ? (
+            <SwapHint text={hint.text} title={hint.title} onPress={() => router.push("/paywall")} />
+          ) : null}
 
           {/* Ingredients */}
           <h2 className="mt-8 text-sm font-semibold text-ink">
