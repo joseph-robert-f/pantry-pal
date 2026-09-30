@@ -1,7 +1,7 @@
 ---
 title: Pantry Pal — Jev Integration Plan
 plan_version: 0.1
-status: approved — founder decisions made 2026-09-30 (section 8). Phases 0–2 done.
+status: approved — founder decisions made 2026-09-30 (section 8). Phases 0–3 done.
 owner: Joe Fehr
 parent_spec: pantry_pal_web_prototype.spec.md (v0.2)
 date: 2026-09-30
@@ -288,10 +288,10 @@ that are not in the cache.
 | **0. Access** ✅ done 2026-09-30 | Join the waitlist. Get a key. Test in the playground. Add `api.typesafe.ai` to the build environment's allowed domains. | Yes | A test request returns an answer. |
 | **1. Deterministic core** ✅ done 2026-09-30 | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
 | **2. Shadow eval** ✅ done 2026-09-30 | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
-| **3. Live classification** | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |
+| **3. Live classification** ✅ done 2026-09-30 | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |
 | **4. Recipe tags and swaps** | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
 
-Phases 0–2 are done. Phase 3 (live classification) is next. Eval results and the #J3 decisions: `eval/jev/README.md`.
+Phases 0–3 are done. Phase 4 (recipe tags and swaps) is next. Eval results and the #J3 decisions: `eval/jev/README.md`.
 
 ## 8. Founder decisions (2026-09-30)
 

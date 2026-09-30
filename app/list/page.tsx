@@ -1,17 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import PhoneFrame from "@/components/PhoneFrame";
 import BottomTabBar from "@/components/BottomTabBar";
 import GroceryItem from "@/components/GroceryItem";
+import AddItemForm from "@/components/AddItemForm";
 import { STRINGS } from "@/lib/coachStrings";
-import { DEMO_GROCERY } from "@/lib/demoGrocery";
+import { DEMO_GROCERY, addItemToSections } from "@/lib/demoGrocery";
+import { createApiClassifier } from "@/lib/grocery";
 
 // Grocery list (spec §7.4). The diff-based list — the signature feature beyond
 // meal planning. The list, the "new" flags, and the diff banner all come from
 // the grocery engine (lib/grocery, plan #J1) comparing this week's plan with
-// last week's.
+// last week's. Items the user types go through /api/classify (Jev, #J3) to
+// find their aisle.
 export default function ListPage() {
+  const [sections, setSections] = useState(DEMO_GROCERY.sections);
+  const [draft, setDraft] = useState("");
+  const [pending, setPending] = useState(false);
+  const classifier = useMemo(() => createApiClassifier(fetch), []);
+
+  async function addItem() {
+    const text = draft.trim();
+    setPending(true);
+    const results = await classifier.classify([text]);
+    setSections((prev) => addItemToSections(prev, text, results[text]));
+    setDraft("");
+    setPending(false);
+  }
+
   // Checkbox state lives here, keyed by canonical ingredient id so it
   // survives a list rebuild. Not persisted.
   const [checked, setChecked] = useState<Record<string, boolean>>(() => {
@@ -46,7 +63,7 @@ export default function ListPage() {
 
         {/* Sections */}
         <div className="mt-4 flex flex-col gap-4">
-          {DEMO_GROCERY.sections.map((section) => (
+          {sections.map((section) => (
             <section key={section.name}>
               <h2 className="text-xs font-semibold text-muted uppercase tracking-wide">
                 {section.name}
@@ -57,8 +74,9 @@ export default function ListPage() {
                     key={item.id}
                     qty={item.qty}
                     name={item.name}
-                    checked={checked[item.id]}
+                    checked={!!checked[item.id]}
                     status={item.status}
+                    needsReview={item.needsReview}
                     onToggle={() => toggle(item.id)}
                   />
                 ))}
@@ -66,6 +84,8 @@ export default function ListPage() {
             </section>
           ))}
         </div>
+
+        <AddItemForm value={draft} pending={pending} onChange={setDraft} onSubmit={addItem} />
 
         {/* Instacart CTA (stubbed link — spec §7.4) */}
         <a

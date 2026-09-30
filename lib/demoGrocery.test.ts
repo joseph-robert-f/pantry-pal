@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { DEMO_GROCERY } from "./demoGrocery.ts";
+import { DEMO_GROCERY, addItemToSections } from "./demoGrocery.ts";
 
 // The demo week end to end: seed plan → engine → what /list renders.
 
@@ -40,4 +40,28 @@ test("spec v0.2 §7.4: 5 section headers in store-walk order", () => {
     DEMO_GROCERY.sections.map((s) => s.name),
     ["PRODUCE", "PROTEIN", "DAIRY", "BAKERY", "PANTRY"],
   );
+});
+
+test("an added item lands in its section, marked new", () => {
+  const out = addItemToSections(DEMO_GROCERY.sections, "tahini", {
+    section: "PANTRY", isStaple: false, confidence: 0.97, source: "jev", needsReview: false,
+  });
+  const pantry = out.find((s) => s.section === "PANTRY");
+  assert.equal(pantry?.items.at(-1)?.name, "tahini");
+  assert.equal(pantry?.items.at(-1)?.status, "new");
+});
+
+test("an added item in a new section keeps store-walk order", () => {
+  const out = addItemToSections(DEMO_GROCERY.sections, "egg bites", {
+    section: "FROZEN", isStaple: false, confidence: 0.52, source: "jev", needsReview: true,
+  });
+  assert.deepEqual(out.map((s) => s.name), ["PRODUCE", "PROTEIN", "DAIRY", "BAKERY", "PANTRY", "FROZEN"]);
+  assert.equal(out.at(-1)?.items[0].needsReview, true);
+});
+
+test("an item already on the list is not added twice", () => {
+  const out = addItemToSections(DEMO_GROCERY.sections, "Bananas", {
+    section: "PRODUCE", isStaple: false, confidence: 1, source: "catalogue", needsReview: false,
+  });
+  assert.equal(out, DEMO_GROCERY.sections);
 });

@@ -17,7 +17,9 @@ parent_spec: pantry_pal_spec_v0.1.html
 > - §5: the grocery list is generated from the plan, not hand-written (#J1).
 > - §6: section strings for all 9 grocery sections.
 > - §7.4: acceptance criteria match the generated list (#J1a).
-> - Appendix: new files for the grocery engine and the Jev eval.
+> - §7.4: "Add something else…" field; typed items are classified by Jev via
+>   `POST /api/classify` (#J3).
+> - Appendix: new files for the grocery engine, the Jev eval, and the route.
 
 A clickable web prototype that lets the founder and a small circle of friends-and-family experience the Pantry Pal product flow before any iOS code is written. Built in Next.js + Tailwind so that components map cleanly to the eventual React Native + NativeWind iOS build.
 
@@ -622,8 +624,9 @@ then it reads exactly: "45P · 52C · 18F · 540 cal · 30min".
 5. For each section in `DEMO_GROCERY.sections`:
    - Section header in `text-xs font-semibold text-muted uppercase tracking-wide`
    - Items: checkbox + qty + name. Checked items have `line-through text-muted` styling. Items with `status: "new"` have a 2px sage border on their checkbox and a small `new` label on the right in `text-sage`.
-6. Bottom CTA: `Shop with Instacart` full-width button in `bg-terracotta text-white font-semibold`, `rounded-full`, 36px tall.
-7. BottomTabBar with `List` active.
+6. Add-item row (v0.2, #J3): text field `STRINGS.grocery_add_placeholder` + `STRINGS.grocery_add_button`. The route file sends the text to `POST /api/classify` and adds the item to the returned section, marked `new`. If the answer has `needsReview`, the row shows `STRINGS.grocery_review_tag` in `text-xs text-muted`. If the route fails, the keyword rules answer. An item already on the list is not added twice.
+7. Bottom CTA: `Shop with Instacart` full-width button in `bg-terracotta text-white font-semibold`, `rounded-full`, 36px tall.
+8. BottomTabBar with `List` active.
 
 **Interactions.**
 
@@ -945,6 +948,7 @@ pantry-pal-prototype/
 │   ├── plan/page.tsx            # Weekly plan home
 │   ├── recipe/[id]/page.tsx     # Recipe detail
 │   ├── list/page.tsx            # Grocery list
+│   ├── api/classify/route.ts    # v0.2: Jev aisle classification (server-only key)
 │   ├── coach/page.tsx           # Stub
 │   ├── discover/page.tsx        # Stub
 │   ├── paywall/page.tsx         # Plus paywall
@@ -959,7 +963,8 @@ pantry-pal-prototype/
 │   ├── PricePill.tsx
 │   ├── Button.tsx
 │   ├── Toast.tsx
-│   └── DemoControls.tsx
+│   ├── DemoControls.tsx
+│   └── AddItemForm.tsx          # v0.2: add-item row on /list
 ├── lib/
 │   ├── seedData.ts              # DEMO_USER, DEMO_WEEK, RECIPES, DEMO_WEEKS, grocery plan inputs
 │   ├── coachStrings.ts          # STRINGS catalogue
