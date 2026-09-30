@@ -89,8 +89,14 @@ _None open — see Resolved (#D1–D4)._
   - Verified: 32 unit tests; live route (chx thighs bnls → PROTEIN 0.97, egg bites → FROZEN 0.53 flagged); cache hit 5 ms; no-key fallback; 400 on bad input; key not in client bundle; Chromium add-item flow.
 - **[#J3a] Voice review for new strings** — `chore` — _status: todo_ — `grocery_add_placeholder` ("Add something else…"), `grocery_add_button` ("Add"), `grocery_review_tag` ("check aisle"), `grocery_add_label`. Run spec §6 checklist.
 - **[#J3b] Abuse guard on `/api/classify`** — `chore` — _status: todo (before public sharing)_ — Route is public. Input caps + cache limit cost (~$0.00002/item), but add a per-IP rate limit before sharing beyond F&F.
+- **[#J4a] Swap suggestion placement** — `decision` — _status: open_ — "Swap meal" is a Plus feature (routes to paywall, spec §7.3). Decide where `rankSwaps` output shows and whether it is gated.
+- **[#J4b] Review day-fit rubric wording** — `chore` — _status: todo (founder)_ — Level descriptions in `lib/recipes/jevRecipeQuestions.ts` are a first draft of sports-nutrition rules of thumb. Also voice-review the new tag and day-type strings.
 - **[#J3c] Added items do not persist** — `feature` — _status: todo (P2)_ — Like checkbox state (spec §9), added items reset on reload. Fine for the prototype.
-- **[#J4] Recipe tags + swap ranking (suggestion UI)** — `feature` — _status: todo_ — Plan §6. Unblocked.
+- **[#J4] Recipe tags + swap ranking (suggestion UI)** — `feature` — _status: in-progress_ — Plan §6. Report: `eval/jev/README.md` (Recipe judgments).
+  - Done: `lib/recipes/` engine — Jev judges day fit (5 Scores) + one-pan / good-leftovers (Nouls) once per recipe, offline (`npm run judge:recipes` → `judgments.generated.ts`); code tags quick / high protein / carb-forward; `rankSwaps` with a minimum gain.
+  - Done: recipe page shows attribute pills. Founder's day tag still wins; Jev's best day fills in only when a recipe has none.
+  - Results: probes 11/12; seed recipes keep their slot 4/6 — the 2 misses are "hard day" dinners with moderate/low carbs.
+  - Open: **where the swap suggestion shows in the UI** (founder decision — see #J4a).
 - **[#D5] Scope change: live model call vs spec v0.1 non-goal** — `decision` — _status: done_ — Founder: yes. Jev allowed server-side with rules fallback. Spec v0.2 §0.
 - **[#D6] Grocery section taxonomy (own 9 vs Instacart departments)** — `decision` — _status: done_ — Founder: keep the 9 for now; map to the grocery partner's departments once one is chosen. Spec v0.2 §5.
 - **[#D7] Vendor risk: keep `ItemClassifier` interface vendor-neutral** — `decision` — _status: done_ — Founder: yes.
@@ -133,3 +139,4 @@ _None open — see Resolved (#D1–D4)._
 - **2026-09-30** — #J2 done. Installed the TypeSafe skill (plugin enabled in `.claude/settings.json`). Eval: v1 criteria 98.3%, v2 100% on tuning set, 99.2% on holdout. Threshold 0.70.
 - **2026-09-30** — Founder decisions: #D5 yes, #J1a update spec, #D6 keep 9 sections (map to partner later), #D7 yes. Spec bumped to v0.2. #D1–D4 re-checked and closed (#D2 folded into #14, #D4 condition moved to #8b).
 - **2026-09-30** — #J3 done. Jev classifies hand-added list items via `/api/classify`. New follow-ups: #J3a voice review, #J3b rate limit before public sharing, #J3c persistence.
+- **2026-09-30** — #J4 engine + recipe tag pills done (PR #8). Swap suggestion UI waits on founder decision #J4a.

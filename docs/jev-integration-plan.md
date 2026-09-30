@@ -289,7 +289,7 @@ that are not in the cache.
 | **1. Deterministic core** ✅ done 2026-09-30 | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
 | **2. Shadow eval** ✅ done 2026-09-30 | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
 | **3. Live classification** ✅ done 2026-09-30 | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |
-| **4. Recipe tags and swaps** | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
+| **4. Recipe tags and swaps** 🔶 in progress — engine + tags done; swap UI waits on #J4a | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
 
 Phases 0–3 are done. Phase 4 (recipe tags and swaps) is next. Eval results and the #J3 decisions: `eval/jev/README.md`.
 

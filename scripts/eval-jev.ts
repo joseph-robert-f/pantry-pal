@@ -9,20 +9,17 @@
 // eval/jev/cache/, so a re-run replays them without API calls; pass --live to
 // ignore the cache. Needs TYPESAFE_API_KEY only for uncached requests.
 
-import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { createCachedJevClient, pool } from "./jevClient.ts";
 import { classifyWithRules } from "../lib/grocery/rulesClassifier.ts";
 import {
   JEV_MODEL,
   SECTION_CRITERIA,
   batchRequest,
   singleItemRequest,
-  type ChoiceAnswer,
-  type SystemOneRequest,
-  type SystemOneResponse,
 } from "../lib/grocery/jevQuestions.ts";
+import { asChoice, type ChoiceAnswer } from "../lib/jev/api.ts";
 
-const ENDPOINT = "https://api.typesafe.ai/v1/systemone";
 const TARGET_ACCURACY = 0.97; // plan §5 step 4
 const CONCURRENCY = 8;
 
@@ -45,63 +42,9 @@ const runName = `${JEV_MODEL}_${criteriaName}_${mode}${mode === "batch" ? batchS
 
 // --- cache + transport ----------------------------------------------------
 
-const CACHE_DIR = "eval/jev/cache";
-const cachePath = `${CACHE_DIR}/${runName}.json`;
-mkdirSync(CACHE_DIR, { recursive: true });
-const cache: Record<string, SystemOneResponse> =
-  !live && existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, "utf8")) : {};
-
-const stats = { calls: 0, cached: 0, inputTokens: 0, latenciesMs: [] as number[] };
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-
-async function ask(body: SystemOneRequest): Promise<SystemOneResponse> {
-  const key = createHash("sha256").update(JSON.stringify(body)).digest("hex").slice(0, 16);
-  if (cache[key]) {
-    stats.cached++;
-    stats.inputTokens += cache[key].usage?.input_tokens ?? 0;
-    return cache[key];
-  }
-  const apiKey = process.env.TYPESAFE_API_KEY;
-  if (!apiKey) throw new Error("TYPESAFE_API_KEY is not set and the request is not cached");
-
-  for (let attempt = 0; ; attempt++) {
-    const started = performance.now();
-    const res = await fetch(ENDPOINT, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
-    if (res.ok) {
-      const json = (await res.json()) as SystemOneResponse;
-      stats.calls++;
-      stats.latenciesMs.push(performance.now() - started);
-      stats.inputTokens += json.usage?.input_tokens ?? 0;
-      cache[key] = json;
-      return json;
-    }
-    const retryable = res.status === 429 || res.status >= 500;
-    if (!retryable || attempt >= 4) {
-      throw new Error(`Jev ${res.status}: ${(await res.text()).slice(0, 300)}`);
-    }
-    const retryAfter = Number(res.headers.get("retry-after"));
-    await sleep(retryAfter > 0 ? retryAfter * 1000 : 2 ** attempt * 1000);
-  }
-}
-
-async function pool<T, R>(inputs: T[], fn: (t: T) => Promise<R>): Promise<R[]> {
-  const out: R[] = new Array(inputs.length);
-  let next = 0;
-  await Promise.all(
-    Array.from({ length: CONCURRENCY }, async () => {
-      while (next < inputs.length) {
-        const i = next++;
-        out[i] = await fn(inputs[i]);
-      }
-    }),
-  );
-  return out;
-}
+const client = createCachedJevClient(`eval/jev/cache/${runName}.json`, { live });
+const { ask, stats } = client;
+const poolN = <T, R>(inputs: T[], fn: (t: T) => Promise<R>) => pool(inputs, fn, CONCURRENCY);
 
 // --- run ------------------------------------------------------------------
 
@@ -113,13 +56,13 @@ const rows: Row[] = readFileSync(`eval/jev/${dataset}.jsonl`, "utf8")
 
 async function answersFor(rows: Row[]): Promise<ChoiceAnswer[]> {
   if (mode === "single") {
-    const responses = await pool(rows, (r) => ask(singleItemRequest(r.item, criteria)));
-    return responses.map((res) => res.answers.section);
+    const responses = await poolN(rows, (r) => ask(singleItemRequest(r.item, criteria)));
+    return responses.map((res) => asChoice(res.answers.section)!);
   }
   const batches: Row[][] = [];
   for (let i = 0; i < rows.length; i += batchSize) batches.push(rows.slice(i, i + batchSize));
-  const responses = await pool(batches, (b) => ask(batchRequest(b.map((r) => r.item), criteria)));
-  return responses.flatMap((res, bi) => batches[bi].map((_, i) => res.answers[`section_${i}`]));
+  const responses = await poolN(batches, (b) => ask(batchRequest(b.map((r) => r.item), criteria)));
+  return responses.flatMap((res, bi) => batches[bi].map((_, i) => asChoice(res.answers[`section_${i}`])!));
 }
 
 function runnerUp(a: ChoiceAnswer): string {
@@ -135,7 +78,7 @@ const scored: Scored[] = rows.map((r, i) => ({
   correct: r.accept.includes(answers[i].choice),
   runnerUp: runnerUp(answers[i]),
 }));
-writeFileSync(cachePath, JSON.stringify(cache, null, 1) + "\n");
+client.save();
 
 // --- metrics --------------------------------------------------------------
 
