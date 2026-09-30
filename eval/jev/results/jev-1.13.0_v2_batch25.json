@@ -1,0 +1,145 @@
+{
+  "run": "jev-1.13.0_v2_batch25",
+  "date": "2026-09-30",
+  "items": 287,
+  "ambiguousItems": 22,
+  "jev": {
+    "accuracy": 0.9965156794425087,
+    "accuracyUnambiguous": 1,
+    "bySection": {
+      "PRODUCE": {
+        "n": 54,
+        "accuracy": 1
+      },
+      "PROTEIN": {
+        "n": 34,
+        "accuracy": 1
+      },
+      "DAIRY": {
+        "n": 30,
+        "accuracy": 1
+      },
+      "BAKERY": {
+        "n": 20,
+        "accuracy": 1
+      },
+      "PANTRY": {
+        "n": 55,
+        "accuracy": 1
+      },
+      "FROZEN": {
+        "n": 20,
+        "accuracy": 1
+      },
+      "SPICES": {
+        "n": 24,
+        "accuracy": 1
+      },
+      "BEVERAGES": {
+        "n": 13,
+        "accuracy": 1
+      },
+      "OTHER": {
+        "n": 15,
+        "accuracy": 1
+      }
+    },
+    "thresholdSweep": [
+      {
+        "threshold": 0,
+        "coverage": 1,
+        "accuracy": 0.9965156794425087,
+        "n": 287,
+        "errorsAbove": 1
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.9930313588850174,
+        "accuracy": 1,
+        "n": 285,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.9825783972125436,
+        "accuracy": 1,
+        "n": 282,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.975609756097561,
+        "accuracy": 1,
+        "n": 280,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.9721254355400697,
+        "accuracy": 1,
+        "n": 279,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.9372822299651568,
+        "accuracy": 1,
+        "n": 269,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.9094076655052264,
+        "accuracy": 1,
+        "n": 261,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.8466898954703833,
+        "accuracy": 1,
+        "n": 243,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.98,
+        "coverage": 0.7770034843205574,
+        "accuracy": 1,
+        "n": 223,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.6724738675958188,
+        "accuracy": 1,
+        "n": 193,
+        "errorsAbove": 0
+      }
+    ],
+    "recommendedThreshold": 0.5
+  },
+  "rulesBaseline": {
+    "accuracy": 0.7456445993031359,
+    "unmatched": 82
+  },
+  "cost": {
+    "liveCalls": 0,
+    "cachedCalls": 12,
+    "inputTokens": 86325,
+    "usd": 0.0036256500000000002,
+    "latencyP50Ms": null,
+    "latencyP95Ms": null
+  },
+  "errors": [
+    {
+      "item": "stir-fry vegetables",
+      "accept": [
+        "PRODUCE",
+        "FROZEN"
+      ],
+      "choice": "PROTEIN",
+      "confidence": 0.34,
+      "runnerUp": "PRODUCE 0.37"
+    }
+  ]
+}

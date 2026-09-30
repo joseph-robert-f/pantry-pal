@@ -1,6 +1,6 @@
 ---
 title: Pantry Pal — Web Prototype
-spec_version: 0.1
+spec_version: 0.2
 status: ready_to_build
 horizon: pre-H1 (prototype only, not shipping product)
 owner: Joe Fehr
@@ -10,6 +10,14 @@ parent_spec: pantry_pal_spec_v0.1.html
 ---
 
 # Pantry Pal — Web Prototype Technical Specification
+
+> **v0.2 changes (2026-09-30).** Founder decisions #D5, #J1a, #D6, #D7 (see
+> `ISSUES.md` and `docs/jev-integration-plan.md`):
+> - §0: live Jev calls are allowed for grocery item classification (#D5).
+> - §5: the grocery list is generated from the plan, not hand-written (#J1).
+> - §6: section strings for all 9 grocery sections.
+> - §7.4: acceptance criteria match the generated list (#J1a).
+> - Appendix: new files for the grocery engine and the Jev eval.
 
 A clickable web prototype that lets the founder and a small circle of friends-and-family experience the Pantry Pal product flow before any iOS code is written. Built in Next.js + Tailwind so that components map cleanly to the eventual React Native + NativeWind iOS build.
 
@@ -30,6 +38,11 @@ This spec is intentionally complete: an AI coding agent (Claude Code, Cursor, Sp
 
 - Real authentication. The prototype is a single anonymous experience.
 - Real LLM calls. All coach copy is hard-coded.
+  - **Exception (v0.2, #D5):** the prototype may call TypeSafe's Jev decision
+    model to classify grocery items into store sections. Jev returns typed
+    choices, not text, so this does not change the coach voice. Calls run
+    server-side only, and the demo must still work with no network (keyword
+    rules fallback).
 - Real HealthKit integration. Workout data is hard-coded into the demo.
 - Real grocery delivery integration. The "Shop with Instacart" button opens a stubbed link (instacart.com).
 - Real payment. The paywall "Start trial" button shows a thank-you state.
@@ -274,36 +287,39 @@ export const RECIPES = [
 
 ### Grocery list for the demo week
 
+**v0.2:** the list is generated, not hand-written. `lib/grocery/` builds it
+from the plan (plan §4, #J1):
+
+1. Collect the ingredients of every planned recipe, plus items added by
+   training events (the Saturday long run adds bagels and bananas).
+2. Merge duplicates by canonical ingredient and add up quantities in code.
+3. Keep staples (oil, salt, spices, soy sauce…) off the list.
+4. Put each item in one of 9 sections, in store-walk order: PRODUCE, PROTEIN,
+   DAIRY, BAKERY, PANTRY, FROZEN, SPICES, BEVERAGES, OTHER. Only non-empty
+   sections show. The catalogue answers known items; unknown items go to the
+   classifier (keyword rules now, Jev in #J3).
+5. Compare with last week's plan. Added items get `status: "new"`. The banner
+   is the event's catalogue string plus the added item names.
+
+Seed inputs (`lib/seedData.ts`):
+
 ```ts
-export const DEMO_GROCERY = {
-  weekOf: "May 25",
-  diffBanner: { trigger: "Added Saturday long run", items: ["bagels", "bananas"] },
-  sections: [
-    {
-      name: "PRODUCE",
-      items: [
-        { qty: "2", name: "sweet potatoes", checked: false, status: null },
-        { qty: "3", name: "lemons", checked: true, status: null },
-        { qty: "1 big bag", name: "spinach", checked: false, status: null },
-        { qty: "3", name: "bananas", checked: false, status: "new" },
-      ],
-    },
-    {
-      name: "PROTEIN",
-      items: [
-        { qty: "1.5 lb", name: "chicken thighs", checked: false, status: null },
-        { qty: "2", name: "salmon filets", checked: false, status: null },
-      ],
-    },
-    {
-      name: "PANTRY",
-      items: [
-        { qty: "4-pack", name: "bagels", checked: false, status: "new" },
-      ],
-    },
-  ],
-};
+export const TRAINING_EVENTS = [
+  { id: "sat_long_run", addItems: [{ qty: "4-pack", name: "bagels" }, { qty: "3", name: "bananas" }] },
+];
+export const DEMO_PLAN_PREVIOUS = { recipeIds: DEMO_WEEK.days.map((d) => d.dinner), eventIds: [] };
+export const DEMO_PLAN = { recipeIds: DEMO_WEEK.days.map((d) => d.dinner), eventIds: ["sat_long_run"] };
+export const DEMO_CHECKED_IDS = ["lemon"]; // shows the strikethrough state
 ```
+
+`lib/demoGrocery.ts` builds `DEMO_GROCERY` (`diffBanner`, `sections`,
+`staples`) from these inputs. For the six seed recipes the list has 5
+sections and 22 items.
+
+**Section taxonomy (#D6):** keep these 9 sections for now. When a grocery
+partner is chosen (for example Instacart), map to that partner's departments.
+Sections are one type (`Section`) plus one criteria map
+(`lib/grocery/jevQuestions.ts`), so the change is in one place.
 
 ### Two-week demo toggle data
 
@@ -371,6 +387,12 @@ export const STRINGS = {
   grocery_section_produce: "PRODUCE",
   grocery_section_protein: "PROTEIN",
   grocery_section_pantry: "PANTRY",
+  grocery_section_dairy: "DAIRY",
+  grocery_section_bakery: "BAKERY",
+  grocery_section_frozen: "FROZEN",
+  grocery_section_spices: "SPICES",
+  grocery_section_beverages: "BEVERAGES",
+  grocery_section_other: "OTHER",
   grocery_cta_instacart: "Shop with Instacart",
 
   // Paywall (Plus upsell)
@@ -596,7 +618,7 @@ then it reads exactly: "45P · 52C · 18F · 540 cal · 30min".
 1. Status bar
 2. Subhead `STRINGS.grocery_subhead` in `text-xs text-muted`
 3. Title `STRINGS.grocery_title` in `text-xl font-bold`
-4. Diff banner: `bg-terracotta-soft text-terracotta-deep`, 34px tall, contains `"Added Saturday long run:"` on line 1 and `"+ bagels, bananas"` on line 2 in font-semibold.
+4. Diff banner: `bg-terracotta-soft text-terracotta-deep`, 34px tall, contains `"Added Saturday long run:"` on line 1 and `"+ bagels, bananas"` on line 2 in font-semibold. The banner text comes from the grocery engine's diff, not from seed text. If the plan change adds no items, the banner does not show.
 5. For each section in `DEMO_GROCERY.sections`:
    - Section header in `text-xs font-semibold text-muted uppercase tracking-wide`
    - Items: checkbox + qty + name. Checked items have `line-through text-muted` styling. Items with `status: "new"` have a 2px sage border on their checkbox and a small `new` label on the right in `text-sage`.
@@ -618,7 +640,13 @@ then the diff banner is visible at the top with the text "Added Saturday long ru
 
 Given the grocery list,
 when rendered with seed data,
-then exactly 3 section headers are visible: PRODUCE, PROTEIN, PANTRY.
+then these 5 section headers are visible, in this order: PRODUCE, PROTEIN, DAIRY, BAKERY, PANTRY
+and no section header is visible for a section with no items.
+
+Given the grocery list,
+when rendered with seed data,
+then only bagels and bananas have status "new"
+and no staple (olive oil, salt, black pepper, soy sauce) is on the list.
 
 Given the grocery list,
 when the user taps an unchecked item,
@@ -872,7 +900,7 @@ The prototype is shippable to friends-and-family when **all** of the following a
 3. Every acceptance criterion in §7 passes.
 4. Every string in §6 passes the voice review checklist.
 5. The Week 1 / Week 3 demo toggle changes the coach context line on `/plan`.
-6. The diff banner on `/list` shows the seed data text.
+6. The diff banner on `/list` shows "Added Saturday long run: + bagels, bananas", generated by the grocery engine.
 7. The paywall flow (tap "Swap meal" → see paywall → tap CTA → see coach acceptance) works end-to-end.
 8. Deployed to Vercel at a shareable URL.
 9. Founder has personally walked through the prototype on their own phone and is comfortable showing it to 5 friends.
@@ -933,8 +961,13 @@ pantry-pal-prototype/
 │   ├── Toast.tsx
 │   └── DemoControls.tsx
 ├── lib/
-│   ├── seedData.ts              # DEMO_USER, DEMO_WEEK, DEMO_GROCERY, RECIPES, DEMO_WEEKS
-│   └── coachStrings.ts          # STRINGS catalogue
+│   ├── seedData.ts              # DEMO_USER, DEMO_WEEK, RECIPES, DEMO_WEEKS, grocery plan inputs
+│   ├── coachStrings.ts          # STRINGS catalogue
+│   ├── demoGrocery.ts           # v0.2: builds DEMO_GROCERY with the grocery engine
+│   └── grocery/                 # v0.2: grocery engine + Jev question definitions
+├── scripts/eval-jev.ts          # v0.2: Jev accuracy eval (npm run eval:jev)
+├── eval/jev/                    # v0.2: labeled item sets, cached responses, results
+├── docs/jev-integration-plan.md # v0.2: Jev plan
 ├── public/
 │   └── recipes/                 # Recipe photos (placeholder → founder's actuals)
 ├── tailwind.config.ts           # Design tokens
@@ -946,4 +979,4 @@ pantry-pal-prototype/
 
 ---
 
-*End of spec. Version 0.1, May 29, 2026. Owner: Joe Fehr. Parent: `pantry_pal_spec_v0.1.html` (anchor doc for all decisions not made here).*
+*End of spec. Version 0.2, September 30, 2026 (v0.1: May 29, 2026). Owner: Joe Fehr. Parent: `pantry_pal_spec_v0.1.html` (anchor doc for all decisions not made here).*

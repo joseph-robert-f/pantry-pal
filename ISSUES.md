@@ -4,7 +4,7 @@ Robust, spec-driven issue tracker for the Pantry Pal web prototype. This is the
 single source of truth for active work, bugs, and open decisions. It is updated
 on every build iteration.
 
-**Spec:** `pantry_pal_web_prototype.spec.md` (v0.1)
+**Spec:** `pantry_pal_web_prototype.spec.md` (v0.2)
 **Baseline definition of done:** spec §12 ("Prototype Done")
 
 ---
@@ -48,6 +48,8 @@ _All P0 build issues resolved — see Resolved._
 - **[#8b] Deploy to Vercel** — `chore` — _status: blocked (founder action)_ — Spec §10.
   - Needs a GitHub repo + Vercel account. Steps documented in README. Set
     `NEXT_PUBLIC_PROTOTYPE_VERSION=0.1` in Vercel env.
+  - For Jev (#J3): set `TYPESAFE_API_KEY` as a server-only env var (no `NEXT_PUBLIC_` prefix).
+  - Before any **public** sharing (beyond friends-and-family): add analytics (Plausible or PostHog) — spec §13.5, was #D4.
 - **[#9b] Founder walkthrough on real iPhone in Safari** — `test` — _status: blocked (founder action)_ — Spec §10, §12.9.
 
 ### P1 — baseline polish / open follow-ups
@@ -57,15 +59,33 @@ _All P0 build issues resolved — see Resolved._
   build + typecheck + SSR string assertions instead. Recommend a manual pass at
   `npm run dev`.
 - **[#14] Replace placeholder recipes + photos with founder's actuals** — `chore` — _status: todo_ — Spec §5, §13.2.
+  - Includes photo rights (was #D2): founder shoots or licenses photos. Blocks wide sharing, not F&F.
+  - New recipe ingredients must be in `lib/grocery/catalogue.ts`, or #J3 must be live to classify them.
   - Graceful `bg-tan` fallback implemented so missing photos never show broken images.
 - **[#18] Lighthouse ≥85 on `/plan` (mobile)** — `test` — _status: todo_ — Spec §10. Run after deploy.
 
 ### P2 — deferred / open decisions (spec §13)
 
-- **[#D1] Display typeface** — `decision` — _status: open_ — Using Source Serif 4 (free) as placeholder per spec §13.1.
-- **[#D2] Recipe photography rights** — `decision` — _status: open_ — Founder to shoot/license. Using CSS-gradient placeholders.
-- **[#D3] Demo-controls in public prototype** — `decision` — _status: open_ — Shipping with "demo" label per spec §13.4 recommendation.
-- **[#D4] Analytics** — `decision` — _status: open_ — None for F&F stage per spec §13.5.
+_None open — see Resolved (#D1–D4)._
+
+### v0.2 — Jev integration (see `docs/jev-integration-plan.md`)
+
+- **[#J0] Get Jev early access + API key; allow `api.typesafe.ai` in build env** — `chore` — _status: done_ — Plan §7 phase 0. Live call OK 2026-09-30 (12/12 sections correct, 596 ms).
+- **[#J1] Deterministic list engine: ingredient table, `buildGroceryList`, `diffGroceryList`, `RulesClassifier`** — `feature` — _status: done_ — Plan §4, §6.
+  - `lib/grocery/`: catalogue (cache + fixed staples list), quantity merge, rules classifier, build, diff. Pure — no browser APIs.
+  - `lib/demoGrocery.ts` builds the `/list` data from the demo plan. Banner "Added Saturday long run: + bagels, bananas" now comes from the diff of last week's plan vs this week's.
+  - `npm test` — 18 tests (Node built-in runner). `tsc`, `next build`, and a Chromium check of `/list` pass.
+- **[#J1a] Spec §7.4 conflict: "exactly 3 section headers"** — `decision` — _status: done_ — Founder: update the spec to match the real list. Spec v0.2 §5, §7.4, §12.6 updated. Was: The generated list has 5 sections (adds DAIRY: eggs, parmesan, butter; BAKERY: sourdough, bagels) because the full week's recipes need them. Also the list is longer (22 lines vs 7). Resolve with #D5/#D6: accept and update the spec criterion, or hide sections for the F&F demo.
+- **[#J1b] "Check you have" group for staples** — `feature` — _status: todo_ — Engine returns `staples` (olive oil, salt, soy sauce…) but `/list` does not show them yet. Needs coach-voice strings.
+- **[#J2] Jev shadow eval: labeled item set + `scripts/eval-jev.ts` + thresholds** — `test` — _status: done_ — Plan §5. Report: `eval/jev/README.md`.
+  - 287-item tuning set + 124-item holdout. Holdout accuracy 99.2% (v2 criteria, 1 item/request) vs 33.1% for keyword rules.
+  - Decisions for #J3: v2 criteria, one item per request, threshold 0.70 → below it flag `needsReview`; rules only when Jev is down.
+- **[#J2a] Re-run eval on real user items** — `test` — _status: todo_ — Once #J3 logs real items, label a sample and re-check the 0.70 threshold. Also measure self-consistency (repeat calls).
+- **[#J3] Live classification: `/api/classify`, `JevClassifier`, cache, fallback, pinned model** — `feature` — _status: todo_ — Plan §4. Unblocked. Use the #J2 decisions.
+- **[#J4] Recipe tags + swap ranking (suggestion UI)** — `feature` — _status: todo_ — Plan §6. Blocked by #J3.
+- **[#D5] Scope change: live model call vs spec v0.1 non-goal** — `decision` — _status: done_ — Founder: yes. Jev allowed server-side with rules fallback. Spec v0.2 §0.
+- **[#D6] Grocery section taxonomy (own 9 vs Instacart departments)** — `decision` — _status: done_ — Founder: keep the 9 for now; map to the grocery partner's departments once one is chosen. Spec v0.2 §5.
+- **[#D7] Vendor risk: keep `ItemClassifier` interface vendor-neutral** — `decision` — _status: done_ — Founder: yes.
 
 ---
 
@@ -86,7 +106,11 @@ _All P0 build issues resolved — see Resolved._
 - **[#13]** README (setup, deploy, structure, pre-share checklist).
 - **[#15]** A11y: semantic headings, `aria-pressed`/`aria-current`/`aria-label`, reading order.
 - **[#16]** Footer + `NEXT_PUBLIC_PROTOTYPE_VERSION` (`.env.example`, `.env.local`).
-- **[#D1–D4]** Open decisions resolved per spec §13 defaults (Source Serif 4, placeholder photos, demo toggle ships labeled, no analytics).
+- **[#D1–D4]** Spec §13 open decisions — closed 2026-09-30 after a re-check (they were also listed as open under P2 by mistake):
+  - **#D1 typeface:** Source Serif 4 in `app/layout.tsx`. Tiempos vs Source Serif is a brand call for iOS, not the prototype.
+  - **#D2 photo rights:** still true, but a duplicate of #14 — folded into #14.
+  - **#D3 demo toggle:** ships with a "demo" label (`components/DemoControls.tsx`), per spec §13.4.
+  - **#D4 analytics:** none, correct for F&F. "Add before public sharing" moved onto #8b.
 
 ---
 
@@ -95,3 +119,8 @@ _All P0 build issues resolved — see Resolved._
 - **2026-05-31** — Tracker created. Repo had only the spec + empty git history. Building from scratch per file manifest in spec appendix.
 - **2026-05-31** — Full prototype built. `npm install`, `tsc --noEmit`, and `next build` all clean (10 routes). Started `next start` and asserted every spec-exact acceptance string renders on `/plan`, `/recipe/[id]`, `/list`, `/paywall`, `/paywall/accepted`, `/coach`, `/discover`. Code-audited each §7 Gherkin criterion. Onboarding `/` renders client-side (gates on localStorage check) — confirmed via logic review, not SSR grep.
 - **2026-05-31** — Build-side baseline COMPLETE. Remaining: founder deploy (#8b), founder device walkthrough (#9b), and optional real-browser visual QA (#17, blocked on screen-recording permission).
+- **2026-09-30** — Added Jev integration plan (`docs/jev-integration-plan.md`) and v0.2 issues #J0–#J4, #D5–#D7. Primary TypeSafe docs blocked by build-env network policy; plan data is from secondary sources — verify before coding against the SDK.
+- **2026-09-30** — #J0 done. Key + network confirmed in cloud env. Plan updated with verified API shape, limits (100k tok/s, 40 req/s), jev-1.13 weak spots, and live test results. Staple Noul question separates poorly — needs rework in #J2.
+- **2026-09-30** — #J1 done. /list is now generated by the grocery engine. Spec §7.4 "exactly 3 sections" no longer holds — tracked as #J1a.
+- **2026-09-30** — #J2 done. Installed the TypeSafe skill (plugin enabled in `.claude/settings.json`). Eval: v1 criteria 98.3%, v2 100% on tuning set, 99.2% on holdout. Threshold 0.70.
+- **2026-09-30** — Founder decisions: #D5 yes, #J1a update spec, #D6 keep 9 sections (map to partner later), #D7 yes. Spec bumped to v0.2. #D1–D4 re-checked and closed (#D2 folded into #14, #D4 condition moved to #8b).
