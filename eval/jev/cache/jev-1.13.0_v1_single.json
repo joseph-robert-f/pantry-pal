@@ -1,0 +1,7177 @@
+{
+ "7be8ead61b644737": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "42fe519cc1627b37": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "c3be9c755c97ca69": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "c2d9135b935d6b1c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "a2b6c9669ba059fb": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "f92311ae72ba2a25": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "4f25e03693d118b7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 1,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "029954ce4f3081a2": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "024922c4bbd4dbbc": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "464d75151cd6ea55": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "2891d4aae5795caf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "8628cadc915373c9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "3612e22cd97fea7a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "83f5ef274e404968": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "e6b6dd55d9444bfc": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "8843f3f7196e6ddf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "5a6992e05dc02131": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "d6269ffbedf2031e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "f78e0219d07154bd": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "d845dec785b772b1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 1,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "7e67d9eb9ff86116": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "2a511b72766a1e39": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "1c9c2c2c4aee6da6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "f6b8ac30d74fd6c0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 1,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "e92ffe4b628c221c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "49b0c5b1cb0c4951": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "ab3baeb8125f79dc": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.97,
+    "probabilities": {
+     "PANTRY": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.02,
+     "PRODUCE": 0.98,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 96
+  }
+ },
+ "bc90ef4861d6b73f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "1a8adb6f05bc9d5d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "4bdc7697822657e0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 491,
+   "output_tokens": 96
+  }
+ },
+ "b3d47ac81bde1cd9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "d408190334e94619": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "7bedfed106bfd0e0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "PRODUCE": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "1fc374f21f37345c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PRODUCE": 1,
+     "OTHER": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "0136089f47aaae80": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "f6b365635e463edf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PRODUCE": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "7557639b8ecafb59": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "02a2e1ca8ed2359e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "dff637b31d0fa12a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "d13237394d1a9f58": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "710e3fb43d92feb1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "e95576111efddda9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "PRODUCE": 1,
+     "SPICES": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "b07a3c215a97bfaa": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 1,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "a861deaec37c7e00": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PRODUCE": 1,
+     "SPICES": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "79ade708c0e2aae5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "9a3586be6aac67e9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "a537ec84a0d19ed7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 1,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "497545018705ed0a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "6cbafe0c983a60fe": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "fd34e5e0822da66d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "fc8ffa17a90d7cc6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 1,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "c0c9852978ff5ef9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "369aced3a2caa12d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 1,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "d5c8f55f27071795": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "0b198cda0a2601e2": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.99,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 96
+  }
+ },
+ "855c2856dea6806d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PROTEIN": 1,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "4a5abeb1b7d1c6a8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.98,
+    "probabilities": {
+     "FROZEN": 0.01,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0.99,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "da809a3f1ea18bb3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 1,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 492,
+   "output_tokens": 96
+  }
+ },
+ "55d9edcec73311c4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "PROTEIN": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "c7c034d0faf076ed": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 1,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "8f34c2b49309d565": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "9851e4ddcd7900a7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "a7f551f8847f49d0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 1,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "cefcd4c1253d7b97": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.88,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0.1,
+     "PROTEIN": 0.9,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "e3f56891238cd1db": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.99,
+    "probabilities": {
+     "PRODUCE": 0,
+     "FROZEN": 0.01,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PROTEIN": 0.99,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 96
+  }
+ },
+ "08940592eac5df8c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "ec5df535365d2b6b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 1,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "1ae1e90a90475a70": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "7e139a39665b3b24": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.86,
+    "probabilities": {
+     "PRODUCE": 0,
+     "FROZEN": 0.13,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0.87,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "eb531e7ee9f84863": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 1,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "3a4b1af62cf3450c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 1,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "43699f83f48ccd56": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.96,
+    "probabilities": {
+     "OTHER": 0.01,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0.03,
+     "PROTEIN": 0.96,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "861c1b42535dad78": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 1,
+     "FROZEN": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "5125094184ed2a1a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 1,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "16a890412c6ac6ea": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.96,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0.02,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.97,
+     "DAIRY": 0.01,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "53f8c1bb1d424f0c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.95,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0.95,
+     "BEVERAGES": 0,
+     "PRODUCE": 0.02,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "DAIRY": 0.03,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "6b0b7e3036a16754": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.95,
+    "probabilities": {
+     "PANTRY": 0,
+     "PROTEIN": 0.96,
+     "BEVERAGES": 0,
+     "DAIRY": 0.02,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0.02,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "2cde40ef59ab1511": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 1,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "43dca7446ceb2d90": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "PROTEIN": 1,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "883a8b92e0902896": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.96,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0.03,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0.97,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "76ab90e664a07dba": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PROTEIN": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "1ce70e608778a37f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "8444e06dce42fc1a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 1,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "c28fb8dd7517de48": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.99,
+    "probabilities": {
+     "FROZEN": 0.01,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.99,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "0bafee9b9d53fba0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.47,
+    "probabilities": {
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0.46,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "SPICES": 0,
+     "PROTEIN": 0.53,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "530607297bb857c7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "aed0a27a56db112d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.62,
+    "probabilities": {
+     "BAKERY": 0.01,
+     "PROTEIN": 0.66,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "OTHER": 0.33
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "04e41450ae81360d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.61,
+    "probabilities": {
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0.34,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0.66,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 94
+  }
+ },
+ "0fefd5f85e584b00": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PROTEIN": 1,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "dc4997b31e9973ac": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 1,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "f5493ab7bd82ecaf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "DAIRY": 1,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "f9bea0187f71c55a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 1,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "07334e14fa4f9eb9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 1,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "7bcac5a3d142faec": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 1,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "bda4de0ecabd7ef1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "DAIRY": 1,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "059673bca0a30b8d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 1,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "a503417020462fef": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "2d17059197c17635": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "DAIRY": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "ff74a8a8891c6e82": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 1,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "a6c096aee978662c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "ab57cff51e53a3a8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "DAIRY": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "8ffed081074eaac8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "9442578ed8691f2f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 1,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "43dff11083016dd4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "8f1df9317518a2b9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 1,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "ed7a47cc94e22178": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "a7abed1df15d0dc6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "DAIRY": 1,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "a69f40a58af1bacd": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "617c5659bf492849": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "DAIRY": 1,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "03a0eba6daf9d698": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "c029abae667f2d09": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "b6b8f916301e5b87": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 1,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "6e10b66684b20b7a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "DAIRY": 1,
+     "PANTRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "e8fe8639087129ea": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "PANTRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "3dc2bc3105635731": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "SPICES": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "faa4720eadf3cad3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "DAIRY": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "bbf21c56858c4ed0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 1,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "b441a26240573eb8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "1155dec0ff9eb52f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0.98,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0.02
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "99aa655ad7e11634": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 1,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "a07a43566bde1f8f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 1,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "300d9e0cbb4c9267": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BAKERY": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "58bd2cb064974e0c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "BAKERY": 1,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "23d8f0e56db34424": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "BAKERY": 1,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "c7a0abea79ac4ce8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 1,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "f489648431dcb62b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.98,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0.02,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0.98,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "ee06594f4c982320": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "949bb06a7743e1de": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.99,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BAKERY": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "c9ed1260b22a6a02": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BAKERY": 1,
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "d7a2de06be4477e2": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.99,
+    "probabilities": {
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BAKERY": 1,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 96
+  }
+ },
+ "3c3c472a76cd2ba0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 1,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "1b57efb2fa793d0e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "2f690488dfed5f1c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 1,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "c847579df2a62d3b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "BAKERY": 1,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "335e3600e3d56a15": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 1,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "4c52bd6e00d9da1d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "BAKERY": 1,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "8db8644ba9dc2554": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "0ff3f15376fedfea": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 1,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "92637ac6a6f6b9c8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 95
+  }
+ },
+ "b6053df011fd67dd": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 1,
+     "SPICES": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "1bd0e44dac062e15": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "d73ec02225b997bd": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "6033d33a6ffba7f7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "c5d55b935018ce9a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "BAKERY": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "c1b10c328a356808": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "742b7e97b55a938f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "a9496b69232a6f7c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "373c6d385a6bfc24": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "2370fefe343aa549": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "7a612edafa4fc93d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "1a3496d0462f2be8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "ddebd52bc59ad325": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "d6ff1e24dcd2dfd7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "132ec44d8e0e5328": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PANTRY": 0.99,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.01,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "5a826fe5cb4394d0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "12f186782d8a42c3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "625e74a26230f9c5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.99,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0.01,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "d2a982c237511691": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 1,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "c7db05294876fc91": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "e78bffc97b38b59b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "48bc8ed14fba5371": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "d262692c09e6ad5f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "0ee38a637bcced90": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 1,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "b38acc7881f3b34a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 1,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "6545824483400379": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "e97c145cf4ee59c8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "11a835fec32a6165": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.97,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0.02,
+     "PROTEIN": 0,
+     "PANTRY": 0.98,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 95
+  }
+ },
+ "8fa734e6789addae": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "6047a4596521bff2": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "PANTRY": 1,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 95
+  }
+ },
+ "d516a1cb11120c6c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "747638d65039e702": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "8111fd752a9d3611": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "749b4857b9062838": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 1,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "5fe8cfa2fc67f31e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "9a0556481fb647ae": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "b864a20b4e1fbbab": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "db3a8e72adb7086a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "c932ba670b4a3e26": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.94,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0.95,
+     "PRODUCE": 0.05,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "bb07684e19ec17b0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "956103150dd4481c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "PANTRY": 0.99,
+     "BEVERAGES": 0,
+     "SPICES": 0.01,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "76df64d5fc85fee7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.99,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0.01,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "20e9c16c01ae1b42": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 1,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "835c6204820ab582": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.99,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "54b0e95f4284122d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.94,
+    "probabilities": {
+     "PANTRY": 0.95,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0.01,
+     "FROZEN": 0,
+     "OTHER": 0.04,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "a6ce3397b4805b7a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PANTRY": 1,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "ebac6107c2ba7d7b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.97,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.98,
+     "OTHER": 0.02,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "4ea594cdfb515d47": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 1,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "6c75a3f9d7b55f4b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.42,
+    "probabilities": {
+     "OTHER": 0.49,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0.48,
+     "BEVERAGES": 0,
+     "PROTEIN": 0.02,
+     "SPICES": 0,
+     "DAIRY": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "6627cb4d909c70da": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 1,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "b8df313271a920bc": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.44,
+    "probabilities": {
+     "OTHER": 0.51,
+     "DAIRY": 0.05,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0.02,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0.42
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 94
+  }
+ },
+ "231b53376eed2457": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "OTHER": 0.01,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0.99
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "f01a4ac7245227da": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0.02,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0.98
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "3615d61f454269ef": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.96,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0.03,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0.97,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "d7d302f622bf201c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.75,
+    "probabilities": {
+     "PRODUCE": 0,
+     "PANTRY": 0.78,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.01,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "OTHER": 0.21
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "f0dc17f0bb7a57c9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "FROZEN": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "585a65572b1c824f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "FROZEN": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "714d22198d7aa4ec": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 1,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "b4addab5a4c9abbc": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "6e84c2e0ce17f8ea": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 1,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "ac0f597e7a3afc7e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "FROZEN": 1,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "5c5487e2e1be7e47": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "1c905a9ff0952eb5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "FROZEN": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "609712a6645bd355": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "192d255f6b093ade": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 1,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "80e23b44ef4cb6c8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.98,
+    "probabilities": {
+     "PANTRY": 0,
+     "FROZEN": 0.99,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.01,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "c91329d8814469d5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 1,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "b2c5ad0754555aee": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 1,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "5c7a1514e9bf5be5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 1,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "08860a924303fb0a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "FROZEN": 1,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "03eabfef1bf85552": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "FROZEN": 1,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "eb2fe1564fcdf243": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "FROZEN": 1,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "e859489a290cbf78": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 1,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "b9686c10d9f16646": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 1,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "bfd9ea9183ce2b93": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 1,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "f28bd8ed3cfef352": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 1,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 95
+  }
+ },
+ "48c6e28f6c603d6c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.99,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 1,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "9f61375b654adf1d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 1,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "d99a8707634c8475": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 1,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "2b2d79afef697bf5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "SPICES": 1,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "71517976e383fd61": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 1,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "6277c758828625a9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 1,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "c1df4a1f35be397f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "SPICES": 1,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "eb80138533b913b9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 1,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "d9441bc78e43ac1a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "SPICES": 1,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "4044232f7a693cbf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "SPICES": 1,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "fd474902c1710862": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "SPICES": 1,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "ea3e38cba4f00c12": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 1,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "27a1fd08874ca1d9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "852a97c947b1545b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "SPICES": 1,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "6a680621d6bdec5e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "SPICES": 1,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "48b8f2dd072a1319": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 1,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 95
+  }
+ },
+ "df12af109f59a3ef": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 1,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "caf30952365fbdb6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "c4fa4d56a29b9972": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0.01,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.98,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0.01,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "9f8ebddbd52d9872": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.96,
+    "probabilities": {
+     "BAKERY": 0,
+     "PRODUCE": 0.03,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0.97,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "54574ac89a9161a8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 1,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "df6b1598b8d91244": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.63,
+    "probabilities": {
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0.68,
+     "FROZEN": 0,
+     "PANTRY": 0.32,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 96
+  }
+ },
+ "70fdad93837b2bbf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "SPICES": 1,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "34eba6279330b5ba": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.47,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0.53,
+     "OTHER": 0.02,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0.45,
+     "SPICES": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "9334d5ab87540801": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.44,
+    "probabilities": {
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0.51,
+     "PANTRY": 0.48,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "OTHER": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "387627d4b521c4d4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.98,
+    "probabilities": {
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0.99,
+     "PANTRY": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "e45370be2abdfbc1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.8,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.17,
+     "BEVERAGES": 0.83,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "065dba72e4c7bec2": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.48,
+    "probabilities": {
+     "OTHER": 0.01,
+     "PANTRY": 0.45,
+     "BEVERAGES": 0.54,
+     "SPICES": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "578fff258e78e9a5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.99,
+    "probabilities": {
+     "BEVERAGES": 1,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "165e8f0ce14d0711": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "aa6256ad95485209": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 1,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "b5b06ad5ed789e19": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 1,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "277edf8c3689704b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 1,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "d7018267418eb501": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 1,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "b754da6eddd6f900": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "59dc740224fbc2f8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 1,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "6671d21c1f5ae48d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.84,
+    "probabilities": {
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0.01,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0.12,
+     "BEVERAGES": 0.87
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 96
+  }
+ },
+ "475b769491f544ad": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "06952cef23d49832": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "BEVERAGES": 1,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "6758ee6aed7db805": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BEVERAGES": 1,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "921d8b7ae8ce94f6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.99,
+    "probabilities": {
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0.99,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "OTHER": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 485,
+   "output_tokens": 96
+  }
+ },
+ "8dd8c07beeee90e1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.97,
+    "probabilities": {
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0.98,
+     "OTHER": 0.02,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "a5595afc93e52b2f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.94,
+    "probabilities": {
+     "PROTEIN": 0,
+     "OTHER": 0.94,
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0.06,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "2ac70743ad0b57bf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.52,
+    "probabilities": {
+     "OTHER": 0.58,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "PANTRY": 0.42
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "37321b7d30be992e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.61,
+    "probabilities": {
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0.65,
+     "BAKERY": 0,
+     "OTHER": 0.35,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "87e2ae29fc3be91d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.69,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PANTRY": 0.28,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "OTHER": 0.72,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 94
+  }
+ },
+ "0a75b8d4b0e28a47": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.96,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "OTHER": 0.97,
+     "PANTRY": 0.03,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "7c5824478a42b0ad": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.67,
+    "probabilities": {
+     "OTHER": 0.24,
+     "FROZEN": 0,
+     "BAKERY": 0.05,
+     "PRODUCE": 0,
+     "PANTRY": 0.71,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "40c446b08e319a12": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.92,
+    "probabilities": {
+     "DAIRY": 0,
+     "PANTRY": 0.07,
+     "PROTEIN": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0.93,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 94
+  }
+ },
+ "13d218636c9a1eb4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.93,
+    "probabilities": {
+     "OTHER": 0.93,
+     "PANTRY": 0.07,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "66794f734299b5ce": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.61,
+    "probabilities": {
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "PANTRY": 0.35,
+     "BEVERAGES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "OTHER": 0.65
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "86d2c00aeb1abc48": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.77,
+    "probabilities": {
+     "OTHER": 0.8,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0.2
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 94
+  }
+ },
+ "d2d48d98e44754c1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 1,
+    "probabilities": {
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "OTHER": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 94
+  }
+ },
+ "0092e819f165898b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.98,
+    "probabilities": {
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "PANTRY": 0.02,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0.98
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 94
+  }
+ },
+ "f0bf7b16fb6b2395": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.98,
+    "probabilities": {
+     "PANTRY": 0.01,
+     "OTHER": 0.99,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BAKERY": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 94
+  }
+ },
+ "aec37265aab86f32": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 1,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "OTHER": 1,
+     "SPICES": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 94
+  }
+ },
+ "d494bb8c51c5c274": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.98,
+    "probabilities": {
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.02,
+     "OTHER": 0.98,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 94
+  }
+ },
+ "950fb942a942628b": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.53,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0.02,
+     "PANTRY": 0.58,
+     "PRODUCE": 0.07,
+     "BEVERAGES": 0,
+     "OTHER": 0.32,
+     "BAKERY": 0,
+     "DAIRY": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "a7d210e4d7d5cfcd": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.53,
+    "probabilities": {
+     "PRODUCE": 0.59,
+     "PANTRY": 0.01,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PROTEIN": 0,
+     "BAKERY": 0,
+     "FROZEN": 0.38,
+     "OTHER": 0.02
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "3976bf946991ecaf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.97,
+    "probabilities": {
+     "PRODUCE": 0.01,
+     "BAKERY": 0,
+     "FROZEN": 0,
+     "SPICES": 0,
+     "DAIRY": 0.02,
+     "BEVERAGES": 0,
+     "PROTEIN": 0.97,
+     "PANTRY": 0,
+     "OTHER": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "cb8a508d3884ccb5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.73,
+    "probabilities": {
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.17,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0.06,
+     "PRODUCE": 0.77
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 96
+  }
+ },
+ "5eef51527f2f11fe": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.96,
+    "probabilities": {
+     "FROZEN": 0,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0.97,
+     "DAIRY": 0,
+     "OTHER": 0.03
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 95
+  }
+ },
+ "8e4ae3e0cc3ef838": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.73,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.76,
+     "OTHER": 0.22,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "PROTEIN": 0.02,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "e64c64728ca3551e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "SPICES": 0,
+     "FROZEN": 0,
+     "DAIRY": 1,
+     "PANTRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 491,
+   "output_tokens": 96
+  }
+ },
+ "0df8da18c217e1d8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PRODUCE": 0,
+     "SPICES": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "PANTRY": 1,
+     "DAIRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "1e82baa5d1eac120": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "SPICES": 0,
+     "OTHER": 0.01,
+     "PANTRY": 0.98,
+     "BAKERY": 0,
+     "PRODUCE": 0.01,
+     "BEVERAGES": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 490,
+   "output_tokens": 95
+  }
+ },
+ "396cc767f33272b9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.93,
+    "probabilities": {
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "OTHER": 0.05,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "SPICES": 0,
+     "PROTEIN": 0.93,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 96
+  }
+ },
+ "2b20dc12317fb564": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.54,
+    "probabilities": {
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0.6,
+     "SPICES": 0.38,
+     "OTHER": 0.02
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 487,
+   "output_tokens": 95
+  }
+ },
+ "f8efcdac3f1319bd": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0.99,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0.01,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 486,
+   "output_tokens": 95
+  }
+ },
+ "afb91a3eb49e6371": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.9,
+    "probabilities": {
+     "FROZEN": 0,
+     "DAIRY": 0.91,
+     "BEVERAGES": 0.03,
+     "PANTRY": 0.06,
+     "SPICES": 0,
+     "BAKERY": 0,
+     "PRODUCE": 0,
+     "OTHER": 0,
+     "PROTEIN": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ },
+ "2fbc7cd6a60ae1d0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.98,
+    "probabilities": {
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "PROTEIN": 0,
+     "FROZEN": 0.98,
+     "BAKERY": 0.02,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 488,
+   "output_tokens": 96
+  }
+ },
+ "5ac2fafb48780c56": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "FROZEN": 0,
+     "BAKERY": 0,
+     "BEVERAGES": 0.01,
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0.98,
+     "PANTRY": 0.01,
+     "PRODUCE": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 489,
+   "output_tokens": 96
+  }
+ }
+}

@@ -6,8 +6,10 @@ so the component layer ports cleanly to React Native + NativeWind for the
 eventual iOS build.
 
 > **Not a shipped product.** Single anonymous demo experience, no real auth, no
-> LLM calls, no payments. All coach copy is hard-coded. See
-> `pantry_pal_web_prototype.spec.md` for the full specification (v0.1).
+> LLM calls, no payments. All coach copy is hard-coded. The one live model call
+> is TypeSafe's Jev for grocery item classification, server-side, with a
+> no-network fallback (spec v0.2, `docs/jev-integration-plan.md`). See
+> `pantry_pal_web_prototype.spec.md` for the full specification (v0.2).
 
 ## What it demonstrates
 
@@ -32,7 +34,8 @@ Other scripts:
 ```bash
 npm run build       # production build (must pass before deploy)
 npm run typecheck   # tsc --noEmit, strict mode
-npm test            # vitest: seed-data + helper checks (tests/)
+npm test            # grocery engine unit tests (Node built-in runner)
+npm run eval:jev    # Jev accuracy eval (replays cached responses; see eval/jev/README.md)
 npm run start       # serve the production build
 ```
 
@@ -54,6 +57,8 @@ npm run start       # serve the production build
 app/          # one route per screen (App Router)
 components/   # presentational components — no browser APIs, port to RN cleanly
 lib/          # seedData.ts (demo content) + coachStrings.ts (string catalogue)
+lib/grocery/  # grocery engine: plan → merged, classified list → diff (see docs/jev-integration-plan.md)
+lib/demoGrocery.ts  # builds the /list demo data with the engine
 public/recipes/  # placeholder for founder's recipe photos
 ```
 

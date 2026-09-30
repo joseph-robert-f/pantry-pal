@@ -1,0 +1,180 @@
+{
+  "run": "jev-1.13.0_v1_batch25",
+  "date": "2026-09-30",
+  "items": 287,
+  "ambiguousItems": 22,
+  "jev": {
+    "accuracy": 0.9825783972125436,
+    "accuracyUnambiguous": 0.9811320754716981,
+    "bySection": {
+      "PRODUCE": {
+        "n": 54,
+        "accuracy": 1
+      },
+      "PROTEIN": {
+        "n": 34,
+        "accuracy": 0.9705882352941176
+      },
+      "DAIRY": {
+        "n": 30,
+        "accuracy": 1
+      },
+      "BAKERY": {
+        "n": 20,
+        "accuracy": 1
+      },
+      "PANTRY": {
+        "n": 55,
+        "accuracy": 0.9818181818181818
+      },
+      "FROZEN": {
+        "n": 20,
+        "accuracy": 1
+      },
+      "SPICES": {
+        "n": 24,
+        "accuracy": 1
+      },
+      "BEVERAGES": {
+        "n": 13,
+        "accuracy": 1
+      },
+      "OTHER": {
+        "n": 15,
+        "accuracy": 0.8
+      }
+    },
+    "thresholdSweep": [
+      {
+        "threshold": 0,
+        "coverage": 1,
+        "accuracy": 0.9825783972125436,
+        "n": 287,
+        "errorsAbove": 5
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.9825783972125436,
+        "accuracy": 0.9893617021276596,
+        "n": 282,
+        "errorsAbove": 3
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.9581881533101045,
+        "accuracy": 0.9927272727272727,
+        "n": 275,
+        "errorsAbove": 2
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.9477351916376306,
+        "accuracy": 0.9926470588235294,
+        "n": 272,
+        "errorsAbove": 2
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.9024390243902439,
+        "accuracy": 0.9961389961389961,
+        "n": 259,
+        "errorsAbove": 1
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.867595818815331,
+        "accuracy": 0.9959839357429718,
+        "n": 249,
+        "errorsAbove": 1
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.8327526132404182,
+        "accuracy": 1,
+        "n": 239,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.7979094076655052,
+        "accuracy": 1,
+        "n": 229,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.98,
+        "coverage": 0.6689895470383276,
+        "accuracy": 1,
+        "n": 192,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.5888501742160279,
+        "accuracy": 1,
+        "n": 169,
+        "errorsAbove": 0
+      }
+    ],
+    "recommendedThreshold": 0.9
+  },
+  "rulesBaseline": {
+    "accuracy": 0.7456445993031359,
+    "unmatched": 82
+  },
+  "cost": {
+    "liveCalls": 0,
+    "cachedCalls": 12,
+    "inputTokens": 68818,
+    "usd": 0.002890356,
+    "latencyP50Ms": null,
+    "latencyP95Ms": null
+  },
+  "errors": [
+    {
+      "item": "deli turkey",
+      "accept": [
+        "PROTEIN"
+      ],
+      "choice": "OTHER",
+      "confidence": 0.44,
+      "runnerUp": "PROTEIN 0.42"
+    },
+    {
+      "item": "dark chocolate",
+      "accept": [
+        "PANTRY"
+      ],
+      "choice": "FROZEN",
+      "confidence": 0.44,
+      "runnerUp": "PANTRY 0.45"
+    },
+    {
+      "item": "aluminum foil",
+      "accept": [
+        "OTHER"
+      ],
+      "choice": "PANTRY",
+      "confidence": 0.78,
+      "runnerUp": "OTHER 0.19"
+    },
+    {
+      "item": "parchment paper",
+      "accept": [
+        "OTHER"
+      ],
+      "choice": "PANTRY",
+      "confidence": 0.85,
+      "runnerUp": "OTHER 0.11"
+    },
+    {
+      "item": "ziploc bags",
+      "accept": [
+        "OTHER"
+      ],
+      "choice": "PANTRY",
+      "confidence": 0.5,
+      "runnerUp": "OTHER 0.43"
+    }
+  ]
+}

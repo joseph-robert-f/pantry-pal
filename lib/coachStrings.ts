@@ -45,6 +45,12 @@ export const STRINGS = {
   grocery_section_produce: "PRODUCE",
   grocery_section_protein: "PROTEIN",
   grocery_section_pantry: "PANTRY",
+  grocery_section_dairy: "DAIRY",
+  grocery_section_bakery: "BAKERY",
+  grocery_section_frozen: "FROZEN",
+  grocery_section_spices: "SPICES",
+  grocery_section_beverages: "BEVERAGES",
+  grocery_section_other: "OTHER",
   grocery_cta_instacart: "Shop with Instacart",
 
   // Paywall (Plus upsell)

@@ -1,0 +1,287 @@
+{"item": "2 sweet potatoes", "accept": ["PRODUCE"]}
+{"item": "3 lemons", "accept": ["PRODUCE"]}
+{"item": "1 big bag spinach", "accept": ["PRODUCE"]}
+{"item": "bananas", "accept": ["PRODUCE"]}
+{"item": "avocados x3", "accept": ["PRODUCE"]}
+{"item": "roma tomatoes", "accept": ["PRODUCE"]}
+{"item": "yellow onion", "accept": ["PRODUCE"]}
+{"item": "red onions 2", "accept": ["PRODUCE"]}
+{"item": "garlic bulb", "accept": ["PRODUCE"]}
+{"item": "fresh ginger", "accept": ["PRODUCE"]}
+{"item": "baby carrots", "accept": ["PRODUCE"]}
+{"item": "celery", "accept": ["PRODUCE"]}
+{"item": "broccoli crowns", "accept": ["PRODUCE"]}
+{"item": "kale", "accept": ["PRODUCE"]}
+{"item": "romaine hearts", "accept": ["PRODUCE"]}
+{"item": "spring mix", "accept": ["PRODUCE"]}
+{"item": "cucumber", "accept": ["PRODUCE"]}
+{"item": "zucchini 2", "accept": ["PRODUCE"]}
+{"item": "bell peppers", "accept": ["PRODUCE"]}
+{"item": "jalape\u00f1os", "accept": ["PRODUCE"]}
+{"item": "cilantro", "accept": ["PRODUCE"]}
+{"item": "flat leaf parsley", "accept": ["PRODUCE"]}
+{"item": "fresh basil", "accept": ["PRODUCE"]}
+{"item": "mint", "accept": ["PRODUCE"]}
+{"item": "scallions", "accept": ["PRODUCE"]}
+{"item": "green onions", "accept": ["PRODUCE"]}
+{"item": "limes", "accept": ["PRODUCE"]}
+{"item": "oranges", "accept": ["PRODUCE"]}
+{"item": "honeycrisp apples", "accept": ["PRODUCE"]}
+{"item": "strawberries", "accept": ["PRODUCE"]}
+{"item": "blueberries 1 pint", "accept": ["PRODUCE"]}
+{"item": "raspberries", "accept": ["PRODUCE"]}
+{"item": "grapes", "accept": ["PRODUCE"]}
+{"item": "watermelon", "accept": ["PRODUCE"]}
+{"item": "cantaloupe", "accept": ["PRODUCE"]}
+{"item": "pineapple", "accept": ["PRODUCE"]}
+{"item": "mango", "accept": ["PRODUCE"]}
+{"item": "russet potatoes 5lb", "accept": ["PRODUCE"]}
+{"item": "yukon gold potatoes", "accept": ["PRODUCE"]}
+{"item": "mushrooms", "accept": ["PRODUCE"]}
+{"item": "cremini mushrooms", "accept": ["PRODUCE"]}
+{"item": "asparagus", "accept": ["PRODUCE"]}
+{"item": "green beans", "accept": ["PRODUCE"]}
+{"item": "brussels sprouts", "accept": ["PRODUCE"]}
+{"item": "butternut squash", "accept": ["PRODUCE"]}
+{"item": "cauliflower", "accept": ["PRODUCE"]}
+{"item": "bok choy", "accept": ["PRODUCE"]}
+{"item": "shallots", "accept": ["PRODUCE"]}
+{"item": "lemon x2", "accept": ["PRODUCE"]}
+{"item": "avo", "accept": ["PRODUCE"]}
+{"item": "bananers", "accept": ["PRODUCE"]}
+{"item": "brocoli", "accept": ["PRODUCE"]}
+{"item": "tomatos", "accept": ["PRODUCE"]}
+{"item": "cherry tomatoes", "accept": ["PRODUCE"]}
+{"item": "1.5 lb chicken thighs", "accept": ["PROTEIN"]}
+{"item": "chicken breast", "accept": ["PROTEIN"]}
+{"item": "chx thighs bnls", "accept": ["PROTEIN"]}
+{"item": "boneless skinless chicken breasts", "accept": ["PROTEIN"]}
+{"item": "ground beef 90/10", "accept": ["PROTEIN"]}
+{"item": "ground turkey", "accept": ["PROTEIN"]}
+{"item": "93% lean ground turkey", "accept": ["PROTEIN"]}
+{"item": "salmon filets", "accept": ["PROTEIN"]}
+{"item": "2 salmon fillets", "accept": ["PROTEIN"]}
+{"item": "cod", "accept": ["PROTEIN"]}
+{"item": "tilapia", "accept": ["PROTEIN"]}
+{"item": "shrimp 1 lb", "accept": ["PROTEIN"]}
+{"item": "raw shrimp peeled", "accept": ["PROTEIN"]}
+{"item": "flank steak", "accept": ["PROTEIN"]}
+{"item": "ribeye", "accept": ["PROTEIN"]}
+{"item": "sirloin steak", "accept": ["PROTEIN"]}
+{"item": "pork tenderloin", "accept": ["PROTEIN"]}
+{"item": "pork chops", "accept": ["PROTEIN"]}
+{"item": "bacon", "accept": ["PROTEIN"]}
+{"item": "chicken sausage", "accept": ["PROTEIN"]}
+{"item": "italian sausage", "accept": ["PROTEIN"]}
+{"item": "firm tofu", "accept": ["PROTEIN"]}
+{"item": "extra firm tofu", "accept": ["PROTEIN"]}
+{"item": "tempeh", "accept": ["PROTEIN"]}
+{"item": "whole chicken", "accept": ["PROTEIN"]}
+{"item": "chicken drumsticks", "accept": ["PROTEIN"]}
+{"item": "ground bison", "accept": ["PROTEIN"]}
+{"item": "lamb chops", "accept": ["PROTEIN"]}
+{"item": "ahi tuna steaks", "accept": ["PROTEIN"]}
+{"item": "scallops", "accept": ["PROTEIN"]}
+{"item": "deli turkey", "accept": ["PROTEIN"]}
+{"item": "sliced ham", "accept": ["PROTEIN"]}
+{"item": "rotisserie chicken", "accept": ["PROTEIN", "OTHER"], "ambiguous": true}
+{"item": "beef stew meat", "accept": ["PROTEIN"]}
+{"item": "ground chicken", "accept": ["PROTEIN"]}
+{"item": "Greek yog", "accept": ["DAIRY"]}
+{"item": "greek yogurt", "accept": ["DAIRY"]}
+{"item": "Chobani plain", "accept": ["DAIRY"]}
+{"item": "fage 0%", "accept": ["DAIRY"]}
+{"item": "skyr", "accept": ["DAIRY"]}
+{"item": "cottage cheese", "accept": ["DAIRY"]}
+{"item": "whole milk", "accept": ["DAIRY"]}
+{"item": "2% milk", "accept": ["DAIRY"]}
+{"item": "fairlife milk", "accept": ["DAIRY"]}
+{"item": "oat milk", "accept": ["DAIRY"]}
+{"item": "almond milk", "accept": ["DAIRY"]}
+{"item": "unsweetened soy milk", "accept": ["DAIRY"]}
+{"item": "half and half", "accept": ["DAIRY"]}
+{"item": "heavy cream", "accept": ["DAIRY"]}
+{"item": "sour cream", "accept": ["DAIRY"]}
+{"item": "butter", "accept": ["DAIRY"]}
+{"item": "unsalted butter", "accept": ["DAIRY"]}
+{"item": "cheddar", "accept": ["DAIRY"]}
+{"item": "shredded mozzarella", "accept": ["DAIRY"]}
+{"item": "parmesan", "accept": ["DAIRY"]}
+{"item": "feta crumbles", "accept": ["DAIRY"]}
+{"item": "string cheese", "accept": ["DAIRY"]}
+{"item": "cream cheese", "accept": ["DAIRY"]}
+{"item": "eggs", "accept": ["DAIRY"]}
+{"item": "dozen eggs", "accept": ["DAIRY"]}
+{"item": "large eggs 18ct", "accept": ["DAIRY"]}
+{"item": "liquid egg whites", "accept": ["DAIRY"]}
+{"item": "kefir", "accept": ["DAIRY"]}
+{"item": "goat cheese", "accept": ["DAIRY"]}
+{"item": "swiss cheese slices", "accept": ["DAIRY"]}
+{"item": "4-pack bagels", "accept": ["BAKERY"]}
+{"item": "bagels", "accept": ["BAKERY"]}
+{"item": "sourdough loaf", "accept": ["BAKERY"]}
+{"item": "sourdough", "accept": ["BAKERY"]}
+{"item": "whole wheat bread", "accept": ["BAKERY"]}
+{"item": "Dave's Killer Bread", "accept": ["BAKERY"]}
+{"item": "english muffins", "accept": ["BAKERY"]}
+{"item": "flour tortillas", "accept": ["BAKERY"]}
+{"item": "corn tortillas", "accept": ["BAKERY"]}
+{"item": "pita bread", "accept": ["BAKERY"]}
+{"item": "naan", "accept": ["BAKERY"]}
+{"item": "hamburger buns", "accept": ["BAKERY"]}
+{"item": "brioche buns", "accept": ["BAKERY"]}
+{"item": "hot dog buns", "accept": ["BAKERY"]}
+{"item": "ciabatta", "accept": ["BAKERY"]}
+{"item": "baguette", "accept": ["BAKERY"]}
+{"item": "dinner rolls", "accept": ["BAKERY"]}
+{"item": "croissants", "accept": ["BAKERY"]}
+{"item": "rye bread", "accept": ["BAKERY"]}
+{"item": "sandwich bread", "accept": ["BAKERY"]}
+{"item": "rice", "accept": ["PANTRY"]}
+{"item": "jasmine rice", "accept": ["PANTRY"]}
+{"item": "brown rice", "accept": ["PANTRY"]}
+{"item": "basmati rice", "accept": ["PANTRY"]}
+{"item": "pasta", "accept": ["PANTRY"]}
+{"item": "spaghetti", "accept": ["PANTRY"]}
+{"item": "penne", "accept": ["PANTRY"]}
+{"item": "rigatoni", "accept": ["PANTRY"]}
+{"item": "egg noodles", "accept": ["PANTRY"]}
+{"item": "ramen noodles", "accept": ["PANTRY"]}
+{"item": "rolled oats", "accept": ["PANTRY"]}
+{"item": "old fashioned oats", "accept": ["PANTRY"]}
+{"item": "quinoa", "accept": ["PANTRY"]}
+{"item": "couscous", "accept": ["PANTRY"]}
+{"item": "flour", "accept": ["PANTRY"]}
+{"item": "sugar", "accept": ["PANTRY"]}
+{"item": "brown sugar", "accept": ["PANTRY"]}
+{"item": "honey", "accept": ["PANTRY"]}
+{"item": "maple syrup", "accept": ["PANTRY"]}
+{"item": "olive oil", "accept": ["PANTRY"]}
+{"item": "extra virgin olive oil", "accept": ["PANTRY"]}
+{"item": "avocado oil", "accept": ["PANTRY"]}
+{"item": "sesame oil", "accept": ["PANTRY"]}
+{"item": "soy sauce", "accept": ["PANTRY"]}
+{"item": "low sodium soy sauce", "accept": ["PANTRY"]}
+{"item": "rice vinegar", "accept": ["PANTRY"]}
+{"item": "balsamic vinegar", "accept": ["PANTRY"]}
+{"item": "marinara", "accept": ["PANTRY"]}
+{"item": "Rao's marinara", "accept": ["PANTRY"]}
+{"item": "canned black beans", "accept": ["PANTRY"]}
+{"item": "chickpeas", "accept": ["PANTRY"]}
+{"item": "kidney beans", "accept": ["PANTRY"]}
+{"item": "lentils", "accept": ["PANTRY"]}
+{"item": "chicken broth", "accept": ["PANTRY"]}
+{"item": "beef stock", "accept": ["PANTRY"]}
+{"item": "diced tomatoes can", "accept": ["PANTRY"]}
+{"item": "tomato paste", "accept": ["PANTRY"]}
+{"item": "peanut butter", "accept": ["PANTRY"]}
+{"item": "almond butter", "accept": ["PANTRY"]}
+{"item": "salsa", "accept": ["PANTRY"]}
+{"item": "sriracha", "accept": ["PANTRY"]}
+{"item": "hot sauce", "accept": ["PANTRY"]}
+{"item": "dijon mustard", "accept": ["PANTRY"]}
+{"item": "ketchup", "accept": ["PANTRY"]}
+{"item": "mayo", "accept": ["PANTRY"]}
+{"item": "granola", "accept": ["PANTRY"]}
+{"item": "cheerios", "accept": ["PANTRY"]}
+{"item": "rice cakes", "accept": ["PANTRY"]}
+{"item": "protein powder", "accept": ["PANTRY"]}
+{"item": "whey protein", "accept": ["PANTRY"]}
+{"item": "canned tuna", "accept": ["PANTRY"]}
+{"item": "almonds", "accept": ["PANTRY"]}
+{"item": "walnuts", "accept": ["PANTRY"]}
+{"item": "trail mix", "accept": ["PANTRY"]}
+{"item": "dark chocolate", "accept": ["PANTRY"]}
+{"item": "frozen peas", "accept": ["FROZEN"]}
+{"item": "frozen corn", "accept": ["FROZEN"]}
+{"item": "frozen broccoli", "accept": ["FROZEN"]}
+{"item": "frozen mixed vegetables", "accept": ["FROZEN"]}
+{"item": "frozen stir fry veggies", "accept": ["FROZEN"]}
+{"item": "frozen berries", "accept": ["FROZEN"]}
+{"item": "frozen blueberries", "accept": ["FROZEN"]}
+{"item": "frozen mango chunks", "accept": ["FROZEN"]}
+{"item": "frozen spinach", "accept": ["FROZEN"]}
+{"item": "frozen edamame", "accept": ["FROZEN"]}
+{"item": "frozen shrimp", "accept": ["FROZEN"]}
+{"item": "frozen chicken tenders", "accept": ["FROZEN"]}
+{"item": "frozen pizza", "accept": ["FROZEN"]}
+{"item": "frozen waffles", "accept": ["FROZEN"]}
+{"item": "ice cream", "accept": ["FROZEN"]}
+{"item": "frozen hash browns", "accept": ["FROZEN"]}
+{"item": "tater tots", "accept": ["FROZEN"]}
+{"item": "frozen cauliflower rice", "accept": ["FROZEN"]}
+{"item": "frozen burritos", "accept": ["FROZEN"]}
+{"item": "popsicles", "accept": ["FROZEN"]}
+{"item": "salt", "accept": ["SPICES"]}
+{"item": "kosher salt", "accept": ["SPICES"]}
+{"item": "sea salt", "accept": ["SPICES"]}
+{"item": "black pepper", "accept": ["SPICES"]}
+{"item": "peppercorns", "accept": ["SPICES"]}
+{"item": "smoked paprika", "accept": ["SPICES"]}
+{"item": "paprika", "accept": ["SPICES"]}
+{"item": "garlic powder", "accept": ["SPICES"]}
+{"item": "onion powder", "accept": ["SPICES"]}
+{"item": "cumin", "accept": ["SPICES"]}
+{"item": "ground cumin", "accept": ["SPICES"]}
+{"item": "chili powder", "accept": ["SPICES"]}
+{"item": "chili flakes", "accept": ["SPICES"]}
+{"item": "red pepper flakes", "accept": ["SPICES"]}
+{"item": "dried oregano", "accept": ["SPICES"]}
+{"item": "dried thyme", "accept": ["SPICES"]}
+{"item": "cinnamon", "accept": ["SPICES"]}
+{"item": "turmeric", "accept": ["SPICES"]}
+{"item": "italian seasoning", "accept": ["SPICES"]}
+{"item": "everything bagel seasoning", "accept": ["SPICES"]}
+{"item": "bay leaves", "accept": ["SPICES"]}
+{"item": "cayenne", "accept": ["SPICES"]}
+{"item": "nutmeg", "accept": ["SPICES"]}
+{"item": "curry powder", "accept": ["SPICES"]}
+{"item": "coffee", "accept": ["BEVERAGES", "PANTRY"], "ambiguous": true}
+{"item": "ground coffee", "accept": ["BEVERAGES", "PANTRY"], "ambiguous": true}
+{"item": "coffee beans", "accept": ["BEVERAGES", "PANTRY"], "ambiguous": true}
+{"item": "cold brew", "accept": ["BEVERAGES"]}
+{"item": "green tea", "accept": ["BEVERAGES", "PANTRY"], "ambiguous": true}
+{"item": "black tea bags", "accept": ["BEVERAGES", "PANTRY"], "ambiguous": true}
+{"item": "orange juice", "accept": ["BEVERAGES"]}
+{"item": "apple juice", "accept": ["BEVERAGES"]}
+{"item": "sparkling water", "accept": ["BEVERAGES"]}
+{"item": "LaCroix", "accept": ["BEVERAGES"]}
+{"item": "seltzer", "accept": ["BEVERAGES"]}
+{"item": "coke zero", "accept": ["BEVERAGES"]}
+{"item": "kombucha", "accept": ["BEVERAGES"]}
+{"item": "gatorade", "accept": ["BEVERAGES"]}
+{"item": "electrolyte drink mix", "accept": ["BEVERAGES", "PANTRY"], "ambiguous": true}
+{"item": "bottled water", "accept": ["BEVERAGES"]}
+{"item": "coconut water", "accept": ["BEVERAGES"]}
+{"item": "beer", "accept": ["BEVERAGES"]}
+{"item": "red wine", "accept": ["BEVERAGES"]}
+{"item": "dish soap", "accept": ["OTHER"]}
+{"item": "paper towels", "accept": ["OTHER"]}
+{"item": "toilet paper", "accept": ["OTHER"]}
+{"item": "trash bags", "accept": ["OTHER"]}
+{"item": "aluminum foil", "accept": ["OTHER"]}
+{"item": "parchment paper", "accept": ["OTHER"]}
+{"item": "ziploc bags", "accept": ["OTHER"]}
+{"item": "laundry detergent", "accept": ["OTHER"]}
+{"item": "sponges", "accept": ["OTHER"]}
+{"item": "dog food", "accept": ["OTHER"]}
+{"item": "batteries", "accept": ["OTHER"]}
+{"item": "toothpaste", "accept": ["OTHER"]}
+{"item": "shampoo", "accept": ["OTHER"]}
+{"item": "sunscreen", "accept": ["OTHER"]}
+{"item": "cat litter", "accept": ["OTHER"]}
+{"item": "hummus", "accept": ["DAIRY", "PANTRY", "OTHER"], "ambiguous": true}
+{"item": "stir-fry vegetables", "accept": ["PRODUCE", "FROZEN"], "ambiguous": true}
+{"item": "tofu", "accept": ["PROTEIN", "DAIRY"], "ambiguous": true}
+{"item": "eggs (pasture raised)", "accept": ["DAIRY", "PROTEIN"], "ambiguous": true}
+{"item": "protein bars", "accept": ["PANTRY", "OTHER"], "ambiguous": true}
+{"item": "fresh salsa", "accept": ["PRODUCE", "PANTRY", "DAIRY"], "ambiguous": true}
+{"item": "pesto", "accept": ["PANTRY", "DAIRY"], "ambiguous": true}
+{"item": "tortilla chips", "accept": ["PANTRY", "BAKERY"], "ambiguous": true}
+{"item": "dried cranberries", "accept": ["PANTRY", "PRODUCE"], "ambiguous": true}
+{"item": "smoked salmon", "accept": ["PROTEIN", "DAIRY"], "ambiguous": true}
+{"item": "chia seeds", "accept": ["PANTRY", "SPICES"], "ambiguous": true}
+{"item": "vanilla extract", "accept": ["PANTRY", "SPICES"], "ambiguous": true}
+{"item": "almond milk creamer", "accept": ["DAIRY", "BEVERAGES"], "ambiguous": true}
+{"item": "oat milk barista", "accept": ["DAIRY", "BEVERAGES"], "ambiguous": true}
+{"item": "frozen bagels", "accept": ["FROZEN", "BAKERY"], "ambiguous": true}

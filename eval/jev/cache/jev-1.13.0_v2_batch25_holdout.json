@@ -1,0 +1,2031 @@
+{
+ "380c5e7a3d16b80c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section_0": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_1": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_2": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_3": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_4": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_5": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.99,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_6": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_7": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_8": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_9": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_10": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_11": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_12": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_13": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_14": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_15": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_16": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.98,
+    "probabilities": {
+     "SPICES": 0.01,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0.99,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_17": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.96,
+    "probabilities": {
+     "SPICES": 0.04,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 0.96,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_18": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.99,
+    "probabilities": {
+     "SPICES": 0.01,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 0.99,
+     "BEVERAGES": 0,
+     "PANTRY": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_19": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_20": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BAKERY": 0,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_21": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_22": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 0.97,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.02,
+     "PRODUCE": 0.98,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_23": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "OTHER": 0,
+     "BAKERY": 0,
+     "DAIRY": 0
+    }
+   },
+   "section_24": {
+    "type": "choice",
+    "choice": "PRODUCE",
+    "confidence": 1,
+    "probabilities": {
+     "SPICES": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "OTHER": 0,
+     "PRODUCE": 1,
+     "BEVERAGES": 0,
+     "BAKERY": 0,
+     "PANTRY": 0,
+     "DAIRY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 7505,
+   "output_tokens": 2393
+  }
+ },
+ "e40bc0fa0485c9d7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section_0": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_1": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.99,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_2": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_3": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_4": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_5": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_6": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_7": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.98,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "PANTRY": 0,
+     "FROZEN": 0.02
+    }
+   },
+   "section_8": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.96,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.97,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0.03,
+     "PANTRY": 0
+    }
+   },
+   "section_9": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_10": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.99,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.01
+    }
+   },
+   "section_11": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 1,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_12": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.99,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.99,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_13": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.99,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_14": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.84,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.87,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.12,
+     "PANTRY": 0.01,
+     "FROZEN": 0
+    }
+   },
+   "section_15": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.99,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_16": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 0.99,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_17": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 1,
+     "PRODUCE": 0,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_18": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.99,
+     "PANTRY": 0,
+     "FROZEN": 0
+    }
+   },
+   "section_19": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.02,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 0.98,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PANTRY": 0
+    }
+   },
+   "section_20": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.97,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.98,
+     "PANTRY": 0.01,
+     "FROZEN": 0
+    }
+   },
+   "section_21": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.96,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0,
+     "BEVERAGES": 0.01,
+     "SPICES": 0,
+     "OTHER": 0,
+     "DAIRY": 0.97,
+     "PRODUCE": 0,
+     "PANTRY": 0.02,
+     "FROZEN": 0
+    }
+   },
+   "section_22": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.81,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.84,
+     "FROZEN": 0,
+     "PANTRY": 0.15
+    }
+   },
+   "section_23": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.98,
+     "FROZEN": 0,
+     "PANTRY": 0.01
+    }
+   },
+   "section_24": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.97,
+    "probabilities": {
+     "BAKERY": 0,
+     "PROTEIN": 0.01,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "OTHER": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0.98,
+     "FROZEN": 0,
+     "PANTRY": 0.01
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 7501,
+   "output_tokens": 2393
+  }
+ },
+ "f3edcb26f19788c0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section_0": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.98,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.02,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0.98
+    }
+   },
+   "section_1": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 1
+    }
+   },
+   "section_2": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_3": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_4": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_5": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_6": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.98,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0.99,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0.01,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_7": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 1,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_8": {
+    "type": "choice",
+    "choice": "BEVERAGES",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0.01,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0.99,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_9": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.52,
+    "probabilities": {
+     "OTHER": 0.58,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0.15,
+     "FROZEN": 0,
+     "PANTRY": 0.27,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_10": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 1,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_11": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0.99,
+     "PROTEIN": 0,
+     "PANTRY": 0.01,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_12": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 1,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_13": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0.99,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0.01,
+     "FROZEN": 0,
+     "PRODUCE": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_14": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.98,
+    "probabilities": {
+     "OTHER": 0.99,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0.01,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_15": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 1,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_16": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.95,
+    "probabilities": {
+     "OTHER": 0.96,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0.02,
+     "PANTRY": 0.02,
+     "DAIRY": 0,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_17": {
+    "type": "choice",
+    "choice": "OTHER",
+    "confidence": 0.75,
+    "probabilities": {
+     "OTHER": 0.78,
+     "PROTEIN": 0.12,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0.05,
+     "PANTRY": 0.04,
+     "DAIRY": 0.01,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_18": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.93,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0.93,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0.01,
+     "PANTRY": 0.04,
+     "DAIRY": 0.01,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_19": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.55,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0.61,
+     "PANTRY": 0.04,
+     "BEVERAGES": 0,
+     "FROZEN": 0.15,
+     "PRODUCE": 0.03,
+     "DAIRY": 0.17,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   },
+   "section_20": {
+    "type": "choice",
+    "choice": "PROTEIN",
+    "confidence": 0.6,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0.65,
+     "PANTRY": 0.23,
+     "BEVERAGES": 0,
+     "FROZEN": 0.07,
+     "PRODUCE": 0.01,
+     "DAIRY": 0.01,
+     "BAKERY": 0.03,
+     "SPICES": 0
+    }
+   },
+   "section_21": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.75,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0.15,
+     "PANTRY": 0.79,
+     "BEVERAGES": 0,
+     "FROZEN": 0.04,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "BAKERY": 0,
+     "SPICES": 0.01
+    }
+   },
+   "section_22": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.81,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0.1,
+     "PANTRY": 0.84,
+     "BEVERAGES": 0,
+     "FROZEN": 0.03,
+     "PRODUCE": 0,
+     "DAIRY": 0.01,
+     "BAKERY": 0,
+     "SPICES": 0.02
+    }
+   },
+   "section_23": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.86,
+    "probabilities": {
+     "OTHER": 0,
+     "PROTEIN": 0,
+     "PRODUCE": 0,
+     "BEVERAGES": 0,
+     "FROZEN": 0.89,
+     "PANTRY": 0.08,
+     "DAIRY": 0.03,
+     "BAKERY": 0,
+     "SPICES": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 7213,
+   "output_tokens": 2275
+  }
+ },
+ "0e9411db9630f018": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section_0": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PANTRY": 0.99,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.01,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_1": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.98,
+    "probabilities": {
+     "PANTRY": 0.98,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0.02,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_2": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.94,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0.95,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.05,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_3": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_4": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.61,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 0.66,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.34,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_5": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_6": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PANTRY": 0.99,
+     "FROZEN": 0.01,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_7": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "FROZEN": 0,
+     "PANTRY": 1,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_8": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_9": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_10": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "PANTRY": 1,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_11": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.92,
+    "probabilities": {
+     "PANTRY": 0,
+     "FROZEN": 0.9400000000000001,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.06,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_12": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.95,
+    "probabilities": {
+     "FROZEN": 0.96,
+     "PANTRY": 0.02,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.02,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_13": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.73,
+    "probabilities": {
+     "PANTRY": 0.13,
+     "FROZEN": 0.76,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0.01,
+     "DAIRY": 0.09,
+     "BAKERY": 0.01
+    }
+   },
+   "section_14": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.67,
+    "probabilities": {
+     "FROZEN": 0.71,
+     "PANTRY": 0.02,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0.27,
+     "BAKERY": 0
+    }
+   },
+   "section_15": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.96,
+    "probabilities": {
+     "PANTRY": 0.01,
+     "FROZEN": 0.98,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0,
+     "PRODUCE": 0.01,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_16": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.7,
+    "probabilities": {
+     "PANTRY": 0.04,
+     "FROZEN": 0.73,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.01,
+     "PRODUCE": 0,
+     "PROTEIN": 0.22,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_17": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.83,
+    "probabilities": {
+     "PANTRY": 0.05,
+     "FROZEN": 0.86,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.01,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.08
+    }
+   },
+   "section_18": {
+    "type": "choice",
+    "choice": "FROZEN",
+    "confidence": 0.92,
+    "probabilities": {
+     "FROZEN": 0.93,
+     "PANTRY": 0.01,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.05,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_19": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.85,
+    "probabilities": {
+     "FROZEN": 0.06,
+     "PANTRY": 0.06,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.88,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_20": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.96,
+    "probabilities": {
+     "FROZEN": 0.01,
+     "PANTRY": 0.02,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.97,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_21": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.96,
+    "probabilities": {
+     "PANTRY": 0.03,
+     "FROZEN": 0.01,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.96,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_22": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.94,
+    "probabilities": {
+     "PANTRY": 0.03,
+     "FROZEN": 0.02,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.95,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_23": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.99,
+    "probabilities": {
+     "PANTRY": 0.01,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.99,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_24": {
+    "type": "choice",
+    "choice": "SPICES",
+    "confidence": 0.99,
+    "probabilities": {
+     "PANTRY": 0.01,
+     "FROZEN": 0,
+     "OTHER": 0,
+     "BEVERAGES": 0,
+     "SPICES": 0.99,
+     "PRODUCE": 0,
+     "PROTEIN": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 7516,
+   "output_tokens": 2376
+  }
+ },
+ "196a200dae9ff8e1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "section_0": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 0.83,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0.1,
+     "PROTEIN": 0.04,
+     "PANTRY": 0,
+     "DAIRY": 0.86,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_1": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 1,
+     "BAKERY": 0
+    }
+   },
+   "section_2": {
+    "type": "choice",
+    "choice": "DAIRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 1,
+     "BAKERY": 0
+    }
+   },
+   "section_3": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 1
+    }
+   },
+   "section_4": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 1
+    }
+   },
+   "section_5": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 1
+    }
+   },
+   "section_6": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 1
+    }
+   },
+   "section_7": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 1
+    }
+   },
+   "section_8": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.98,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.02,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0.98
+    }
+   },
+   "section_9": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.64,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.32,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.68
+    }
+   },
+   "section_10": {
+    "type": "choice",
+    "choice": "BAKERY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.01,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.99
+    }
+   },
+   "section_11": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 1,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_12": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_13": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.94,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.01,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.95,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.04
+    }
+   },
+   "section_14": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.9,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.01,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.92,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.07
+    }
+   },
+   "section_15": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.95,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.96,
+     "DAIRY": 0.04,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_16": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_17": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 1,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_18": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.99,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.01,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.99,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_19": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.97,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.02,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.98,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_20": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.93,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.04,
+     "PRODUCE": 0,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.95,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.01
+    }
+   },
+   "section_21": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.85,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.08,
+     "PRODUCE": 0.04,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.88,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_22": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.82,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.09,
+     "PRODUCE": 0.05,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.85,
+     "BEVERAGES": 0,
+     "DAIRY": 0,
+     "BAKERY": 0.01
+    }
+   },
+   "section_23": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.94,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0,
+     "PRODUCE": 0.05,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.95,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   },
+   "section_24": {
+    "type": "choice",
+    "choice": "PANTRY",
+    "confidence": 0.76,
+    "probabilities": {
+     "OTHER": 0,
+     "SPICES": 0.04,
+     "PRODUCE": 0.17,
+     "FROZEN": 0,
+     "PROTEIN": 0,
+     "PANTRY": 0.79,
+     "DAIRY": 0,
+     "BEVERAGES": 0,
+     "BAKERY": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 7496,
+   "output_tokens": 2379
+  }
+ }
+}
