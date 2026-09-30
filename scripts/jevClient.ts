@@ -18,7 +18,10 @@ export type JevClientStats = {
   latenciesMs: number[];
 };
 
-export function createCachedJevClient(cachePath: string, { live = false } = {}) {
+// live: start with an empty cache (new calls, then saved).
+// noCache: never read the cache, so repeated identical calls all reach Jev
+// (for self-consistency runs). Responses are still recorded for save().
+export function createCachedJevClient(cachePath: string, { live = false, noCache = false } = {}) {
   mkdirSync(dirname(cachePath), { recursive: true });
   const cache: Record<string, SystemOneResponse> =
     !live && existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, "utf8")) : {};
@@ -26,7 +29,7 @@ export function createCachedJevClient(cachePath: string, { live = false } = {}) 
 
   async function ask(body: SystemOneRequest): Promise<SystemOneResponse> {
     const key = createHash("sha256").update(JSON.stringify(body)).digest("hex").slice(0, 16);
-    if (cache[key]) {
+    if (!noCache && cache[key]) {
       stats.cached++;
       stats.inputTokens += cache[key].usage?.input_tokens ?? 0;
       return cache[key];

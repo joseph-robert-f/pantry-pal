@@ -83,7 +83,7 @@ _#D1–D4 closed — see Resolved._
 - **[#J2] Jev shadow eval: labeled item set + `scripts/eval-jev.ts` + thresholds** — `test` — _status: done_ — Plan §5. Report: `eval/jev/README.md`.
   - 287-item tuning set + 124-item holdout. Holdout accuracy 99.2% (v2 criteria, 1 item/request) vs 33.1% for keyword rules.
   - Decisions for #J3: v2 criteria, one item per request, threshold 0.70 → below it flag `needsReview`; rules only when Jev is down.
-- **[#J2a] Re-run eval on real user items** — `test` — _status: todo_ — #J3 is live but does not log items yet (no analytics, #D4). Once real items are collected, label a sample and re-check the 0.70 threshold. Also measure self-consistency (repeat calls).
+- **[#J2a] Re-run eval on real user items** — `test` — _status: partly done_ — Self-consistency measured 2026-09-30 (`npm run consistency:jev`): confident answers stable; near 0.70, confidence moves ±0.09 and 3/26 uncertain items flip the "check aisle" flag across repeats. No threshold change — the classifier caches the first answer. Still to do: label a sample of real typed items once they are collected (needs logging; see #D4 analytics) and re-check the 0.70 threshold.
 - **[#J3] Live classification: `/api/classify`, `JevClassifier`, cache, fallback, pinned model** — `feature` — _status: done_ — Plan §4.
   - `lib/grocery/jevClassifier.ts`: catalogue first, then Jev (v2 criteria, 1 item/request, `jev-1.13.0`), threshold 0.70 → `needsReview`, rules on error/timeout (1.5 s)/429, per-process cache, concurrency cap 8.
   - `app/api/classify/route.ts`: only place the key is read. Max 20 names × 80 chars. No key → rules.
@@ -151,3 +151,4 @@ _#D1–D4 closed — see Resolved._
 - **2026-09-30** — #J3b done: rate limits + Jev budget + bounded cache on `/api/classify`. Note for #J2a: pedialyte scored 0.69 then 0.71 on repeat calls — measure self-consistency near the 0.70 threshold.
 - **2026-09-30** — #J1b done: "Check you have" staples group on /list.
 - **2026-09-30** — Code review of the branch (9 findings, all fixed): typed + picked staple listed twice; stale state on quick taps; Jev budget charged for free hits and bypassed the cache; spoofable client key; toast fade-out lost; limiter bound on refusal path; FIFO → LRU cache; aria-controls to an unmounted element.
+- **2026-09-30** — #J2a self-consistency measured: stable when confident; ±0.09 near the threshold; cache makes it a non-issue for users.

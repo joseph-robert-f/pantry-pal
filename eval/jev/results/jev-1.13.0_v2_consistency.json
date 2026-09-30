@@ -1,0 +1,1009 @@
+{
+  "model": "jev-1.13.0",
+  "date": "2026-09-30",
+  "repeats": 5,
+  "threshold": 0.7,
+  "uncertain": {
+    "items": 26,
+    "choiceFlips": 1,
+    "flagFlips": 3,
+    "meanSpread": 0.042307692307692275,
+    "maxSpread": 0.08999999999999997
+  },
+  "confident": {
+    "items": 20,
+    "choiceFlips": 0,
+    "flagFlips": 0,
+    "meanSpread": 0.0010000000000000009,
+    "maxSpread": 0.010000000000000009
+  },
+  "items": [
+    {
+      "item": "shrimp 1 lb",
+      "recorded": 0.91,
+      "accept": [
+        "PROTEIN"
+      ],
+      "choices": [
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN"
+      ],
+      "confs": [
+        0.91,
+        0.9,
+        0.9,
+        0.9,
+        0.91
+      ]
+    },
+    {
+      "item": "raw shrimp peeled",
+      "recorded": 0.81,
+      "accept": [
+        "PROTEIN"
+      ],
+      "choices": [
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN"
+      ],
+      "confs": [
+        0.79,
+        0.81,
+        0.81,
+        0.8,
+        0.83
+      ]
+    },
+    {
+      "item": "Rao's marinara",
+      "recorded": 0.94,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.95,
+        0.98,
+        0.91,
+        0.98,
+        0.98
+      ]
+    },
+    {
+      "item": "coffee beans",
+      "recorded": 0.87,
+      "accept": [
+        "BEVERAGES",
+        "PANTRY"
+      ],
+      "choices": [
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES"
+      ],
+      "confs": [
+        0.9,
+        0.88,
+        0.84,
+        0.87,
+        0.83
+      ]
+    },
+    {
+      "item": "electrolyte drink mix",
+      "recorded": 0.72,
+      "accept": [
+        "BEVERAGES",
+        "PANTRY"
+      ],
+      "choices": [
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES"
+      ],
+      "confs": [
+        0.7,
+        0.7,
+        0.7,
+        0.67,
+        0.69
+      ]
+    },
+    {
+      "item": "hummus",
+      "recorded": 0.78,
+      "accept": [
+        "DAIRY",
+        "PANTRY",
+        "OTHER"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.81,
+        0.8,
+        0.82,
+        0.81,
+        0.8
+      ]
+    },
+    {
+      "item": "stir-fry vegetables",
+      "recorded": 0.57,
+      "accept": [
+        "PRODUCE",
+        "FROZEN"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        0.52,
+        0.52,
+        0.55,
+        0.51,
+        0.55
+      ]
+    },
+    {
+      "item": "fresh salsa",
+      "recorded": 0.68,
+      "accept": [
+        "PRODUCE",
+        "PANTRY",
+        "DAIRY"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        0.75,
+        0.68,
+        0.66,
+        0.66,
+        0.71
+      ]
+    },
+    {
+      "item": "vanilla extract",
+      "recorded": 0.51,
+      "accept": [
+        "PANTRY",
+        "SPICES"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.49,
+        0.47,
+        0.45,
+        0.49,
+        0.49
+      ]
+    },
+    {
+      "item": "almond milk creamer",
+      "recorded": 0.8,
+      "accept": [
+        "DAIRY",
+        "BEVERAGES"
+      ],
+      "choices": [
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY"
+      ],
+      "confs": [
+        0.75,
+        0.78,
+        0.76,
+        0.78,
+        0.77
+      ]
+    },
+    {
+      "item": "dill",
+      "recorded": 0.84,
+      "accept": [
+        "PRODUCE"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        0.84,
+        0.84,
+        0.78,
+        0.8,
+        0.84
+      ]
+    },
+    {
+      "item": "crab legs",
+      "recorded": 0.67,
+      "accept": [
+        "PROTEIN"
+      ],
+      "choices": [
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN"
+      ],
+      "confs": [
+        0.7,
+        0.73,
+        0.73,
+        0.68,
+        0.71
+      ]
+    },
+    {
+      "item": "ghee",
+      "recorded": 0.52,
+      "accept": [
+        "DAIRY"
+      ],
+      "choices": [
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY"
+      ],
+      "confs": [
+        0.6,
+        0.54,
+        0.61,
+        0.57,
+        0.55
+      ]
+    },
+    {
+      "item": "egg bites",
+      "recorded": 0.52,
+      "accept": [
+        "DAIRY"
+      ],
+      "choices": [
+        "FROZEN",
+        "FROZEN",
+        "FROZEN",
+        "FROZEN",
+        "FROZEN"
+      ],
+      "confs": [
+        0.51,
+        0.46,
+        0.54,
+        0.51,
+        0.52
+      ]
+    },
+    {
+      "item": "panko",
+      "recorded": 0.9,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.89,
+        0.89,
+        0.88,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "item": "breadcrumbs",
+      "recorded": 0.81,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.77,
+        0.78,
+        0.78,
+        0.79,
+        0.78
+      ]
+    },
+    {
+      "item": "baking soda",
+      "recorded": 0.8,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.84,
+        0.82,
+        0.83,
+        0.81,
+        0.82
+      ]
+    },
+    {
+      "item": "baking powder",
+      "recorded": 0.94,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.91,
+        0.93,
+        0.93,
+        0.95,
+        0.94
+      ]
+    },
+    {
+      "item": "olives",
+      "recorded": 0.91,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.91,
+        0.92,
+        0.9,
+        0.89,
+        0.9
+      ]
+    },
+    {
+      "item": "canned salmon",
+      "recorded": 0.91,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.91,
+        0.92,
+        0.91,
+        0.9,
+        0.92
+      ]
+    },
+    {
+      "item": "beef jerky",
+      "recorded": 0.93,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.94,
+        0.93,
+        0.93,
+        0.93,
+        0.93
+      ]
+    },
+    {
+      "item": "pedialyte",
+      "recorded": 0.59,
+      "accept": [
+        "BEVERAGES"
+      ],
+      "choices": [
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES"
+      ],
+      "confs": [
+        0.69,
+        0.67,
+        0.66,
+        0.62,
+        0.66
+      ]
+    },
+    {
+      "item": "guacamole",
+      "recorded": 0.45,
+      "accept": [
+        "PRODUCE",
+        "DAIRY",
+        "OTHER"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PANTRY",
+        "PANTRY",
+        "PRODUCE",
+        "PANTRY"
+      ],
+      "confs": [
+        0.45,
+        0.45,
+        0.47,
+        0.45,
+        0.45
+      ]
+    },
+    {
+      "item": "fresh pasta",
+      "recorded": 0.9,
+      "accept": [
+        "DAIRY",
+        "PANTRY",
+        "BAKERY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        0.92,
+        0.93,
+        0.92,
+        0.92,
+        0.92
+      ]
+    },
+    {
+      "item": "tofu skins",
+      "recorded": 0.83,
+      "accept": [
+        "PROTEIN",
+        "PANTRY"
+      ],
+      "choices": [
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN"
+      ],
+      "confs": [
+        0.85,
+        0.83,
+        0.86,
+        0.86,
+        0.81
+      ]
+    },
+    {
+      "item": "matcha powder",
+      "recorded": 0.48,
+      "accept": [
+        "BEVERAGES",
+        "PANTRY"
+      ],
+      "choices": [
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES"
+      ],
+      "confs": [
+        0.45,
+        0.41,
+        0.47,
+        0.47,
+        0.49
+      ]
+    },
+    {
+      "item": "2 sweet potatoes",
+      "recorded": 1,
+      "accept": [
+        "PRODUCE"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "spring mix",
+      "recorded": 1,
+      "accept": [
+        "PRODUCE"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "blueberries 1 pint",
+      "recorded": 1,
+      "accept": [
+        "PRODUCE"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "cauliflower",
+      "recorded": 1,
+      "accept": [
+        "PRODUCE"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "93% lean ground turkey",
+      "recorded": 1,
+      "accept": [
+        "PROTEIN"
+      ],
+      "choices": [
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "tempeh",
+      "recorded": 1,
+      "accept": [
+        "PROTEIN"
+      ],
+      "choices": [
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN",
+        "PROTEIN"
+      ],
+      "confs": [
+        0.99,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "fage 0%",
+      "recorded": 1,
+      "accept": [
+        "DAIRY"
+      ],
+      "choices": [
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "shredded mozzarella",
+      "recorded": 1,
+      "accept": [
+        "DAIRY"
+      ],
+      "choices": [
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY",
+        "DAIRY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "sourdough",
+      "recorded": 1,
+      "accept": [
+        "BAKERY"
+      ],
+      "choices": [
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "rye bread",
+      "recorded": 1,
+      "accept": [
+        "BAKERY"
+      ],
+      "choices": [
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "couscous",
+      "recorded": 1,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "canned black beans",
+      "recorded": 1,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "mayo",
+      "recorded": 1,
+      "accept": [
+        "PANTRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "frozen stir fry veggies",
+      "recorded": 1,
+      "accept": [
+        "FROZEN"
+      ],
+      "choices": [
+        "FROZEN",
+        "FROZEN",
+        "FROZEN",
+        "FROZEN",
+        "FROZEN"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "popsicles",
+      "recorded": 1,
+      "accept": [
+        "FROZEN"
+      ],
+      "choices": [
+        "FROZEN",
+        "FROZEN",
+        "FROZEN",
+        "FROZEN",
+        "FROZEN"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "dried oregano",
+      "recorded": 1,
+      "accept": [
+        "SPICES"
+      ],
+      "choices": [
+        "SPICES",
+        "SPICES",
+        "SPICES",
+        "SPICES",
+        "SPICES"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "orange juice",
+      "recorded": 1,
+      "accept": [
+        "BEVERAGES"
+      ],
+      "choices": [
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES",
+        "BEVERAGES"
+      ],
+      "confs": [
+        0.99,
+        1,
+        1,
+        0.99,
+        0.99
+      ]
+    },
+    {
+      "item": "trash bags",
+      "recorded": 1,
+      "accept": [
+        "OTHER"
+      ],
+      "choices": [
+        "OTHER",
+        "OTHER",
+        "OTHER",
+        "OTHER",
+        "OTHER"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "pesto",
+      "recorded": 0.99,
+      "accept": [
+        "PANTRY",
+        "DAIRY"
+      ],
+      "choices": [
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY",
+        "PANTRY"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "item": "radishes",
+      "recorded": 1,
+      "accept": [
+        "PRODUCE"
+      ],
+      "choices": [
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE",
+        "PRODUCE"
+      ],
+      "confs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "cost": {
+    "calls": 230,
+    "inputTokens": 126140,
+    "usd": 0.0052978800000000005
+  }
+}
