@@ -58,6 +58,8 @@ export const STRINGS = {
   grocery_diff_banner_prefix: "Added Saturday long run:",
   grocery_new_tag: "new",
   grocery_review_tag: "check aisle",
+  grocery_staples_title: "Check you have",
+  grocery_staples_hint: "Tap anything you're out of to add it.",
   grocery_add_label: "Add an item",
   grocery_add_placeholder: "Add something else…",
   grocery_add_button: "Add",

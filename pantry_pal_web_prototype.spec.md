@@ -627,6 +627,7 @@ then it reads exactly: "45P · 52C · 18F · 540 cal · 30min".
 5. For each section in `DEMO_GROCERY.sections`:
    - Section header in `text-xs font-semibold text-muted uppercase tracking-wide`
    - Items: checkbox + qty + name. Checked items have `line-through text-muted` styling. Items with `status: "new"` have a 2px sage border on their checkbox and a small `new` label on the right in `text-sage`.
+5a. "Check you have" group (v0.2, #J1b): a collapsed, bordered group titled `STRINGS.grocery_staples_title` plus the staple count, with a chevron (`aria-expanded`). Expanded: `STRINGS.grocery_staples_hint` in `text-xs text-muted`, then one row per staple (name only, with a + icon). Tapping a staple moves it onto the list in its section, marked `new`, and removes it from the group. Hidden when there are no staples.
 6. Add-item row (v0.2, #J3): text field `STRINGS.grocery_add_placeholder` + `STRINGS.grocery_add_button`. The route file sends the text to `POST /api/classify` and adds the item to the returned section, marked `new`. If the answer has `needsReview`, the row shows `STRINGS.grocery_review_tag` in `text-xs text-muted`. If the route fails, the keyword rules answer. An item already on the list is not added twice.
 7. Bottom CTA: `Shop with Instacart` full-width button in `bg-terracotta text-white font-semibold`, `rounded-full`, 36px tall.
 8. BottomTabBar with `List` active.
@@ -968,6 +969,7 @@ pantry-pal-prototype/
 │   ├── Toast.tsx
 │   ├── DemoControls.tsx
 │   ├── AddItemForm.tsx          # v0.2: add-item row on /list
+│   ├── StaplesGroup.tsx         # v0.2: "Check you have" staples group on /list
 │   └── SwapHint.tsx             # v0.2: "Better fit for a {day}" row on /recipe
 ├── lib/
 │   ├── seedData.ts              # DEMO_USER, DEMO_WEEK, RECIPES, DEMO_WEEKS, grocery plan inputs

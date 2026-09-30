@@ -5,8 +5,9 @@ import PhoneFrame from "@/components/PhoneFrame";
 import BottomTabBar from "@/components/BottomTabBar";
 import GroceryItem from "@/components/GroceryItem";
 import AddItemForm from "@/components/AddItemForm";
+import StaplesGroup from "@/components/StaplesGroup";
 import { STRINGS } from "@/lib/coachStrings";
-import { DEMO_GROCERY, addItemToSections } from "@/lib/demoGrocery";
+import { DEMO_GROCERY, addItemToSections, moveStapleToList } from "@/lib/demoGrocery";
 import { createApiClassifier } from "@/lib/grocery";
 
 // Grocery list (spec §7.4). The diff-based list — the signature feature beyond
@@ -16,6 +17,8 @@ import { createApiClassifier } from "@/lib/grocery";
 // find their aisle.
 export default function ListPage() {
   const [sections, setSections] = useState(DEMO_GROCERY.sections);
+  const [staples, setStaples] = useState(DEMO_GROCERY.staples);
+  const [staplesOpen, setStaplesOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
   const classifier = useMemo(() => createApiClassifier(fetch), []);
@@ -27,6 +30,12 @@ export default function ListPage() {
     setSections((prev) => addItemToSections(prev, text, results[text]));
     setDraft("");
     setPending(false);
+  }
+
+  function pickStaple(id: string) {
+    const next = moveStapleToList(sections, staples, id);
+    setSections(next.sections);
+    setStaples(next.staples);
   }
 
   // Checkbox state lives here, keyed by canonical ingredient id so it
@@ -84,6 +93,13 @@ export default function ListPage() {
             </section>
           ))}
         </div>
+
+        <StaplesGroup
+          staples={staples}
+          expanded={staplesOpen}
+          onToggle={() => setStaplesOpen((o) => !o)}
+          onPick={pickStaple}
+        />
 
         <AddItemForm value={draft} pending={pending} onChange={setDraft} onSubmit={addItem} />
 

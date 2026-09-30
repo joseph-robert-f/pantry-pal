@@ -153,6 +153,14 @@ async function layoutChecks(page, vp, route) {
     await p.waitForFunction(() => document.querySelector('#add-item').value === '', null, { timeout: 8000 });
     const protein = p.locator('section', { has: p.locator('h2', { hasText: 'PROTEIN' }) });
     check(vp, where, (await protein.innerText()).includes('chx thighs bnls'), 'typed item lands in PROTEIN via Enter');
+    const staplesBtn = p.getByRole('button', { name: /Check you have \(\d+\)/ });
+    check(vp, where, (await staplesBtn.getAttribute('aria-expanded')) === 'false', 'staples collapsed by default');
+    await staplesBtn.click();
+    check(vp, where, (await staplesBtn.getAttribute('aria-expanded')) === 'true', 'staples expand');
+    await p.locator('#staples-list').getByRole('button', { name: 'olive oil' }).click();
+    const pantry = p.locator('section', { has: p.locator('h2', { hasText: 'PANTRY' }) });
+    check(vp, where, (await pantry.innerText()).includes('olive oil'), 'picked staple lands in PANTRY');
+    check(vp, where, /Check you have \(8\)/i.test(await staplesBtn.innerText()) /* h2 is CSS-uppercased */, 'staple count drops to 8');
     // This sandbox blocks instacart.com, so check the link, not the load.
     const insta = p.getByRole('link', { name: 'Shop with Instacart' });
     check(vp, where, (await insta.getAttribute('href')) === 'https://www.instacart.com' && (await insta.getAttribute('target')) === '_blank' && /noopener/.test(await insta.getAttribute('rel')), 'Instacart link opens a new tab safely');

@@ -31,6 +31,10 @@ export type GroceryItemData = {
   needsReview?: boolean; // low-confidence aisle (#J3): shows "check aisle"
 };
 
+// A pantry staple held off the list (oil, salt, spices). Name only: recipe
+// amounts like "7 tbsp" mean nothing when you buy a whole bottle.
+export type StapleData = { id: string; name: string; section: Section };
+
 export type GrocerySectionData = {
   section: Section;
   name: string; // display label from the string catalogue
@@ -80,7 +84,9 @@ export const DEMO_GROCERY = {
       }),
     ),
   })),
-  staples: current.staples,
+  staples: current.staples.map(
+    (line): StapleData => ({ id: line.id, name: line.name, section: line.section }),
+  ),
 };
 
 // Add an item the user typed (#J3). Pure: returns new sections in store-walk
@@ -94,15 +100,42 @@ export function addItemToSections(
   const id = lookupCatalogue(name)?.id ?? `added:${normalizeName(name)}`;
   if (sections.some((s) => s.items.some((i) => i.id === id))) return sections;
 
-  const item: GroceryItemData = {
+  return insertItem(sections, classification.section, {
     id,
     qty: "",
     name,
     checked: false,
     status: "new",
     needsReview: classification.needsReview,
+  });
+}
+
+// Move a staple the user is out of onto the list (#J1b), in its aisle,
+// marked new. Pure: returns the new sections and the remaining staples.
+export function moveStapleToList(
+  sections: GrocerySectionData[],
+  staples: StapleData[],
+  id: string,
+): { sections: GrocerySectionData[]; staples: StapleData[] } {
+  const staple = staples.find((s) => s.id === id);
+  if (!staple) return { sections, staples };
+  return {
+    sections: insertItem(sections, staple.section, {
+      id: staple.id,
+      qty: "",
+      name: staple.name,
+      checked: false,
+      status: "new",
+    }),
+    staples: staples.filter((s) => s.id !== id),
   };
-  const target = classification.section;
+}
+
+function insertItem(
+  sections: GrocerySectionData[],
+  target: Section,
+  item: GroceryItemData,
+): GrocerySectionData[] {
   const exists = sections.some((s) => s.section === target);
   const next = exists
     ? sections.map((s) => (s.section === target ? { ...s, items: [...s.items, item] } : s))
