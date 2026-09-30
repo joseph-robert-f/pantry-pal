@@ -6,6 +6,14 @@ import type { DayType, JudgedTag, RecipeFacts } from "./types.ts";
 // the state; every question about it runs in parallel. Levels describe
 // concrete meals and stand on their own (docs: primitives/score).
 
+// Rubric version, stored with every judgment. v1-draft: Claude's first draft
+// of sports-nutrition rules of thumb, accepted by the founder on 2026-09-30
+// as a placeholder. To be replaced by a nutritionist-authored rubric (#J4b).
+// DAY_CONTEXT (what each training day is) belongs to the trainer's workout
+// logic (#J5). Change the version whenever DAY_CONTEXT, DAY_LEVELS, or
+// TAG_QUESTIONS change, then re-run `npm run judge:recipes`.
+export const RUBRIC_VERSION = "v1-draft";
+
 const DAY_CONTEXT: Record<DayType, string> = {
   hard_day: "dinner after a very demanding training day, such as a heavy lifting session or hard intervals",
   lift_day: "dinner on a normal strength-training day",

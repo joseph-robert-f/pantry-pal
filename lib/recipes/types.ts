@@ -29,6 +29,7 @@ export type RecipeJudgment = {
 
 export type JudgmentFile = {
   model: string;
+  rubric: string; // RUBRIC_VERSION the judgments were made with
   generated: string;
   recipes: Record<string, RecipeJudgment>;
 };

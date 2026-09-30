@@ -13,7 +13,7 @@ import { asNoul, asScore, JEV_MODEL } from "../lib/jev/api.ts";
 // Import modules directly, not lib/recipes/index.ts: the index re-exports
 // the file this script generates.
 import { codeTags, macroLevels } from "../lib/recipes/facts.ts";
-import { fitQuestionId, recipeJudgmentRequest } from "../lib/recipes/jevRecipeQuestions.ts";
+import { RUBRIC_VERSION, fitQuestionId, recipeJudgmentRequest } from "../lib/recipes/jevRecipeQuestions.ts";
 import { bestDayType, rankSwaps } from "../lib/recipes/swaps.ts";
 import {
   DAY_TYPES,
@@ -51,6 +51,7 @@ async function judgeAll(recipes: RecipeFacts[]): Promise<JudgmentFile> {
   const results = await pool(recipes, judge, 6);
   return {
     model: JEV_MODEL,
+    rubric: RUBRIC_VERSION,
     generated: new Date().toISOString().slice(0, 10),
     recipes: Object.fromEntries(recipes.map((r, i) => [r.id, results[i]])),
   };

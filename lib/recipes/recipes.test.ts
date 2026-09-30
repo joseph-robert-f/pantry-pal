@@ -4,6 +4,7 @@ import {
   DAY_TYPES,
   MIN_SWAP_GAIN,
   RECIPE_JUDGMENTS,
+  RUBRIC_VERSION,
   TAG_YES,
   bestDayType,
   codeTags,
@@ -35,7 +36,7 @@ function judgments(scores: Record<string, Partial<Record<DayType, number>>>, tag
     const [onePan, leftovers] = tags[id] ?? [0, 0];
     recipes[id] = { fit, tags: { one_pan: onePan, good_leftovers: leftovers } };
   }
-  return { model: "test", generated: "2026-09-30", recipes };
+  return { model: "test", rubric: "test", generated: "2026-09-30", recipes };
 }
 
 // --- numbers stay in code -------------------------------------------------
@@ -95,6 +96,10 @@ test("judged tags show only at or above TAG_YES", () => {
 });
 
 // --- stored judgments -----------------------------------------------------
+
+test("stored judgments use the current rubric (re-run judge:recipes after changing it)", () => {
+  assert.equal(RECIPE_JUDGMENTS.rubric, RUBRIC_VERSION);
+});
 
 test("every seed recipe has stored judgments (re-run judge:recipes after editing RECIPES)", () => {
   for (const r of RECIPES) {

@@ -3,6 +3,7 @@ import type { JudgmentFile } from "./types.ts";
 
 export const RECIPE_JUDGMENTS: JudgmentFile = {
   "model": "jev-1.13.0",
+  "rubric": "v1-draft",
   "generated": "2026-09-30",
   "recipes": {
     "sheet_pan_chicken_sweet_potato": {

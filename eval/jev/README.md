@@ -124,6 +124,6 @@ carbohydrate portion or re-tag the day.
 
 - 18 recipes. The probe set was written with obvious answers; it checks the
   rubric works, not fine-grained accuracy.
-- Day-fit rubrics are my first draft of sports-nutrition rules of thumb.
-  The founder should review the level wording in
-  `lib/recipes/jevRecipeQuestions.ts`.
+- Day-fit rubrics are `v1-draft`: Claude's first draft of sports-nutrition
+  rules of thumb, confirmed by the founder as a placeholder. A nutritionist
+  (#J4b) and a trainer (#J5) will replace them.

@@ -306,6 +306,21 @@ Phases 0–3 are done. Phase 4 (recipe tags and swaps) is next. Eval results and
   vendor-neutral, so an LLM or a local classifier can replace Jev with no UI
   change.
 
+### Expert skills (deferred, 2026-09-30)
+
+Jev supplies the judgment; experts supply the definitions it judges against.
+The founder confirmed the `v1-draft` recipe rubric as a placeholder. Two
+expert-authored "skills" replace the drafts later:
+
+- **Recipe skill — nutritionist (#J4b, GH #9).** Day-fit levels, recipe tag
+  definitions, macro cutoffs, and a labeled test set.
+- **Workout logic skill — trainer (#J5, GH #10).** Day types and their
+  definitions, training week → day type rules, and training events that
+  change the grocery list.
+
+Each skill is versioned (`RUBRIC_VERSION`); stored judgments record the
+version they were made with, and a test fails when they are stale.
+
 ## 9. Risks
 
 | Risk | Mitigation |
