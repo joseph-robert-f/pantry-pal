@@ -69,7 +69,7 @@ _All P0 build issues resolved — see Resolved._
 
 - **[#D8] Accent colour contrast** — `decision` — _status: open (founder)_ — axe-core: terracotta `#C56E47` and sage `#7A8B6F` are 3.7:1 on white; WCAG AA needs 4.5:1 for normal text. Affects links, "+ N more", "new" labels, "check aisle", and white text on terracotta buttons (Instacart CTA, active day chip). Proposal: add text-safe tokens and keep the current colours for fills and borders — `terracotta.ink #A75D3C` (4.56:1 on cream) and `sage.ink #67765E` (4.50:1 on cream); use them for text and for fills that carry white text. Brand call, so not changed yet.
 
-_None open — see Resolved (#D1–D4)._
+_#D1–D4 closed — see Resolved._
 
 ### v0.2 — Jev integration (see `docs/jev-integration-plan.md`)
 
