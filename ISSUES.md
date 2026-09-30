@@ -45,7 +45,7 @@ Visual QA in a real browser is pending (macOS screen-recording permission not gr
 
 _All P0 build issues resolved — see Resolved._
 
-- **[#8b] Deploy to Vercel** — `chore` — _status: blocked (founder action)_ — Spec §10.
+- **[#8b] Deploy to Vercel** ([GH #2](https://github.com/joseph-robert-f/pantry-pal/issues/2)) — `chore` — _status: blocked (founder action)_ — Spec §10.
   - Needs a GitHub repo + Vercel account. Steps documented in README. Set
     `NEXT_PUBLIC_PROTOTYPE_VERSION=0.1` in Vercel env.
   - For Jev (#J3): set `TYPESAFE_API_KEY` as a server-only env var (no `NEXT_PUBLIC_` prefix).
@@ -54,7 +54,7 @@ _All P0 build issues resolved — see Resolved._
 
 ### P1 — baseline polish / open follow-ups
 
-- **[#17] Real-browser visual QA** — `test` — _status: blocked_ — macOS screen-recording
+- **[#17] Real-browser visual QA** ([GH #4](https://github.com/joseph-robert-f/pantry-pal/issues/4)) — `test` — _status: blocked_ — macOS screen-recording
   permission not granted, so automated screenshot QA couldn't run. Verified via
   build + typecheck + SSR string assertions instead. Recommend a manual pass at
   `npm run dev`.
@@ -62,7 +62,7 @@ _All P0 build issues resolved — see Resolved._
   - Includes photo rights (was #D2): founder shoots or licenses photos. Blocks wide sharing, not F&F.
   - New recipe ingredients must be in `lib/grocery/catalogue.ts`, or #J3 must be live to classify them.
   - Graceful `bg-tan` fallback implemented so missing photos never show broken images.
-- **[#18] Lighthouse ≥85 on `/plan` (mobile)** — `test` — _status: todo_ — Spec §10. Run after deploy.
+- **[#18] Lighthouse ≥85 on `/plan` (mobile)** ([GH #6](https://github.com/joseph-robert-f/pantry-pal/issues/6)) — `test` — _status: todo_ — Spec §10. Run after deploy.
 
 ### P2 — deferred / open decisions (spec §13)
 
