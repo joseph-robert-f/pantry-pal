@@ -1,7 +1,7 @@
 # Pantry Pal — Web Prototype
 
 A clickable web prototype of Pantry Pal — a coach-voiced weekly meal planner for
-people who train. Built in **Next.js 14 (App Router) + TypeScript + Tailwind**
+people who train. Built in **Next.js 15 (App Router) + React 19 + TypeScript + Tailwind**
 so the component layer ports cleanly to React Native + NativeWind for the
 eventual iOS build.
 
@@ -32,6 +32,7 @@ Other scripts:
 ```bash
 npm run build       # production build (must pass before deploy)
 npm run typecheck   # tsc --noEmit, strict mode
+npm test            # vitest: seed-data + helper checks (tests/)
 npm run start       # serve the production build
 ```
 

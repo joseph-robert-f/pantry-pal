@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
 import PhoneFrame from "@/components/PhoneFrame";
 import Button from "@/components/Button";
@@ -19,9 +19,10 @@ function humanizeTag(tag: string): string {
 // Recipe detail (spec §7.3). Hero, macros, tags, ingredients (first 5 + expand),
 // instructions, and the two primary CTAs. "Swap meal" routes to the paywall —
 // the natural "I want to talk to the coach" moment.
-export default function RecipePage({ params }: { params: { id: string } }) {
+export default function RecipePage() {
   const router = useRouter();
-  const recipe = getRecipe(params.id);
+  const { id } = useParams<{ id: string }>();
+  const recipe = getRecipe(id);
   const [expanded, setExpanded] = useState(false);
   const [toastVisible, setToastVisible] = useState(false);
 
