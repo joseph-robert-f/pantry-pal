@@ -1,0 +1,144 @@
+{
+  "run": "jev-1.13.0_v2_single_holdout",
+  "date": "2026-09-30",
+  "items": 124,
+  "ambiguousItems": 6,
+  "jev": {
+    "accuracy": 0.9919354838709677,
+    "accuracyUnambiguous": 0.9915254237288136,
+    "bySection": {
+      "PRODUCE": {
+        "n": 25,
+        "accuracy": 1
+      },
+      "PROTEIN": {
+        "n": 15,
+        "accuracy": 1
+      },
+      "DAIRY": {
+        "n": 13,
+        "accuracy": 0.9230769230769231
+      },
+      "BAKERY": {
+        "n": 8,
+        "accuracy": 1
+      },
+      "PANTRY": {
+        "n": 25,
+        "accuracy": 1
+      },
+      "FROZEN": {
+        "n": 8,
+        "accuracy": 1
+      },
+      "SPICES": {
+        "n": 8,
+        "accuracy": 1
+      },
+      "BEVERAGES": {
+        "n": 8,
+        "accuracy": 1
+      },
+      "OTHER": {
+        "n": 8,
+        "accuracy": 1
+      }
+    },
+    "thresholdSweep": [
+      {
+        "threshold": 0,
+        "coverage": 1,
+        "accuracy": 0.9919354838709677,
+        "n": 124,
+        "errorsAbove": 1
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.9838709677419355,
+        "accuracy": 0.9918032786885246,
+        "n": 122,
+        "errorsAbove": 1
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.9596774193548387,
+        "accuracy": 1,
+        "n": 119,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.9516129032258065,
+        "accuracy": 1,
+        "n": 118,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.9516129032258065,
+        "accuracy": 1,
+        "n": 118,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.9193548387096774,
+        "accuracy": 1,
+        "n": 114,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.9193548387096774,
+        "accuracy": 1,
+        "n": 114,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.8709677419354839,
+        "accuracy": 1,
+        "n": 108,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.98,
+        "coverage": 0.8145161290322581,
+        "accuracy": 1,
+        "n": 101,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.7903225806451613,
+        "accuracy": 1,
+        "n": 98,
+        "errorsAbove": 0
+      }
+    ],
+    "recommendedThreshold": 0.6
+  },
+  "rulesBaseline": {
+    "accuracy": 0.33064516129032256,
+    "unmatched": 80
+  },
+  "cost": {
+    "liveCalls": 0,
+    "cachedCalls": 124,
+    "inputTokens": 67953,
+    "usd": 0.002854026,
+    "latencyP50Ms": null,
+    "latencyP95Ms": null
+  },
+  "errors": [
+    {
+      "item": "egg bites",
+      "accept": [
+        "DAIRY"
+      ],
+      "choice": "FROZEN",
+      "confidence": 0.52,
+      "runnerUp": "DAIRY 0.31"
+    }
+  ]
+}

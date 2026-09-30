@@ -1,7 +1,7 @@
 ---
 title: Pantry Pal — Jev Integration Plan
 plan_version: 0.1
-status: draft — needs founder decisions (section 8). Phases 0–1 done.
+status: draft — needs founder decisions (section 8). Phases 0–2 done.
 owner: Joe Fehr
 parent_spec: pantry_pal_web_prototype.spec.md (v0.1)
 date: 2026-09-30
@@ -244,6 +244,21 @@ Do not connect Jev to the live list before you do these steps.
 6. **Keep the eval script in the repo** (`scripts/eval-jev.ts`). Run it
    again for each new pinned model version.
 
+### Results (2026-09-30, `jev-1.13.0`) ✅
+
+Full report: `eval/jev/README.md`.
+
+| | Tuning set (287) | Holdout (124) |
+|---|---|---|
+| Jev, v2 criteria, 1 item/request | 100% | **99.2%** |
+| Jev, v2 criteria, 25 items/request | 99.7% | 97.6% |
+| Keyword rules | 74.6% | 33.1% |
+
+- **Threshold: 0.70.** No errors at or above it on the holdout, ~95% coverage.
+- **One item per request**, not batches: more accurate, and cost is negligible.
+- Below 0.70: keep Jev's choice and flag `needsReview`. Keyword rules are
+  only for when Jev is unavailable.
+
 ## 6. Auto-update behavior
 
 ### Shopping list
@@ -272,11 +287,11 @@ that are not in the cache.
 |---|---|---|---|
 | **0. Access** ✅ done 2026-09-30 | Join the waitlist. Get a key. Test in the playground. Add `api.typesafe.ai` to the build environment's allowed domains. | Yes | A test request returns an answer. |
 | **1. Deterministic core** ✅ done 2026-09-30 | Canonical ingredient table. `buildGroceryList()`, `diffGroceryList()`. `RulesClassifier`. Unit tests. Seed data is generated, not hand-written. | No | The Saturday long run diff banner comes from the engine, not from seed text. |
-| **2. Shadow eval** | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
+| **2. Shadow eval** ✅ done 2026-09-30 | Labeled set. `scripts/eval-jev.ts`. Accuracy and calibration report. | Yes | Thresholds are chosen and written in this doc. |
 | **3. Live classification** | `/api/classify` route. `JevClassifier` with cache and fallback. Pinned model. | Yes | New items get Jev sections. Demo still works with no network. |
 | **4. Recipe tags and swaps** | Tag questions. Swap scoring. Suggestion UI. | Yes | A training change produces a ranked swap suggestion. |
 
-Phase 1 is done. Phase 2 (shadow eval) is next.
+Phases 0–2 are done. Phase 3 (live classification) is next. Eval results and the #J3 decisions: `eval/jev/README.md`.
 
 ## 8. Decisions for the founder
 

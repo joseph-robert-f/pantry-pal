@@ -1,0 +1,180 @@
+{
+  "run": "jev-1.13.0_v1_single",
+  "date": "2026-09-30",
+  "items": 287,
+  "ambiguousItems": 22,
+  "jev": {
+    "accuracy": 0.9825783972125436,
+    "accuracyUnambiguous": 0.9811320754716981,
+    "bySection": {
+      "PRODUCE": {
+        "n": 54,
+        "accuracy": 1
+      },
+      "PROTEIN": {
+        "n": 34,
+        "accuracy": 0.9705882352941176
+      },
+      "DAIRY": {
+        "n": 30,
+        "accuracy": 1
+      },
+      "BAKERY": {
+        "n": 20,
+        "accuracy": 1
+      },
+      "PANTRY": {
+        "n": 55,
+        "accuracy": 0.9636363636363636
+      },
+      "FROZEN": {
+        "n": 20,
+        "accuracy": 1
+      },
+      "SPICES": {
+        "n": 24,
+        "accuracy": 1
+      },
+      "BEVERAGES": {
+        "n": 13,
+        "accuracy": 1
+      },
+      "OTHER": {
+        "n": 15,
+        "accuracy": 0.8666666666666667
+      }
+    },
+    "thresholdSweep": [
+      {
+        "threshold": 0,
+        "coverage": 1,
+        "accuracy": 0.9825783972125436,
+        "n": 287,
+        "errorsAbove": 5
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.9790940766550522,
+        "accuracy": 0.9893238434163701,
+        "n": 281,
+        "errorsAbove": 3
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.9651567944250871,
+        "accuracy": 0.9891696750902527,
+        "n": 277,
+        "errorsAbove": 3
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.9407665505226481,
+        "accuracy": 1,
+        "n": 270,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.926829268292683,
+        "accuracy": 1,
+        "n": 266,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.9198606271777003,
+        "accuracy": 1,
+        "n": 264,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.9128919860627178,
+        "accuracy": 1,
+        "n": 262,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.8885017421602788,
+        "accuracy": 1,
+        "n": 255,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.98,
+        "coverage": 0.8397212543554007,
+        "accuracy": 1,
+        "n": 241,
+        "errorsAbove": 0
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.7839721254355401,
+        "accuracy": 1,
+        "n": 225,
+        "errorsAbove": 0
+      }
+    ],
+    "recommendedThreshold": 0.7
+  },
+  "rulesBaseline": {
+    "accuracy": 0.7456445993031359,
+    "unmatched": 82
+  },
+  "cost": {
+    "liveCalls": 0,
+    "cachedCalls": 287,
+    "inputTokens": 139816,
+    "usd": 0.005872272,
+    "latencyP50Ms": null,
+    "latencyP95Ms": null
+  },
+  "errors": [
+    {
+      "item": "deli turkey",
+      "accept": [
+        "PROTEIN"
+      ],
+      "choice": "OTHER",
+      "confidence": 0.61,
+      "runnerUp": "PROTEIN 0.34"
+    },
+    {
+      "item": "protein powder",
+      "accept": [
+        "PANTRY"
+      ],
+      "choice": "OTHER",
+      "confidence": 0.42,
+      "runnerUp": "PANTRY 0.48"
+    },
+    {
+      "item": "whey protein",
+      "accept": [
+        "PANTRY"
+      ],
+      "choice": "OTHER",
+      "confidence": 0.44,
+      "runnerUp": "PANTRY 0.42"
+    },
+    {
+      "item": "aluminum foil",
+      "accept": [
+        "OTHER"
+      ],
+      "choice": "PANTRY",
+      "confidence": 0.61,
+      "runnerUp": "OTHER 0.35"
+    },
+    {
+      "item": "parchment paper",
+      "accept": [
+        "OTHER"
+      ],
+      "choice": "PANTRY",
+      "confidence": 0.67,
+      "runnerUp": "OTHER 0.24"
+    }
+  ]
+}
