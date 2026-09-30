@@ -67,6 +67,17 @@ _All P0 build issues resolved — see Resolved._
 - **[#D3] Demo-controls in public prototype** — `decision` — _status: open_ — Shipping with "demo" label per spec §13.4 recommendation.
 - **[#D4] Analytics** — `decision` — _status: open_ — None for F&F stage per spec §13.5.
 
+### v0.2 — Jev integration (see `docs/jev-integration-plan.md`)
+
+- **[#J0] Get Jev early access + API key; allow `api.typesafe.ai` in build env** — `chore` — _status: todo (founder action)_ — Plan §7 phase 0.
+- **[#J1] Deterministic list engine: ingredient table, `buildGroceryList`, `diffGroceryList`, `RulesClassifier`** — `feature` — _status: todo_ — Plan §4, §6. No Jev needed. Diff banner generated, not seeded.
+- **[#J2] Jev shadow eval: labeled item set + `scripts/eval-jev.ts` + thresholds** — `test` — _status: todo_ — Plan §5. Blocked by #J0.
+- **[#J3] Live classification: `/api/classify`, `JevClassifier`, cache, fallback, pinned model** — `feature` — _status: todo_ — Plan §4. Blocked by #J2.
+- **[#J4] Recipe tags + swap ranking (suggestion UI)** — `feature` — _status: todo_ — Plan §6. Blocked by #J3.
+- **[#D5] Scope change: live model call vs spec v0.1 non-goal** — `decision` — _status: open_ — Plan §8. Recommendation: v0.2 branch for J1–J2, allow Jev with fallback from J3.
+- **[#D6] Grocery section taxonomy (own 9 vs Instacart departments)** — `decision` — _status: open_ — Plan §8.
+- **[#D7] Vendor risk: keep `ItemClassifier` interface vendor-neutral** — `decision` — _status: open_ — Plan §8.
+
 ---
 
 ## Resolved
@@ -95,3 +106,4 @@ _All P0 build issues resolved — see Resolved._
 - **2026-05-31** — Tracker created. Repo had only the spec + empty git history. Building from scratch per file manifest in spec appendix.
 - **2026-05-31** — Full prototype built. `npm install`, `tsc --noEmit`, and `next build` all clean (10 routes). Started `next start` and asserted every spec-exact acceptance string renders on `/plan`, `/recipe/[id]`, `/list`, `/paywall`, `/paywall/accepted`, `/coach`, `/discover`. Code-audited each §7 Gherkin criterion. Onboarding `/` renders client-side (gates on localStorage check) — confirmed via logic review, not SSR grep.
 - **2026-05-31** — Build-side baseline COMPLETE. Remaining: founder deploy (#8b), founder device walkthrough (#9b), and optional real-browser visual QA (#17, blocked on screen-recording permission).
+- **2026-09-30** — Added Jev integration plan (`docs/jev-integration-plan.md`) and v0.2 issues #J0–#J4, #D5–#D7. Primary TypeSafe docs blocked by build-env network policy; plan data is from secondary sources — verify before coding against the SDK.
