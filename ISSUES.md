@@ -62,6 +62,11 @@ _All P0 build issues resolved — see Resolved._
 
 ### P2 — deferred / open decisions (spec §13)
 
+- **[#20] Residual Next.js advisories need Next 15.5+** — `chore` — _status: todo_ — Follow-up to #19.
+  - `npm audit` still lists `next` advisories fixed only in 15.5.x; no 14.x patch exists.
+  - Low current exposure: app uses no `next/image`, middleware, server actions, rewrites, or custom server.
+  - Do the Next 15 (+ React 19) upgrade before any public / non-F&F launch.
+
 - **[#D1] Display typeface** — `decision` — _status: open_ — Using Source Serif 4 (free) as placeholder per spec §13.1.
 - **[#D2] Recipe photography rights** — `decision` — _status: open_ — Founder to shoot/license. Using CSS-gradient placeholders.
 - **[#D3] Demo-controls in public prototype** — `decision` — _status: open_ — Shipping with "demo" label per spec §13.4 recommendation.
@@ -87,6 +92,7 @@ _All P0 build issues resolved — see Resolved._
 - **[#15]** A11y: semantic headings, `aria-pressed`/`aria-current`/`aria-label`, reading order.
 - **[#16]** Footer + `NEXT_PUBLIC_PROTOTYPE_VERSION` (`.env.example`, `.env.local`).
 - **[#D1–D4]** Open decisions resolved per spec §13 defaults (Source Serif 4, placeholder photos, demo toggle ships labeled, no analytics).
+- **[#19]** Security: upgraded `next` 14.2.15 → 14.2.35 (pinned exact). Clears the `npm ci` deprecation warning for the [2025-12-11 advisory](https://nextjs.org/blog/security-update-2025-12-11) (GHSA-mwv6-3258-q52c, GHSA-5j59-xgg2-r9c4). 14.2.35 is the lowest patched 14.2.x, and the last 14.x release. It also closes the older 14.2.x advisories (incl. critical middleware auth bypass GHSA-f82v-jwr5-mffw). Lockfile regenerated with npm. `tsc --noEmit` + `next build` clean; all 8 routes return 200 under `next start`. Follow-up: #20.
 
 ---
 
@@ -95,3 +101,4 @@ _All P0 build issues resolved — see Resolved._
 - **2026-05-31** — Tracker created. Repo had only the spec + empty git history. Building from scratch per file manifest in spec appendix.
 - **2026-05-31** — Full prototype built. `npm install`, `tsc --noEmit`, and `next build` all clean (10 routes). Started `next start` and asserted every spec-exact acceptance string renders on `/plan`, `/recipe/[id]`, `/list`, `/paywall`, `/paywall/accepted`, `/coach`, `/discover`. Code-audited each §7 Gherkin criterion. Onboarding `/` renders client-side (gates on localStorage check) — confirmed via logic review, not SSR grep.
 - **2026-05-31** — Build-side baseline COMPLETE. Remaining: founder deploy (#8b), founder device walkthrough (#9b), and optional real-browser visual QA (#17, blocked on screen-recording permission).
+- **2026-09-30** — #19: `next` → 14.2.35. `npm ci` warning gone. Repo has no `test` script, so `npm test` has nothing to run. Opened #20 for advisories that need Next 15.5+.
