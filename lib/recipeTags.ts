@@ -1,9 +1,10 @@
 import { STRINGS, type StringKey } from "./coachStrings.ts";
-import type { Recipe } from "./seedData.ts";
+import { RECIPES, type Recipe } from "./seedData.ts";
 import {
   DAY_TYPES,
   RECIPE_JUDGMENTS,
   bestDayType,
+  rankSwaps,
   recipeTags,
   type DayType,
   type JudgmentFile,
@@ -41,5 +42,28 @@ export function recipePills(recipe: Recipe, judgments: JudgmentFile = RECIPE_JUD
   return {
     trainingDay: day ? STRINGS[DAY_LABEL[day]] : null,
     attributes: recipeTags(judgments, recipe).map((t) => STRINGS[TAG_LABEL[t]]),
+  };
+}
+
+export type SwapHint = { recipeId: string; title: string; text: string };
+
+// A better dinner for this recipe's training day (#J4a), or null. The day is
+// the founder's day tag (the plan's intent); without one there is no hint.
+// Code picks the top rankSwaps result; the hint opens the Plus paywall.
+export function swapHint(
+  recipe: Recipe,
+  candidates: Recipe[] = RECIPES,
+  judgments: JudgmentFile = RECIPE_JUDGMENTS,
+): SwapHint | null {
+  const day = DAY_TYPES.find((d) => recipe.tags.includes(d));
+  if (!day) return null;
+  const [best] = rankSwaps(judgments, day, recipe.id, candidates.map((c) => c.id));
+  const match = best && candidates.find((c) => c.id === best.recipeId);
+  if (!match) return null;
+  const dayLabel = STRINGS[DAY_LABEL[day]].toLowerCase();
+  return {
+    recipeId: match.id,
+    title: match.title,
+    text: STRINGS.recipe_swap_hint.replace("{day}", dayLabel),
   };
 }
