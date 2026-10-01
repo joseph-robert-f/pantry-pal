@@ -5,8 +5,9 @@ import PhoneFrame from "@/components/PhoneFrame";
 import BottomTabBar from "@/components/BottomTabBar";
 import GroceryItem from "@/components/GroceryItem";
 import AddItemForm from "@/components/AddItemForm";
+import StaplesGroup from "@/components/StaplesGroup";
 import { STRINGS } from "@/lib/coachStrings";
-import { DEMO_GROCERY, addItemToSections } from "@/lib/demoGrocery";
+import { DEMO_GROCERY, addTypedItem, moveStapleToList, type ListState } from "@/lib/demoGrocery";
 import { createApiClassifier } from "@/lib/grocery";
 
 // Grocery list (spec §7.4). The diff-based list — the signature feature beyond
@@ -15,7 +16,13 @@ import { createApiClassifier } from "@/lib/grocery";
 // last week's. Items the user types go through /api/classify (Jev, #J3) to
 // find their aisle.
 export default function ListPage() {
-  const [sections, setSections] = useState(DEMO_GROCERY.sections);
+  // Sections and staples change together, so they live in one state object
+  // and every update is functional (no stale snapshots on quick taps).
+  const [list, setList] = useState<ListState>(() => ({
+    sections: DEMO_GROCERY.sections,
+    staples: DEMO_GROCERY.staples,
+  }));
+  const [staplesOpen, setStaplesOpen] = useState(false);
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
   const classifier = useMemo(() => createApiClassifier(fetch), []);
@@ -24,9 +31,13 @@ export default function ListPage() {
     const text = draft.trim();
     setPending(true);
     const results = await classifier.classify([text]);
-    setSections((prev) => addItemToSections(prev, text, results[text]));
+    setList((prev) => addTypedItem(prev, text, results[text]));
     setDraft("");
     setPending(false);
+  }
+
+  function pickStaple(id: string) {
+    setList((prev) => moveStapleToList(prev, id));
   }
 
   // Checkbox state lives here, keyed by canonical ingredient id so it
@@ -63,7 +74,7 @@ export default function ListPage() {
 
         {/* Sections */}
         <div className="mt-4 flex flex-col gap-4">
-          {sections.map((section) => (
+          {list.sections.map((section) => (
             <section key={section.name}>
               <h2 className="text-xs font-semibold text-muted uppercase tracking-wide">
                 {section.name}
@@ -84,6 +95,13 @@ export default function ListPage() {
             </section>
           ))}
         </div>
+
+        <StaplesGroup
+          staples={list.staples}
+          expanded={staplesOpen}
+          onToggle={() => setStaplesOpen((o) => !o)}
+          onPick={pickStaple}
+        />
 
         <AddItemForm value={draft} pending={pending} onChange={setDraft} onSubmit={addItem} />
 

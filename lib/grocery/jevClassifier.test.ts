@@ -97,6 +97,26 @@ test("concurrency cap is respected", async () => {
   assert.ok(peak <= 3, `peak ${peak}`);
 });
 
+test("the cache stays bounded", async () => {
+  const table = Object.fromEntries(["a1", "a2", "a3"].map((n) => [n, ["PANTRY", 0.9] as [string, number]]));
+  const jev = fakeJev(table);
+  const cache = new Map();
+  await createJevClassifier({ send: jev.send, cache, maxCacheSize: 2 }).classify(["a1", "a2", "a3"]);
+  assert.equal(cache.size, 2);
+});
+
+test("cache eviction drops the least recently used name", async () => {
+  const table = Object.fromEntries(["b1", "b2", "b3"].map((n) => [n, ["PANTRY", 0.9] as [string, number]]));
+  const jev = fakeJev(table);
+  const classifier = createJevClassifier({ send: jev.send, maxCacheSize: 2 });
+  await classifier.classify(["b1"]);
+  await classifier.classify(["b2"]);
+  await classifier.classify(["b1"]); // hit: b1 is now most recent
+  await classifier.classify(["b3"]); // evicts b2, not b1
+  await classifier.classify(["b1"]);
+  assert.deepEqual(jev.asked, ["b1", "b2", "b3"]);
+});
+
 // --- browser client -------------------------------------------------------
 
 test("api client returns the route's answers", async () => {

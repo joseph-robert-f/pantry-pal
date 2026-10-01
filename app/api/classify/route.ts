@@ -6,11 +6,17 @@ import {
   type ItemClassifier,
 } from "@/lib/grocery";
 import type { SystemOneRequest, SystemOneResponse } from "@/lib/grocery/jevQuestions";
+import { clientKey, createRateLimiter } from "@/lib/rateLimit";
 
 // POST /api/classify  { names: string[] } → { results: { [name]: Classification } }
 //
 // The only place the Jev key is used (plan §4 rule 1). With no key set, or if
 // Jev fails, answers come from the keyword rules, so the route always works.
+//
+// Abuse guard (#J3b): a per-client limit returns 429. A per-instance Jev
+// budget is charged per actual Jev call (catalogue and cache hits are free);
+// over budget, that one name falls back to the rules, so users still get an
+// answer and cached Jev answers keep being served.
 
 const ENDPOINT = "https://api.typesafe.ai/v1/systemone";
 const TIMEOUT_MS = 1500;
@@ -21,10 +27,17 @@ const MAX_NAME_LENGTH = 80;
 // is enough for the prototype.
 const cache = new Map<string, Classification>();
 
+// Per client: burst of 10, then 30 requests a minute.
+const perClient = createRateLimiter({ capacity: 10, refillPerSec: 0.5 });
+// Per instance: Jev calls, about half the 40 requests/s account limit.
+const jevBudget = createRateLimiter({ capacity: 100, refillPerSec: 20, maxKeys: 1 });
+
 function jevClassifier(apiKey: string): ItemClassifier {
   return createJevClassifier({
     cache,
     send: async (body: SystemOneRequest) => {
+      // Over budget: throw, so the classifier answers this name from the rules.
+      if (!jevBudget.take("jev", Date.now()).ok) throw new Error("Jev budget exhausted");
       const res = await fetch(ENDPOINT, {
         method: "POST",
         headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
@@ -47,6 +60,14 @@ function parseNames(body: unknown): string[] | null {
 }
 
 export async function POST(request: Request) {
+  const limited = perClient.take(clientKey(request.headers), Date.now());
+  if (!limited.ok) {
+    return NextResponse.json(
+      { error: "Too many requests. Try again shortly." },
+      { status: 429, headers: { "Retry-After": String(limited.retryAfterSec) } },
+    );
+  }
+
   const names = parseNames(await request.json().catch(() => null));
   if (!names) {
     return NextResponse.json(

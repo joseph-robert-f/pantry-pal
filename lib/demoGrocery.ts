@@ -31,6 +31,10 @@ export type GroceryItemData = {
   needsReview?: boolean; // low-confidence aisle (#J3): shows "check aisle"
 };
 
+// A pantry staple held off the list (oil, salt, spices). Name only: recipe
+// amounts like "7 tbsp" mean nothing when you buy a whole bottle.
+export type StapleData = { id: string; name: string; section: Section };
+
 export type GrocerySectionData = {
   section: Section;
   name: string; // display label from the string catalogue
@@ -80,7 +84,9 @@ export const DEMO_GROCERY = {
       }),
     ),
   })),
-  staples: current.staples,
+  staples: current.staples.map(
+    (line): StapleData => ({ id: line.id, name: line.name, section: line.section }),
+  ),
 };
 
 // Add an item the user typed (#J3). Pure: returns new sections in store-walk
@@ -92,17 +98,58 @@ export function addItemToSections(
 ): GrocerySectionData[] {
   const name = text.trim();
   const id = lookupCatalogue(name)?.id ?? `added:${normalizeName(name)}`;
-  if (sections.some((s) => s.items.some((i) => i.id === id))) return sections;
+  if (isOnList(sections, id)) return sections;
 
-  const item: GroceryItemData = {
+  return insertItem(sections, classification.section, {
     id,
     qty: "",
     name,
     checked: false,
     status: "new",
     needsReview: classification.needsReview,
+  });
+}
+
+// The /list screen's editable state: the shopping list plus the staples still
+// held back. One object, so every change updates both sides together.
+export type ListState = { sections: GrocerySectionData[]; staples: StapleData[] };
+
+// Move a staple the user is out of onto the list (#J1b), in its aisle,
+// marked new. Pure. If the item is already on the list (typed earlier), it
+// only leaves the staples group.
+export function moveStapleToList(state: ListState, id: string): ListState {
+  const staple = state.staples.find((s) => s.id === id);
+  if (!staple) return state;
+  const staples = state.staples.filter((s) => s.id !== id);
+  if (isOnList(state.sections, id)) return { sections: state.sections, staples };
+  return {
+    sections: insertItem(state.sections, staple.section, {
+      id: staple.id,
+      qty: "",
+      name: staple.name,
+      checked: false,
+      status: "new",
+    }),
+    staples,
   };
-  const target = classification.section;
+}
+
+// Add a typed item (#J3) and drop it from the staples group if it was one.
+export function addTypedItem(state: ListState, text: string, classification: Classification): ListState {
+  const sections = addItemToSections(state.sections, text, classification);
+  const id = lookupCatalogue(text.trim())?.id;
+  return { sections, staples: id ? state.staples.filter((s) => s.id !== id) : state.staples };
+}
+
+function isOnList(sections: GrocerySectionData[], id: string): boolean {
+  return sections.some((s) => s.items.some((i) => i.id === id));
+}
+
+function insertItem(
+  sections: GrocerySectionData[],
+  target: Section,
+  item: GroceryItemData,
+): GrocerySectionData[] {
   const exists = sections.some((s) => s.section === target);
   const next = exists
     ? sections.map((s) => (s.section === target ? { ...s, items: [...s.items, item] } : s))

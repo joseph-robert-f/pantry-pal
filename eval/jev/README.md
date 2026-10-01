@@ -66,6 +66,28 @@ generalize (99.2%).
 4. **Watch the rate limit.** 40 requests/s. A list with more than ~40 new
    items at once needs the client-side concurrency cap (the eval uses 8).
 
+## Self-consistency (#J2a, 2026-09-30)
+
+`npm run consistency:jev` asks the same question 5 times with no cache: every
+item with recorded confidence < 0.95 (26 items) plus 20 confident controls.
+230 calls, $0.005. Report: `results/jev-1.13.0_v2_consistency.json`.
+
+| Group | Section changed | "check aisle" flag flipped | Confidence spread (mean / max) |
+|---|---|---|---|
+| Confident (≥ 0.95), 20 items | 0 | 0 | 0.001 / 0.010 |
+| Uncertain (< 0.95), 26 items | 1 | 3 | 0.042 / 0.090 |
+
+- Confident answers are stable.
+- Near the threshold, confidence moves by up to ±0.09 between identical
+  calls. The flag flipped only for items at ~0.70 (electrolyte drink mix,
+  fresh salsa, crab legs).
+- The one section change (guacamole: PRODUCE/PANTRY) is at confidence 0.45 —
+  flagged "check aisle" on every call.
+- **Decision: no threshold change.** The classifier caches the first answer
+  per name and never re-asks, so users see a stable result; moving the
+  threshold only moves which items sit on the edge. Do not re-query Jev on
+  render or refresh.
+
 ## Limits of this eval
 
 - 411 items total, labeled by one person. Sections follow a typical US
@@ -73,8 +95,8 @@ generalize (99.2%).
 - The holdout has only 1–3 errors per run, so the 0.70 threshold is a
   reasonable starting point, not a precise estimate. Re-run on real user
   items once #J3 logs them.
-- One run per configuration. Self-consistency across repeated calls is not
-  measured yet.
+- One run per configuration for the accuracy numbers. Self-consistency is
+  measured separately above.
 
 ---
 

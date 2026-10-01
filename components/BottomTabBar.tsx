@@ -20,7 +20,7 @@ const TABS: { key: TabKey; href: string; label: string; Icon: typeof Calendar }[
 // inactive = muted + outline.
 export default function BottomTabBar({ active }: BottomTabBarProps) {
   return (
-    <nav className="border-t border-hairline bg-card flex shrink-0" aria-label="Primary">
+    <nav className="border-t border-hairline bg-card flex shrink-0" aria-label={STRINGS.a11y_nav_primary}>
       {TABS.map(({ key, href, label, Icon }) => {
         const isActive = key === active;
         return (

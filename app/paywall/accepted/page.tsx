@@ -9,10 +9,10 @@ export default function PaywallAcceptedPage() {
   return (
     <PhoneFrame>
       <main className="flex-1 flex flex-col items-center justify-center px-8 text-center gap-4">
-        <CoachBubble>{STRINGS.trial_accepted_headline}</CoachBubble>
+        <CoachBubble as="h1">{STRINGS.trial_accepted_headline}</CoachBubble>
         <p className="text-sm text-muted">{STRINGS.trial_accepted_sub}</p>
-        <Link href="/plan" className="text-sm text-terracotta underline">
-          Back to your plan
+        <Link href="/plan" className="min-h-6 py-1 text-sm text-terracotta underline">
+          {STRINGS.trial_accepted_back}
         </Link>
       </main>
     </PhoneFrame>
