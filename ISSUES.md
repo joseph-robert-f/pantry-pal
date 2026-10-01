@@ -153,3 +153,4 @@ _#D1–D4 closed — see Resolved._
 - **2026-09-30** — #J1b done: "Check you have" staples group on /list.
 - **2026-09-30** — Code review of the branch (9 findings, all fixed): typed + picked staple listed twice; stale state on quick taps; Jev budget charged for free hits and bypassed the cache; spoofable client key; toast fade-out lost; limiter bound on refusal path; FIFO → LRU cache; aria-controls to an unmounted element.
 - **2026-09-30** — #J2a self-consistency measured: stable when confident; ±0.09 near the threshold; cache makes it a non-issue for users.
+- **2026-10-01** — Added CI (typecheck, both test suites, Jev replay freshness check, build) and a Claude Code web SessionStart hook (`npm install`). Judgments/eval replays are now byte-stable so CI can diff them.
