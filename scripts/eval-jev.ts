@@ -9,7 +9,7 @@
 // eval/jev/cache/, so a re-run replays them without API calls; pass --live to
 // ignore the cache. Needs TYPESAFE_API_KEY only for uncached requests.
 
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createCachedJevClient, pool } from "./jevClient.ts";
 import { classifyWithRules } from "../lib/grocery/rulesClassifier.ts";
 import {
@@ -144,8 +144,15 @@ const report = {
     .map(({ item, accept, choice, confidence, runnerUp }) => ({ item, accept, choice, confidence, runnerUp })),
 };
 
+// A pure replay (no live calls) rewrites the report only if the scores
+// changed, so date and cost fields don't churn and CI can diff the output.
 mkdirSync("eval/jev/results", { recursive: true });
-writeFileSync(`eval/jev/results/${runName}.json`, JSON.stringify(report, null, 2) + "\n");
+const reportPath = `eval/jev/results/${runName}.json`;
+const scores = (r: Record<string, unknown>) => JSON.stringify({ ...r, date: null, cost: null });
+const previous = existsSync(reportPath) ? JSON.parse(readFileSync(reportPath, "utf8")) : null;
+if (stats.calls > 0 || !previous || scores(previous) !== scores(report)) {
+  writeFileSync(reportPath, JSON.stringify(report, null, 2) + "\n");
+}
 
 // --- summary --------------------------------------------------------------
 

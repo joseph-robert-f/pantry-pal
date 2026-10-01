@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Unit tests (Node test runner)
+        run: npm test
+
+      - name: Unit tests (Vitest)
+        run: npx vitest run
+
+      # Replays from committed caches: no API key, no network calls to Jev.
+      # A diff means recipes, rubric, or eval inputs changed without
+      # re-running the scripts (npm run judge:recipes / eval:jev -- --live).
+      - name: Jev judgments and eval are up to date
+        run: |
+          npm run -s judge:recipes > /dev/null
+          npm run -s eval:jev -- --mode single --criteria v2 > /dev/null
+          npm run -s eval:jev -- --mode single --criteria v2 --dataset holdout > /dev/null
+          git diff --exit-code -- lib/recipes eval/jev
+
+      - name: Build
+        run: npm run build
