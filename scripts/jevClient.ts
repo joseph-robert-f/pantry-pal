@@ -35,7 +35,14 @@ export function createCachedJevClient(cachePath: string, { live = false, noCache
       return cache[key];
     }
     const apiKey = process.env.TYPESAFE_API_KEY;
-    if (!apiKey) throw new Error("TYPESAFE_API_KEY is not set and the request is not cached");
+    if (!apiKey) {
+      throw new Error(
+        "This Jev request is not in the cache and TYPESAFE_API_KEY is not set. " +
+          "The recipes, rubric, or eval inputs changed: re-run the script with the key " +
+          "(npm run judge:recipes, or npm run eval:jev -- ...) and commit the updated cache " +
+          "and generated files.",
+      );
+    }
 
     for (let attempt = 0; ; attempt++) {
       const started = performance.now();

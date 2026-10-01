@@ -42,6 +42,20 @@ node scripts/qa-browser.cjs http://localhost:3000 /tmp/qa  # browser QA of every
 npm run start       # serve the production build
 ```
 
+## CI and checks
+
+GitHub Actions (`.github/workflows/ci.yml`) runs on every PR and push to
+`main`: `npm ci`, typecheck, `npm test`, `npx vitest run`, a replay of the
+Jev recipe judgments and eval from committed caches (no API key; fails if
+`lib/recipes` or `eval/jev` would change — re-run the script with the key and
+commit), and `next build`. Node version: `.nvmrc` (22; needs ≥ 22.18 because
+`npm test` runs `.ts` files directly).
+
+There is no ESLint config; `npm run typecheck` is the static check.
+
+In Claude Code on the web, `.claude/hooks/session-start.sh` installs
+dependencies when a session starts.
+
 ## Routes
 
 | Route | Screen |
