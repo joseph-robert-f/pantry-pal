@@ -1,0 +1,52 @@
+{"line": "ALDI CHKN BREAST TNDRLNS", "accept": ["chicken breast", "NONE"], "food": true}
+{"line": "FOSTER FARMS BNLS BRST", "accept": ["chicken breast"], "food": true}
+{"line": "O ORG CHKN THIGHS", "accept": ["chicken thighs"], "food": true}
+{"line": "BONE-IN THIGHS 2.4LB", "accept": ["chicken thighs", "NONE"], "food": true}
+{"line": "COHO SALMON PORTIONS", "accept": ["salmon filets"], "food": true}
+{"line": "SALMON STEAK", "accept": ["salmon filets", "NONE"], "food": true}
+{"line": "GROUND CHUCK 85/15", "accept": ["ground beef"], "food": true}
+{"line": "GRASSFED GRND BEEF", "accept": ["ground beef"], "food": true}
+{"line": "GARNET YAMS", "accept": ["sweet potatoes"], "food": true}
+{"line": "SPINACH BUNCH", "accept": ["spinach"], "food": true}
+{"line": "AVOCADO", "accept": ["avocados"], "food": true}
+{"line": "BANANAS 2.3LB @.59", "accept": ["bananas"], "food": true}
+{"line": "EINSTEIN BAGELS", "accept": ["bagels"], "food": true}
+{"line": "MARINARA 4 CHEESE", "accept": ["marinara"], "food": true}
+{"line": "GRATED PARMESAN", "accept": ["parmesan"], "food": true}
+{"line": "CAGE FREE EGGS DZ", "accept": ["eggs"], "food": true}
+{"line": "PLUGRA BUTTER", "accept": ["butter"], "food": true}
+{"line": "SOURDOUGH BOULE", "accept": ["sourdough"], "food": true}
+{"line": "ARBORIO RICE", "accept": ["rice"], "food": true}
+{"line": "LINGUINE 1LB", "accept": ["pasta"], "food": true}
+{"line": "LEMON", "accept": ["lemons"], "food": true}
+{"line": "GARLIC", "accept": ["garlic"], "food": true}
+{"line": "CURLY PARSLEY", "accept": ["parsley"], "food": true}
+{"line": "THAI BASIL", "accept": ["basil"], "food": true}
+{"line": "GINGER", "accept": ["ginger"], "food": true}
+{"line": "PERSIAN CUKES 6CT", "accept": ["cucumber"], "food": true}
+{"line": "ASIAN STIR FRY BLEND", "accept": ["stir-fry vegetables"], "food": true}
+{"line": "SWT POT FRIES FRZ", "accept": ["NONE"], "food": true}
+{"line": "KEY LIMES BAG", "accept": ["NONE"], "food": true}
+{"line": "LEMON CURD", "accept": ["NONE"], "food": true}
+{"line": "AVOCADO TOAST KIT", "accept": ["NONE", "avocados"], "food": true}
+{"line": "BANANA PEPPERS", "accept": ["NONE"], "food": true}
+{"line": "BUTTERMILK", "accept": ["NONE"], "food": true}
+{"line": "PEANUT BUTTER", "accept": ["NONE"], "food": true}
+{"line": "RICE VINEGAR", "accept": ["NONE"], "food": true}
+{"line": "GARLIC BREAD FRZ", "accept": ["NONE"], "food": true}
+{"line": "TURKEY BACON", "accept": ["NONE"], "food": true}
+{"line": "PORK CHOPS", "accept": ["NONE"], "food": true}
+{"line": "CHOC CHIP COOKIES", "accept": ["NONE"], "food": true}
+{"line": "SPARKLING WATER 12PK", "accept": ["NONE"], "food": true}
+{"line": "MOZZARELLA BALL", "accept": ["NONE"], "food": true}
+{"line": "BLUEBERRIES PINT", "accept": ["NONE"], "food": true}
+{"line": "HUMMUS", "accept": ["NONE"], "food": true}
+{"line": "KOMBUCHA", "accept": ["NONE"], "food": true}
+{"line": "KLEENEX 3PK", "accept": ["NONE"], "food": false}
+{"line": "BLEACH", "accept": ["NONE"], "food": false}
+{"line": "CAT LITTER", "accept": ["NONE"], "food": false}
+{"line": "PARCHMENT PAPER", "accept": ["NONE"], "food": false}
+{"line": "DISHWASHER PODS", "accept": ["NONE"], "food": false}
+{"line": "FLOWERS BOUQUET", "accept": ["NONE"], "food": false}
+{"line": "SUNSCREEN SPF50", "accept": ["NONE"], "food": false}
+{"line": "WINDEX", "accept": ["NONE"], "food": false}

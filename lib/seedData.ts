@@ -220,6 +220,31 @@ export const DEMO_PLAN = {
   eventIds: ["sat_long_run"],
 };
 
+// Sample receipt for the "Try a sample receipt" demo (receipt pipeline step 1).
+// OCR-style text: store header, abbreviations, a continuation line, a coupon,
+// a non-food item, a food item not on the list, totals, and payment.
+export const DEMO_RECEIPT = `GREEN VALLEY MARKET
+1200 MAIN ST
+10/04/2026 18:22
+KS ORG BNLS SKNLS CHKN BRST 24.99 F
+CHKN THGH BNLS
+1.52 lb @ 3.49/lb 5.30
+ATL SALMON FLT 12.98 F
+BABY SPNCH 16OZ 4.49 F
+HASS AVOCADO 3CT 5.49 F
+BANANAS ORG
+3 @ 0.29 0.87
+THMS EVRYTHNG BAGEL 6PK 4.99 F
+RAOS MARINARA 24OZ 8.99 F
+MFR COUPON -1.00
+PARM REGG WEDGE 7.49 F
+CLIF BAR CHOC CHIP 1.79 F
+GV DISH SOAP 2.97
+SUBTOTAL 79.35
+TAX 0.24
+TOTAL 79.59
+VISA ************4321`;
+
 // Items shown pre-checked so the demo shows the strikethrough state.
 export const DEMO_CHECKED_IDS = ["lemon"];
 

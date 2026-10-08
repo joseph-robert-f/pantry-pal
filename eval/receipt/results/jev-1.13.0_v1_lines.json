@@ -1,0 +1,152 @@
+{
+  "run": "jev-1.13.0_v1_lines",
+  "date": "2026-10-08",
+  "lines": 118,
+  "listItems": 23,
+  "thresholds": {
+    "autoTick": 0.9,
+    "ask": 0.7,
+    "isFood": 0.5
+  },
+  "matchAccuracy": 0.9576271186440678,
+  "onListAccuracy": 0.987012987012987,
+  "notOnListAccuracy": 0.9024390243902439,
+  "foodAccuracyNotOnList": 0.975609756097561,
+  "actions": {
+    "tick": 77,
+    "ask": 3,
+    "unmatched": 24,
+    "ignore": 14
+  },
+  "sweep": [
+    {
+      "threshold": 0.5,
+      "ticks": 80,
+      "wrongTicks": 4,
+      "precision": 0.95,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.7,
+      "ticks": 80,
+      "wrongTicks": 4,
+      "precision": 0.95,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.8,
+      "ticks": 80,
+      "wrongTicks": 4,
+      "precision": 0.95,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.85,
+      "ticks": 77,
+      "wrongTicks": 3,
+      "precision": 0.961038961038961,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.9,
+      "ticks": 77,
+      "wrongTicks": 3,
+      "precision": 0.961038961038961,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.95,
+      "ticks": 76,
+      "wrongTicks": 3,
+      "precision": 0.9605263157894737,
+      "coverage": 0.948051948051948
+    },
+    {
+      "threshold": 0.99,
+      "ticks": 69,
+      "wrongTicks": 1,
+      "precision": 0.9855072463768116,
+      "coverage": 0.8831168831168831
+    }
+  ],
+  "errors": [
+    {
+      "line": "CUKES ORG 2CT",
+      "accept": [
+        "cucumber"
+      ],
+      "choice": "NONE",
+      "confidence": 0.47,
+      "food": true,
+      "foodP": 0.94,
+      "action": "unmatched",
+      "verify": null
+    },
+    {
+      "line": "BASIL PESTO",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "basil",
+      "confidence": 0.8,
+      "food": true,
+      "foodP": 0.98,
+      "action": "ask",
+      "verify": null
+    },
+    {
+      "line": "PARMESAN CRISPS",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "parmesan",
+      "confidence": 0.99,
+      "food": true,
+      "foodP": 0.98,
+      "action": "tick",
+      "verify": null
+    },
+    {
+      "line": "EGG WHITES 32OZ",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "eggs",
+      "confidence": 0.95,
+      "food": true,
+      "foodP": 0.98,
+      "action": "tick",
+      "verify": null
+    },
+    {
+      "line": "GARLIC POWDER",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "garlic",
+      "confidence": 0.95,
+      "food": true,
+      "foodP": 0.97,
+      "action": "tick",
+      "verify": null
+    },
+    {
+      "line": "DOG FOOD 30LB",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "NONE",
+      "confidence": 1,
+      "food": false,
+      "foodP": 0.85,
+      "action": "unmatched",
+      "verify": null
+    }
+  ],
+  "cost": {
+    "liveCalls": 0,
+    "cachedCalls": 118,
+    "inputTokens": 65250,
+    "usd": 0.0027405000000000003
+  }
+}

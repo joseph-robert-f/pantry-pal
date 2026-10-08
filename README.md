@@ -37,6 +37,7 @@ npm run typecheck   # tsc --noEmit, strict mode
 npm test            # grocery engine unit tests (Node built-in runner)
 npm run eval:jev    # Jev accuracy eval (replays cached responses; see eval/jev/README.md)
 npm run consistency:jev  # Jev repeat-call stability near the threshold (live calls, ~$0.005)
+npm run eval:receipt   # receipt-line matching eval (replays cache; see eval/receipt/README.md)
 npm run judge:recipes  # Jev recipe judgments → lib/recipes/judgments.generated.ts (re-run after editing RECIPES)
 node scripts/qa-browser.cjs http://localhost:3000 /tmp/qa  # browser QA of every route (needs Playwright; see file header)
 npm run start       # serve the production build
@@ -67,6 +68,7 @@ dependencies when a session starts.
 | `/coach` | Coach stub |
 | `/discover` | Discover stub |
 | `/paywall` → `/paywall/accepted` | Plus paywall + trial-accepted state |
+| `POST /api/receipt` | Server-only. Matches pasted receipt text to list items with Jev (match + verify); rules fallback |
 | `POST /api/classify` | Server-only. Classifies grocery items into aisle sections with Jev; keyword-rules fallback with no key or on error |
 
 ## Project structure

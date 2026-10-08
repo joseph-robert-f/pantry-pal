@@ -14,7 +14,8 @@
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"lib/**/*.test.ts\"",
     "eval:jev": "NODE_USE_ENV_PROXY=1 node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=UNDICI-EHPA scripts/eval-jev.ts",
     "judge:recipes": "NODE_USE_ENV_PROXY=1 node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=UNDICI-EHPA scripts/judge-recipes.ts",
-    "consistency:jev": "NODE_USE_ENV_PROXY=1 node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=UNDICI-EHPA scripts/consistency-jev.ts"
+    "consistency:jev": "NODE_USE_ENV_PROXY=1 node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=UNDICI-EHPA scripts/consistency-jev.ts",
+    "eval:receipt": "NODE_USE_ENV_PROXY=1 node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=UNDICI-EHPA scripts/eval-receipt.ts"
   },
   "dependencies": {
     "lucide-react": "^0.453.0",

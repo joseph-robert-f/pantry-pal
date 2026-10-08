@@ -1,0 +1,92 @@
+{
+  "run": "jev-1.13.0_v3_holdout",
+  "date": "2026-10-08",
+  "lines": 52,
+  "listItems": 23,
+  "thresholds": {
+    "autoTick": 0.9,
+    "ask": 0.7,
+    "isFood": 0.5
+  },
+  "matchAccuracy": 0.9807692307692307,
+  "onListAccuracy": 0.9642857142857143,
+  "notOnListAccuracy": 1,
+  "foodAccuracyNotOnList": 1,
+  "actions": {
+    "tick": 25,
+    "ask": 0,
+    "unmatched": 19,
+    "ignore": 8
+  },
+  "sweep": [
+    {
+      "threshold": 0.5,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    },
+    {
+      "threshold": 0.7,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    },
+    {
+      "threshold": 0.8,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    },
+    {
+      "threshold": 0.85,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    },
+    {
+      "threshold": 0.9,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    },
+    {
+      "threshold": 0.95,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    },
+    {
+      "threshold": 0.99,
+      "ticks": 25,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8928571428571429
+    }
+  ],
+  "errors": [
+    {
+      "line": "PERSIAN CUKES 6CT",
+      "accept": [
+        "cucumber"
+      ],
+      "choice": "NONE",
+      "confidence": 0.93,
+      "food": true,
+      "foodP": 0.96,
+      "action": "unmatched",
+      "verify": null
+    }
+  ],
+  "cost": {
+    "liveCalls": 80,
+    "cachedCalls": 0,
+    "inputTokens": 46245,
+    "usd": 0.0019422900000000002
+  }
+}

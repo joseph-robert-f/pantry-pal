@@ -21,6 +21,7 @@ parent_spec: pantry_pal_spec_v0.1.html
 >   `POST /api/classify` (#J3).
 > - §7.3: attribute tag pills from code and stored Jev judgments (#J4), and a
 >   swap hint row that opens the paywall (#J4a).
+> - §7.4 (2026-10-08): "Paste a receipt" panel — receipt pipeline step 1, text only.
 > - Appendix: new files for the grocery engine, the Jev eval, and the route.
 
 A clickable web prototype that lets the founder and a small circle of friends-and-family experience the Pantry Pal product flow before any iOS code is written. Built in Next.js + Tailwind so that components map cleanly to the eventual React Native + NativeWind iOS build.
@@ -624,6 +625,7 @@ then it reads exactly: "45P · 52C · 18F · 540 cal · 30min".
 2. Subhead `STRINGS.grocery_subhead` in `text-xs text-muted`
 3. Title `STRINGS.grocery_title` in `text-xl font-bold`
 4. Diff banner: `bg-terracotta-soft text-terracotta-deep`, 34px tall, contains `"Added Saturday long run:"` on line 1 and `"+ bagels, bananas"` on line 2 in font-semibold. The banner text comes from the grocery engine's diff, not from seed text. If the plan change adds no items, the banner does not show.
+4a. "Paste a receipt" panel (receipt pipeline step 1, `docs/receipt-pipeline-plan.md`): a collapsed, bordered disclosure under the diff banner. Expanded: a text area (`STRINGS.receipt_placeholder`), `STRINGS.receipt_submit`, and `STRINGS.receipt_sample` (fills `DEMO_RECEIPT`). The route file sends the text and the list items to `POST /api/receipt`. Matched items are ticked off. The result shows `STRINGS.receipt_ticked`, a "Did you buy …?" row with Yes / No per uncertain item, `STRINGS.receipt_unmatched` with food lines not on the list, and `STRINGS.receipt_still_need` with unticked list items.
 5. For each section in `DEMO_GROCERY.sections`:
    - Section header in `text-xs font-semibold text-muted uppercase tracking-wide`
    - Items: checkbox + qty + name. Checked items have `line-through text-muted` styling. Items with `status: "new"` have a 2px sage border on their checkbox and a small `new` label on the right in `text-sage`.
@@ -953,6 +955,7 @@ pantry-pal-prototype/
 │   ├── recipe/[id]/page.tsx     # Recipe detail
 │   ├── list/page.tsx            # Grocery list
 │   ├── api/classify/route.ts    # v0.2: Jev aisle classification (server-only key)
+│   ├── api/receipt/route.ts     # receipt step 1: Jev receipt-line matching
 │   ├── coach/page.tsx           # Stub
 │   ├── discover/page.tsx        # Stub
 │   ├── paywall/page.tsx         # Plus paywall
@@ -970,7 +973,8 @@ pantry-pal-prototype/
 │   ├── DemoControls.tsx
 │   ├── AddItemForm.tsx          # v0.2: add-item row on /list
 │   ├── StaplesGroup.tsx         # v0.2: "Check you have" staples group on /list
-│   └── SwapHint.tsx             # v0.2: "Better fit for a {day}" row on /recipe
+│   ├── SwapHint.tsx             # v0.2: "Better fit for a {day}" row on /recipe
+│   └── ReceiptPanel.tsx         # receipt step 1: "Paste a receipt" panel on /list
 ├── lib/
 │   ├── seedData.ts              # DEMO_USER, DEMO_WEEK, RECIPES, DEMO_WEEKS, grocery plan inputs
 │   ├── coachStrings.ts          # STRINGS catalogue
