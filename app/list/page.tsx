@@ -6,15 +6,19 @@ import BottomTabBar from "@/components/BottomTabBar";
 import GroceryItem from "@/components/GroceryItem";
 import AddItemForm from "@/components/AddItemForm";
 import StaplesGroup from "@/components/StaplesGroup";
+import ReceiptPanel from "@/components/ReceiptPanel";
 import { STRINGS } from "@/lib/coachStrings";
 import { DEMO_GROCERY, addTypedItem, moveStapleToList, type ListState } from "@/lib/demoGrocery";
 import { createApiClassifier } from "@/lib/grocery";
+import { createApiReceiptMatcher, type ReceiptSummary } from "@/lib/receipt";
+import { DEMO_RECEIPT } from "@/lib/seedData";
 
 // Grocery list (spec §7.4). The diff-based list — the signature feature beyond
 // meal planning. The list, the "new" flags, and the diff banner all come from
 // the grocery engine (lib/grocery, plan #J1) comparing this week's plan with
 // last week's. Items the user types go through /api/classify (Jev, #J3) to
-// find their aisle.
+// find their aisle. A pasted receipt goes through /api/receipt (Jev match +
+// verify) and ticks off what was bought.
 export default function ListPage() {
   // Sections and staples change together, so they live in one state object
   // and every update is functional (no stale snapshots on quick taps).
@@ -56,6 +60,47 @@ export default function ListPage() {
     setChecked((prev) => ({ ...prev, [key]: !prev[key] }));
   }
 
+  // Receipt (receipt pipeline step 1).
+  const [receiptOpen, setReceiptOpen] = useState(false);
+  const [receiptText, setReceiptText] = useState("");
+  const [receiptPending, setReceiptPending] = useState(false);
+  const [receipt, setReceipt] = useState<ReceiptSummary | null>(null);
+  const [receiptTicked, setReceiptTicked] = useState(0); // newly ticked, incl. "Yes"
+  const matchReceipt = useMemo(() => createApiReceiptMatcher(fetch), []);
+
+  async function submitReceipt() {
+    setReceiptPending(true);
+    const items = list.sections.flatMap((s) => s.items.map((i) => ({ id: i.id, name: i.name })));
+    const summary = await matchReceipt(receiptText, items);
+    // Count and ask only about items that were not already ticked.
+    const fresh = summary.tickIds.filter((id) => !checked[id]);
+    setChecked((prev) => {
+      const next = { ...prev };
+      for (const id of summary.tickIds) next[id] = true;
+      return next;
+    });
+    setReceiptTicked(fresh.length);
+    setReceipt({ ...summary, ask: summary.ask.filter((a) => !checked[a.item.id]) });
+    setReceiptPending(false);
+  }
+
+  function answerReceipt(id: string, bought: boolean) {
+    if (bought) {
+      setChecked((prev) => ({ ...prev, [id]: true }));
+      setReceiptTicked((n) => n + 1);
+    }
+    // "No" means the user still needs it.
+    setReceipt((prev) => {
+      if (!prev) return prev;
+      const asked = prev.ask.find((a) => a.item.id === id);
+      return {
+        ...prev,
+        ask: prev.ask.filter((a) => a.item.id !== id),
+        stillNeed: !bought && asked ? [...prev.stillNeed, asked.item] : prev.stillNeed,
+      };
+    });
+  }
+
   return (
     <PhoneFrame>
       <main className="flex-1 flex flex-col px-4 pt-4 pb-4 overflow-y-auto">
@@ -71,6 +116,25 @@ export default function ListPage() {
             </p>
           </div>
         ) : null}
+
+        <ReceiptPanel
+          expanded={receiptOpen}
+          onToggle={() => setReceiptOpen((o) => !o)}
+          text={receiptText}
+          onTextChange={setReceiptText}
+          onSample={() => setReceiptText(DEMO_RECEIPT)}
+          onSubmit={submitReceipt}
+          pending={receiptPending}
+          result={
+            receipt && {
+              tickedCount: receiptTicked,
+              ask: receipt.ask.map((a) => ({ id: a.item.id, name: a.item.name })),
+              unmatched: receipt.unmatched,
+              stillNeed: receipt.stillNeed.filter((i) => !checked[i.id]).map((i) => i.name),
+            }
+          }
+          onAnswer={answerReceipt}
+        />
 
         {/* Sections */}
         <div className="mt-4 flex flex-col gap-4">

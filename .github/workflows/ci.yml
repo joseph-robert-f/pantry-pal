@@ -37,13 +37,15 @@ jobs:
 
       # Replays from committed caches: no API key, no network calls to Jev.
       # A diff means recipes, rubric, or eval inputs changed without
-      # re-running the scripts (npm run judge:recipes / eval:jev -- --live).
+      # re-running the scripts (judge:recipes, eval:jev or eval:receipt with --live).
       - name: Jev judgments and eval are up to date
         run: |
           npm run -s judge:recipes > /dev/null
           npm run -s eval:jev -- --mode single --criteria v2 > /dev/null
           npm run -s eval:jev -- --mode single --criteria v2 --dataset holdout > /dev/null
-          git diff --exit-code -- lib/recipes eval/jev
+          npm run -s eval:receipt > /dev/null
+          npm run -s eval:receipt -- --dataset holdout > /dev/null
+          git diff --exit-code -- lib/recipes eval/jev eval/receipt
 
       - name: Build
         run: npm run build

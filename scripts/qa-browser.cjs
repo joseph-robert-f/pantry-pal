@@ -158,6 +158,20 @@ async function layoutChecks(page, vp, route) {
     await p.waitForFunction(() => document.querySelector('#add-item').value === '', null, { timeout: 8000 });
     const protein = p.locator('section', { has: p.locator('h2', { hasText: 'PROTEIN' }) });
     check(vp, where, (await protein.innerText()).includes('chx thighs bnls'), 'typed item lands in PROTEIN via Enter');
+    // Receipt panel: sample receipt → match → items ticked, Clif bar not on list.
+    const receiptBtn = p.getByRole('button', { name: 'Paste a receipt' });
+    check(vp, where, (await receiptBtn.getAttribute('aria-expanded')) === 'false', 'receipt panel collapsed by default');
+    await receiptBtn.click();
+    await p.getByRole('button', { name: 'Try a sample receipt' }).click();
+    await p.getByRole('button', { name: 'Match receipt' }).click();
+    await p.getByText(/Ticked off \d+\./).waitFor({ timeout: 15000 });
+    for (const item of ['chicken breast', 'bananas', 'bagels']) {
+      const row = p.getByRole('button', { name: new RegExp(`\\b${item}\\b`) }).first();
+      check(vp, where, (await row.getAttribute('aria-pressed')) === 'true', `receipt ticks ${item}`);
+    }
+    check(vp, where, await p.getByText(/Not on your list:.*CLIF BAR/).isVisible(), 'receipt shows the Clif bar as not on the list');
+    const receiptResult = p.locator('[aria-live="polite"]', { hasText: 'Ticked off' });
+    check(vp, where, !/DISH SOAP/.test(await receiptResult.innerText()), 'receipt ignores dish soap (not shown in the result)');
     const staplesBtn = p.getByRole('button', { name: /Check you have \(\d+\)/ });
     check(vp, where, (await staplesBtn.getAttribute('aria-expanded')) === 'false', 'staples collapsed by default');
     await staplesBtn.click();

@@ -1,0 +1,104 @@
+{
+  "run": "jev-1.13.0_v3_lines",
+  "date": "2026-10-08",
+  "lines": 118,
+  "listItems": 23,
+  "thresholds": {
+    "autoTick": 0.9,
+    "ask": 0.7,
+    "isFood": 0.5
+  },
+  "matchAccuracy": 0.9830508474576272,
+  "onListAccuracy": 0.974025974025974,
+  "notOnListAccuracy": 1,
+  "foodAccuracyNotOnList": 1,
+  "actions": {
+    "tick": 74,
+    "ask": 0,
+    "unmatched": 29,
+    "ignore": 15
+  },
+  "sweep": [
+    {
+      "threshold": 0.5,
+      "ticks": 74,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.7,
+      "ticks": 74,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.8,
+      "ticks": 74,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.85,
+      "ticks": 74,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.9,
+      "ticks": 74,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.95,
+      "ticks": 73,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.948051948051948
+    },
+    {
+      "threshold": 0.99,
+      "ticks": 68,
+      "wrongTicks": 0,
+      "precision": 1,
+      "coverage": 0.8831168831168831
+    }
+  ],
+  "errors": [
+    {
+      "line": "BOUDIN SOURDOUGH",
+      "accept": [
+        "sourdough"
+      ],
+      "choice": "NONE",
+      "confidence": 0.93,
+      "food": true,
+      "foodP": 0.96,
+      "action": "unmatched",
+      "verify": 1.13
+    },
+    {
+      "line": "CUKES ORG 2CT",
+      "accept": [
+        "cucumber"
+      ],
+      "choice": "NONE",
+      "confidence": 0.48,
+      "food": true,
+      "foodP": 0.95,
+      "action": "unmatched",
+      "verify": null
+    }
+  ],
+  "cost": {
+    "liveCalls": 203,
+    "cachedCalls": 0,
+    "inputTokens": 114208,
+    "usd": 0.004796736
+  }
+}

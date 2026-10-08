@@ -1,0 +1,118 @@
+{"line": "KS ORG BNLS SKNLS CHKN BRST", "accept": ["chicken breast"], "food": true}
+{"line": "GV BNLS SKNLS CHICKEN BREAST", "accept": ["chicken breast"], "food": true}
+{"line": "TJ ORGANIC CHKN BREAST", "accept": ["chicken breast"], "food": true}
+{"line": "365 CHICKEN BRST BNLS", "accept": ["chicken breast"], "food": true}
+{"line": "PERDUE CHKN BRST FILLETS", "accept": ["chicken breast"], "food": true}
+{"line": "CHKN THGH BNLS 1.52LB", "accept": ["chicken thighs"], "food": true}
+{"line": "KS CHICKEN THIGHS BNLS", "accept": ["chicken thighs"], "food": true}
+{"line": "SMPL TRTH CHKN THIGH", "accept": ["chicken thighs"], "food": true}
+{"line": "BONELESS SKINLESS THIGHS", "accept": ["chicken thighs"], "food": true}
+{"line": "ATL SALMON FLT", "accept": ["salmon filets"], "food": true}
+{"line": "KS ATLANTIC SALMON", "accept": ["salmon filets"], "food": true}
+{"line": "WILD SOCKEYE SALMON FILLET", "accept": ["salmon filets"], "food": true}
+{"line": "TJ SALMON FILLETS", "accept": ["salmon filets"], "food": true}
+{"line": "GRND BF 90/10 1LB", "accept": ["ground beef"], "food": true}
+{"line": "GV 93% LEAN GROUND BEEF", "accept": ["ground beef"], "food": true}
+{"line": "KS GRND BEEF 88/12", "accept": ["ground beef"], "food": true}
+{"line": "80/20 GR CHUCK", "accept": ["ground beef"], "food": true}
+{"line": "SWT POTATO 2.1LB", "accept": ["sweet potatoes"], "food": true}
+{"line": "SWEET POTATOES BULK", "accept": ["sweet potatoes"], "food": true}
+{"line": "ORG YAMS", "accept": ["sweet potatoes"], "food": true}
+{"line": "BABY SPNCH 16OZ", "accept": ["spinach"], "food": true}
+{"line": "ORG BABY SPINACH", "accept": ["spinach"], "food": true}
+{"line": "365 SPINACH 5OZ", "accept": ["spinach"], "food": true}
+{"line": "HASS AVOCADO 3CT", "accept": ["avocados"], "food": true}
+{"line": "AVOCADOS BAG 4CT", "accept": ["avocados"], "food": true}
+{"line": "ORG AVOCADO EA", "accept": ["avocados"], "food": true}
+{"line": "BANANAS ORG", "accept": ["bananas"], "food": true}
+{"line": "BANANA", "accept": ["bananas"], "food": true}
+{"line": "GV BANANAS 3LB", "accept": ["bananas"], "food": true}
+{"line": "THMS EVRYTHNG BAGEL 6PK", "accept": ["bagels"], "food": true}
+{"line": "TJ PLAIN BAGELS", "accept": ["bagels"], "food": true}
+{"line": "DAVES KLR BGLS EPIC EVRYTHNG", "accept": ["bagels"], "food": true}
+{"line": "NY BAGELS 6CT", "accept": ["bagels"], "food": true}
+{"line": "RAOS MARINARA 24OZ", "accept": ["marinara"], "food": true}
+{"line": "PREGO TRAD PASTA SAUCE", "accept": ["marinara"], "food": true}
+{"line": "GV MARINARA SAUCE", "accept": ["marinara"], "food": true}
+{"line": "PARM REGG WEDGE", "accept": ["parmesan"], "food": true}
+{"line": "KS PARMIGIANO REGGIANO", "accept": ["parmesan"], "food": true}
+{"line": "SHRD PARMESAN 6OZ", "accept": ["parmesan"], "food": true}
+{"line": "LG BRWN EGGS 12CT", "accept": ["eggs"], "food": true}
+{"line": "KS ORG EGGS 24CT", "accept": ["eggs"], "food": true}
+{"line": "VITAL FRMS PSTR EGGS", "accept": ["eggs"], "food": true}
+{"line": "GV LARGE WHITE EGGS 18", "accept": ["eggs"], "food": true}
+{"line": "KERRYGOLD BTR UNSLT", "accept": ["butter"], "food": true}
+{"line": "GV SALTED BUTTER", "accept": ["butter"], "food": true}
+{"line": "LAND O LAKES UNSALTED", "accept": ["butter"], "food": true}
+{"line": "SOURDOUGH LOAF", "accept": ["sourdough"], "food": true}
+{"line": "BOUDIN SOURDOUGH", "accept": ["sourdough"], "food": true}
+{"line": "TJ SOURDOUGH BREAD", "accept": ["sourdough"], "food": true}
+{"line": "JASMINE RICE 5LB", "accept": ["rice"], "food": true}
+{"line": "KS CALROSE RICE", "accept": ["rice"], "food": true}
+{"line": "GV LONG GRAIN RICE", "accept": ["rice"], "food": true}
+{"line": "BASMATI RICE", "accept": ["rice"], "food": true}
+{"line": "BARILLA PENNE", "accept": ["pasta"], "food": true}
+{"line": "DECECCO SPAGHETTI", "accept": ["pasta"], "food": true}
+{"line": "GV RIGATONI 16OZ", "accept": ["pasta"], "food": true}
+{"line": "365 ORG FUSILLI", "accept": ["pasta"], "food": true}
+{"line": "LEMONS 3 @ .79", "accept": ["lemons"], "food": true}
+{"line": "MEYER LEMON", "accept": ["lemons"], "food": true}
+{"line": "ORG LEMONS BAG", "accept": ["lemons"], "food": true}
+{"line": "GARLIC 3PK", "accept": ["garlic"], "food": true}
+{"line": "ORG GARLIC BULB", "accept": ["garlic"], "food": true}
+{"line": "PEELED GARLIC CLOVES", "accept": ["garlic"], "food": true}
+{"line": "ITALIAN PARSLEY", "accept": ["parsley"], "food": true}
+{"line": "FLAT LEAF PRSLY", "accept": ["parsley"], "food": true}
+{"line": "FRESH BASIL CLAMSHELL", "accept": ["basil"], "food": true}
+{"line": "ORG BASIL", "accept": ["basil"], "food": true}
+{"line": "GINGER ROOT", "accept": ["ginger"], "food": true}
+{"line": "FRSH GINGER .32LB", "accept": ["ginger"], "food": true}
+{"line": "ENGLISH CUCUMBER", "accept": ["cucumber"], "food": true}
+{"line": "CUKES ORG 2CT", "accept": ["cucumber"], "food": true}
+{"line": "STIR FRY VEG MIX 12OZ", "accept": ["stir-fry vegetables"], "food": true}
+{"line": "TJ STIR FRY VEGETABLES", "accept": ["stir-fry vegetables"], "food": true}
+{"line": "LIMES 3 @ .33", "accept": ["NONE"], "food": true}
+{"line": "AVOCADO OIL 1L", "accept": ["NONE"], "food": true}
+{"line": "BUTTER LETTUCE", "accept": ["NONE"], "food": true}
+{"line": "BANANA BREAD", "accept": ["NONE"], "food": true}
+{"line": "SIMPLY LEMONADE", "accept": ["NONE"], "food": true}
+{"line": "GROUND TURKEY 93/7", "accept": ["NONE"], "food": true}
+{"line": "CHKN DRUMSTICKS", "accept": ["NONE"], "food": true}
+{"line": "SWEET POTATO CHIPS", "accept": ["NONE"], "food": true}
+{"line": "SPINACH ARTICHOKE DIP", "accept": ["NONE"], "food": true}
+{"line": "GINGER ALE 12PK", "accept": ["NONE"], "food": true}
+{"line": "BASIL PESTO", "accept": ["NONE"], "food": true}
+{"line": "PARMESAN CRISPS", "accept": ["NONE"], "food": true}
+{"line": "SALMON BURGERS FRZ", "accept": ["NONE"], "food": true}
+{"line": "EGG WHITES 32OZ", "accept": ["NONE"], "food": true}
+{"line": "GARLIC POWDER", "accept": ["NONE"], "food": true}
+{"line": "RICE CAKES", "accept": ["NONE"], "food": true}
+{"line": "CUCUMBER WATER", "accept": ["NONE"], "food": true}
+{"line": "CLIF BAR CHOC CHIP", "accept": ["NONE"], "food": true}
+{"line": "GREEK YOGURT", "accept": ["NONE"], "food": true}
+{"line": "STRAWBERRIES 1LB", "accept": ["NONE"], "food": true}
+{"line": "OAT MILK", "accept": ["NONE"], "food": true}
+{"line": "TORTILLA CHIPS", "accept": ["NONE"], "food": true}
+{"line": "FROZEN PIZZA", "accept": ["NONE"], "food": true}
+{"line": "APPLES GALA", "accept": ["NONE"], "food": true}
+{"line": "COFFEE BEANS", "accept": ["NONE"], "food": true}
+{"line": "EGG NOODLES", "accept": ["pasta", "NONE"], "food": true}
+{"line": "BROWN RICE", "accept": ["rice"], "food": true}
+{"line": "GARLIC NAAN", "accept": ["NONE"], "food": true}
+{"line": "SOURDOUGH BAGEL", "accept": ["bagels", "sourdough"], "food": true}
+{"line": "CHICKEN TENDERLOINS", "accept": ["chicken breast", "NONE"], "food": true}
+{"line": "GV DISH SOAP", "accept": ["NONE"], "food": false}
+{"line": "BOUNTY PAPER TOWELS", "accept": ["NONE"], "food": false}
+{"line": "REYNOLDS FOIL", "accept": ["NONE"], "food": false}
+{"line": "DURACELL AA 8PK", "accept": ["NONE"], "food": false}
+{"line": "GLAD TRASH BAGS", "accept": ["NONE"], "food": false}
+{"line": "TIDE PODS", "accept": ["NONE"], "food": false}
+{"line": "CHARMIN TP 12", "accept": ["NONE"], "food": false}
+{"line": "COLGATE TOOTHPASTE", "accept": ["NONE"], "food": false}
+{"line": "ZIPLOC GAL BAGS", "accept": ["NONE"], "food": false}
+{"line": "DOG FOOD 30LB", "accept": ["NONE"], "food": false}
+{"line": "SPONGES 3PK", "accept": ["NONE"], "food": false}
+{"line": "HAND SOAP REFILL", "accept": ["NONE"], "food": false}
+{"line": "BIRTHDAY CARD", "accept": ["NONE"], "food": false}
+{"line": "PROPANE EXCHANGE", "accept": ["NONE"], "food": false}
+{"line": "LIGHT BULBS", "accept": ["NONE"], "food": false}

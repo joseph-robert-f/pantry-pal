@@ -1,0 +1,164 @@
+{
+  "run": "jev-1.13.0_v2_lines",
+  "date": "2026-10-08",
+  "lines": 118,
+  "listItems": 23,
+  "thresholds": {
+    "autoTick": 0.9,
+    "ask": 0.7,
+    "isFood": 0.5
+  },
+  "matchAccuracy": 0.940677966101695,
+  "onListAccuracy": 0.987012987012987,
+  "notOnListAccuracy": 0.8536585365853658,
+  "foodAccuracyNotOnList": 1,
+  "actions": {
+    "tick": 79,
+    "ask": 3,
+    "unmatched": 21,
+    "ignore": 15
+  },
+  "sweep": [
+    {
+      "threshold": 0.5,
+      "ticks": 82,
+      "wrongTicks": 6,
+      "precision": 0.926829268292683,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.7,
+      "ticks": 82,
+      "wrongTicks": 6,
+      "precision": 0.926829268292683,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.8,
+      "ticks": 81,
+      "wrongTicks": 5,
+      "precision": 0.9382716049382716,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.85,
+      "ticks": 80,
+      "wrongTicks": 4,
+      "precision": 0.95,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.9,
+      "ticks": 79,
+      "wrongTicks": 3,
+      "precision": 0.9620253164556962,
+      "coverage": 0.987012987012987
+    },
+    {
+      "threshold": 0.95,
+      "ticks": 76,
+      "wrongTicks": 2,
+      "precision": 0.9736842105263158,
+      "coverage": 0.961038961038961
+    },
+    {
+      "threshold": 0.99,
+      "ticks": 70,
+      "wrongTicks": 1,
+      "precision": 0.9857142857142858,
+      "coverage": 0.8961038961038961
+    }
+  ],
+  "errors": [
+    {
+      "line": "CUKES ORG 2CT",
+      "accept": [
+        "cucumber"
+      ],
+      "choice": "NONE",
+      "confidence": 0.68,
+      "food": true,
+      "foodP": 0.94,
+      "action": "unmatched",
+      "verify": null
+    },
+    {
+      "line": "SWEET POTATO CHIPS",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "sweet potatoes",
+      "confidence": 0.83,
+      "food": true,
+      "foodP": 0.98,
+      "action": "ask",
+      "verify": null
+    },
+    {
+      "line": "PARMESAN CRISPS",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "parmesan",
+      "confidence": 0.98,
+      "food": true,
+      "foodP": 0.97,
+      "action": "tick",
+      "verify": null
+    },
+    {
+      "line": "SALMON BURGERS FRZ",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "salmon filets",
+      "confidence": 0.89,
+      "food": true,
+      "foodP": 0.98,
+      "action": "ask",
+      "verify": null
+    },
+    {
+      "line": "EGG WHITES 32OZ",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "eggs",
+      "confidence": 0.99,
+      "food": true,
+      "foodP": 0.98,
+      "action": "tick",
+      "verify": null
+    },
+    {
+      "line": "GARLIC POWDER",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "garlic",
+      "confidence": 0.94,
+      "food": true,
+      "foodP": 0.9,
+      "action": "tick",
+      "verify": null
+    },
+    {
+      "line": "RICE CAKES",
+      "accept": [
+        "NONE"
+      ],
+      "choice": "rice",
+      "confidence": 0.79,
+      "food": true,
+      "foodP": 0.97,
+      "action": "ask",
+      "verify": null
+    }
+  ],
+  "cost": {
+    "liveCalls": 0,
+    "cachedCalls": 118,
+    "inputTokens": 78348,
+    "usd": 0.003290616
+  }
+}

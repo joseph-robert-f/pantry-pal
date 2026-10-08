@@ -1,0 +1,2962 @@
+{
+ "14a1f9f2a409ebf5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "chicken thighs",
+    "confidence": 1,
+    "probabilities": {
+     "chicken thighs": 1,
+     "basil": 0,
+     "garlic": 0,
+     "ginger": 0,
+     "bagels": 0,
+     "NONE": 0,
+     "sweet potatoes": 0,
+     "ground beef": 0,
+     "spinach": 0,
+     "butter": 0,
+     "parsley": 0,
+     "avocados": 0,
+     "marinara": 0,
+     "lemons": 0,
+     "stir-fry vegetables": 0,
+     "rice": 0,
+     "sourdough": 0,
+     "cucumber": 0,
+     "eggs": 0,
+     "bananas": 0,
+     "chicken breast": 0,
+     "parmesan": 0,
+     "salmon filets": 0,
+     "pasta": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 668,
+   "output_tokens": 240
+  }
+ },
+ "60dd2dc89944dcc3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "chicken breast",
+    "confidence": 1,
+    "probabilities": {
+     "butter": 0,
+     "garlic": 0,
+     "parsley": 0,
+     "lemons": 0,
+     "ground beef": 0,
+     "bagels": 0,
+     "basil": 0,
+     "sourdough": 0,
+     "avocados": 0,
+     "chicken thighs": 0,
+     "chicken breast": 1,
+     "salmon filets": 0,
+     "stir-fry vegetables": 0,
+     "NONE": 0,
+     "eggs": 0,
+     "parmesan": 0,
+     "ginger": 0,
+     "bananas": 0,
+     "sweet potatoes": 0,
+     "marinara": 0,
+     "cucumber": 0,
+     "spinach": 0,
+     "rice": 0,
+     "pasta": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 667,
+   "output_tokens": 240
+  }
+ },
+ "b609dd0b9f66d8c5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "match": {
+    "type": "choice",
+    "choice": "ground beef",
+    "confidence": 1,
+    "probabilities": {
+     "ground beef": 1,
+     "cucumber": 0,
+     "avocados": 0,
+     "sourdough": 0,
+     "marinara": 0,
+     "garlic": 0,
+     "lemons": 0,
+     "parmesan": 0,
+     "salmon filets": 0,
+     "bananas": 0,
+     "ginger": 0,
+     "parsley": 0,
+     "eggs": 0,
+     "stir-fry vegetables": 0,
+     "bagels": 0,
+     "basil": 0,
+     "chicken breast": 0,
+     "chicken thighs": 0,
+     "NONE": 0,
+     "sweet potatoes": 0,
+     "pasta": 0,
+     "spinach": 0,
+     "butter": 0,
+     "rice": 0
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 239
+  }
+ },
+ "213ae839567a946f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "chicken thighs",
+    "confidence": 1,
+    "probabilities": {
+     "avocados": 0,
+     "chicken breast": 0,
+     "sweet potatoes": 0,
+     "cucumber": 0,
+     "pasta": 0,
+     "stir-fry vegetables": 0,
+     "ground beef": 0,
+     "chicken thighs": 1,
+     "eggs": 0,
+     "bagels": 0,
+     "basil": 0,
+     "lemons": 0,
+     "parmesan": 0,
+     "spinach": 0,
+     "parsley": 0,
+     "salmon filets": 0,
+     "garlic": 0,
+     "ginger": 0,
+     "bananas": 0,
+     "butter": 0,
+     "NONE": 0,
+     "sourdough": 0,
+     "marinara": 0,
+     "rice": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 665,
+   "output_tokens": 240
+  }
+ },
+ "92af6f88723447a0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "chicken breast",
+    "confidence": 0.99,
+    "probabilities": {
+     "pasta": 0,
+     "sweet potatoes": 0.01,
+     "chicken breast": 0.99,
+     "cucumber": 0,
+     "avocados": 0,
+     "spinach": 0,
+     "ground beef": 0,
+     "chicken thighs": 0,
+     "eggs": 0,
+     "bagels": 0,
+     "basil": 0,
+     "lemons": 0,
+     "salmon filets": 0,
+     "stir-fry vegetables": 0,
+     "parsley": 0,
+     "parmesan": 0,
+     "garlic": 0,
+     "ginger": 0,
+     "bananas": 0,
+     "butter": 0,
+     "NONE": 0,
+     "sourdough": 0,
+     "marinara": 0,
+     "rice": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 666,
+   "output_tokens": 240
+  }
+ },
+ "852835358226b814": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "salmon filets",
+    "confidence": 1,
+    "probabilities": {
+     "sweet potatoes": 0,
+     "avocados": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "spinach": 0,
+     "stir-fry vegetables": 0,
+     "parsley": 0,
+     "chicken thighs": 0,
+     "butter": 0,
+     "salmon filets": 1,
+     "cucumber": 0,
+     "ginger": 0,
+     "rice": 0,
+     "marinara": 0,
+     "NONE": 0,
+     "eggs": 0,
+     "chicken breast": 0,
+     "sourdough": 0,
+     "ground beef": 0,
+     "basil": 0,
+     "garlic": 0,
+     "bagels": 0,
+     "lemons": 0,
+     "pasta": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 241
+  }
+ },
+ "14cbbce5a11a3d76": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "ground beef",
+    "confidence": 1,
+    "probabilities": {
+     "parmesan": 0,
+     "rice": 0,
+     "marinara": 0,
+     "avocados": 0,
+     "sweet potatoes": 0,
+     "parsley": 0,
+     "bagels": 0,
+     "NONE": 0,
+     "ginger": 0,
+     "spinach": 0,
+     "eggs": 0,
+     "cucumber": 0,
+     "chicken thighs": 0,
+     "butter": 0,
+     "bananas": 0,
+     "stir-fry vegetables": 0,
+     "ground beef": 1,
+     "basil": 0,
+     "chicken breast": 0,
+     "sourdough": 0,
+     "lemons": 0,
+     "pasta": 0,
+     "salmon filets": 0,
+     "garlic": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 666,
+   "output_tokens": 239
+  }
+ },
+ "e51234d9a68d2024": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.89,
+    "confidence": 0.83,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.11,
+     "2": 0.89
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 426,
+   "output_tokens": 17
+  }
+ },
+ "ca628fc48dda46ad": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "salmon filets",
+    "confidence": 1,
+    "probabilities": {
+     "chicken thighs": 0,
+     "basil": 0,
+     "garlic": 0,
+     "ginger": 0,
+     "avocados": 0,
+     "NONE": 0,
+     "stir-fry vegetables": 0,
+     "bagels": 0,
+     "spinach": 0,
+     "butter": 0,
+     "parsley": 0,
+     "lemons": 0,
+     "marinara": 0,
+     "ground beef": 0,
+     "sweet potatoes": 0,
+     "rice": 0,
+     "cucumber": 0,
+     "sourdough": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "salmon filets": 1,
+     "eggs": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 241
+  }
+ },
+ "aa57761a82d12af0": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.99,
+    "confidence": 0.99,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.01,
+     "2": 0.99
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 423,
+   "output_tokens": 17
+  }
+ },
+ "83026999ff83830d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.57,
+    "confidence": 0.35,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.43,
+     "2": 0.57
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 425,
+   "output_tokens": 17
+  }
+ },
+ "d6a625835fd0f320": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.88,
+    "confidence": 0.83,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.11,
+     "2": 0.89
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 424,
+   "output_tokens": 17
+  }
+ },
+ "c87e53febadaf957": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.95,
+    "confidence": 0.93,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.05,
+     "2": 0.95
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 421,
+   "output_tokens": 17
+  }
+ },
+ "811fa6b64566aad6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.77,
+    "confidence": 0.66,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.23,
+     "2": 0.77
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 423,
+   "output_tokens": 17
+  }
+ },
+ "afcf0296da09f31d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.05,
+    "confidence": 0.91,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.94,
+     "2": 0.06
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 420,
+   "output_tokens": 17
+  }
+ },
+ "20ebcc4cba0dd8d5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "sweet potatoes",
+    "confidence": 1,
+    "probabilities": {
+     "cucumber": 0,
+     "chicken breast": 0,
+     "eggs": 0,
+     "butter": 0,
+     "rice": 0,
+     "chicken thighs": 0,
+     "lemons": 0,
+     "salmon filets": 0,
+     "bananas": 0,
+     "basil": 0,
+     "sweet potatoes": 1,
+     "NONE": 0,
+     "ginger": 0,
+     "bagels": 0,
+     "ground beef": 0,
+     "spinach": 0,
+     "parmesan": 0,
+     "pasta": 0,
+     "garlic": 0,
+     "parsley": 0,
+     "avocados": 0,
+     "stir-fry vegetables": 0,
+     "marinara": 0,
+     "sourdough": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 239
+  }
+ },
+ "f60c5594c84e1ba4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.63,
+    "confidence": 0.44,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.37,
+     "2": 0.63
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 422,
+   "output_tokens": 17
+  }
+ },
+ "d3b2e6bf885cf6a3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "spinach",
+    "confidence": 1,
+    "probabilities": {
+     "sourdough": 0,
+     "parsley": 0,
+     "salmon filets": 0,
+     "pasta": 0,
+     "marinara": 0,
+     "eggs": 0,
+     "spinach": 1,
+     "ginger": 0,
+     "garlic": 0,
+     "rice": 0,
+     "sweet potatoes": 0,
+     "chicken breast": 0,
+     "stir-fry vegetables": 0,
+     "parmesan": 0,
+     "lemons": 0,
+     "bagels": 0,
+     "bananas": 0,
+     "cucumber": 0,
+     "butter": 0,
+     "NONE": 0,
+     "chicken thighs": 0,
+     "avocados": 0,
+     "basil": 0,
+     "ground beef": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 239
+  }
+ },
+ "4e002e0420d3f45c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "avocados",
+    "confidence": 1,
+    "probabilities": {
+     "ginger": 0,
+     "chicken breast": 0,
+     "eggs": 0,
+     "spinach": 0,
+     "lemons": 0,
+     "parsley": 0,
+     "avocados": 1,
+     "salmon filets": 0,
+     "stir-fry vegetables": 0,
+     "basil": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "sourdough": 0,
+     "cucumber": 0,
+     "ground beef": 0,
+     "rice": 0,
+     "NONE": 0,
+     "pasta": 0,
+     "sweet potatoes": 0,
+     "chicken thighs": 0,
+     "bagels": 0,
+     "butter": 0,
+     "garlic": 0,
+     "marinara": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 660,
+   "output_tokens": 240
+  }
+ },
+ "567b8e34f33baea3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "bagels",
+    "confidence": 1,
+    "probabilities": {
+     "lemons": 0,
+     "pasta": 0,
+     "avocados": 0,
+     "sweet potatoes": 0,
+     "bagels": 1,
+     "NONE": 0,
+     "spinach": 0,
+     "butter": 0,
+     "sourdough": 0,
+     "chicken breast": 0,
+     "marinara": 0,
+     "stir-fry vegetables": 0,
+     "chicken thighs": 0,
+     "ground beef": 0,
+     "garlic": 0,
+     "ginger": 0,
+     "parsley": 0,
+     "bananas": 0,
+     "eggs": 0,
+     "basil": 0,
+     "salmon filets": 0,
+     "cucumber": 0,
+     "rice": 0,
+     "parmesan": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.96
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 239
+  }
+ },
+ "d75fe80d99035538": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.95,
+    "confidence": 0.91,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.02,
+     "2": 0.96
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 419,
+   "output_tokens": 17
+  }
+ },
+ "2f59137a3fbb2c20": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "parmesan",
+    "confidence": 1,
+    "probabilities": {
+     "cucumber": 0,
+     "chicken breast": 0,
+     "eggs": 0,
+     "butter": 0,
+     "bananas": 0,
+     "chicken thighs": 0,
+     "lemons": 0,
+     "basil": 0,
+     "rice": 0,
+     "salmon filets": 0,
+     "sweet potatoes": 0,
+     "NONE": 0,
+     "ginger": 0,
+     "bagels": 0,
+     "stir-fry vegetables": 0,
+     "spinach": 0,
+     "parmesan": 1,
+     "pasta": 0,
+     "garlic": 0,
+     "marinara": 0,
+     "avocados": 0,
+     "parsley": 0,
+     "ground beef": 0,
+     "sourdough": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 240
+  }
+ },
+ "c4d2f3b3f0052cd7": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "bananas",
+    "confidence": 1,
+    "probabilities": {
+     "ground beef": 0,
+     "cucumber": 0,
+     "sourdough": 0,
+     "spinach": 0,
+     "marinara": 0,
+     "garlic": 0,
+     "avocados": 0,
+     "parmesan": 0,
+     "salmon filets": 0,
+     "lemons": 0,
+     "ginger": 0,
+     "parsley": 0,
+     "bagels": 0,
+     "stir-fry vegetables": 0,
+     "eggs": 0,
+     "sweet potatoes": 0,
+     "chicken breast": 0,
+     "chicken thighs": 0,
+     "NONE": 0,
+     "pasta": 0,
+     "bananas": 1,
+     "basil": 0,
+     "butter": 0,
+     "rice": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 669,
+   "output_tokens": 239
+  }
+ },
+ "b9430884ed4acef9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "marinara",
+    "confidence": 1,
+    "probabilities": {
+     "bananas": 0,
+     "NONE": 0,
+     "eggs": 0,
+     "sweet potatoes": 0,
+     "ground beef": 0,
+     "rice": 0,
+     "bagels": 0,
+     "cucumber": 0,
+     "parmesan": 0,
+     "avocados": 0,
+     "pasta": 0,
+     "parsley": 0,
+     "ginger": 0,
+     "chicken thighs": 0,
+     "basil": 0,
+     "marinara": 1,
+     "garlic": 0,
+     "butter": 0,
+     "salmon filets": 0,
+     "chicken breast": 0,
+     "spinach": 0,
+     "lemons": 0,
+     "sourdough": 0,
+     "stir-fry vegetables": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.95
+   }
+  },
+  "usage": {
+   "input_tokens": 665,
+   "output_tokens": 240
+  }
+ },
+ "8e82feda4dc91be3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "eggs",
+    "confidence": 1,
+    "probabilities": {
+     "avocados": 0,
+     "ginger": 0,
+     "parsley": 0,
+     "NONE": 0,
+     "salmon filets": 0,
+     "chicken thighs": 0,
+     "sourdough": 0,
+     "garlic": 0,
+     "eggs": 1,
+     "bananas": 0,
+     "parmesan": 0,
+     "rice": 0,
+     "spinach": 0,
+     "sweet potatoes": 0,
+     "stir-fry vegetables": 0,
+     "cucumber": 0,
+     "basil": 0,
+     "bagels": 0,
+     "butter": 0,
+     "chicken breast": 0,
+     "pasta": 0,
+     "lemons": 0,
+     "ground beef": 0,
+     "marinara": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 239
+  }
+ },
+ "d8043e9bdcca7e00": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 419,
+   "output_tokens": 17
+  }
+ },
+ "d50f47b3c59f2265": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 418,
+   "output_tokens": 17
+  }
+ },
+ "0ea393c8a018378d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.51,
+    "confidence": 0.27,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.49,
+     "2": 0.51
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 420,
+   "output_tokens": 17
+  }
+ },
+ "10049f9acf20dbd4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 420,
+   "output_tokens": 17
+  }
+ },
+ "8b036399feda1520": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 426,
+   "output_tokens": 17
+  }
+ },
+ "9381230641f51a84": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.67,
+    "confidence": 0.5,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.31,
+     "2": 0.68
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 423,
+   "output_tokens": 17
+  }
+ },
+ "e9e15de32c05b52f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "butter",
+    "confidence": 1,
+    "probabilities": {
+     "cucumber": 0,
+     "chicken breast": 0,
+     "eggs": 0,
+     "butter": 1,
+     "bananas": 0,
+     "chicken thighs": 0,
+     "lemons": 0,
+     "salmon filets": 0,
+     "rice": 0,
+     "basil": 0,
+     "sweet potatoes": 0,
+     "NONE": 0,
+     "ginger": 0,
+     "stir-fry vegetables": 0,
+     "bagels": 0,
+     "parsley": 0,
+     "marinara": 0,
+     "pasta": 0,
+     "garlic": 0,
+     "parmesan": 0,
+     "avocados": 0,
+     "spinach": 0,
+     "ground beef": 0,
+     "sourdough": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 239
+  }
+ },
+ "19913f70e279db12": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 420,
+   "output_tokens": 17
+  }
+ },
+ "b8fedfb8caa03431": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "sourdough",
+    "confidence": 1,
+    "probabilities": {
+     "chicken thighs": 0,
+     "ground beef": 0,
+     "parsley": 0,
+     "stir-fry vegetables": 0,
+     "eggs": 0,
+     "lemons": 0,
+     "sourdough": 1,
+     "avocados": 0,
+     "bananas": 0,
+     "sweet potatoes": 0,
+     "salmon filets": 0,
+     "butter": 0,
+     "NONE": 0,
+     "basil": 0,
+     "cucumber": 0,
+     "rice": 0,
+     "parmesan": 0,
+     "pasta": 0,
+     "spinach": 0,
+     "ginger": 0,
+     "bagels": 0,
+     "chicken breast": 0,
+     "marinara": 0,
+     "garlic": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 240
+  }
+ },
+ "ad01667fc888987e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "rice",
+    "confidence": 1,
+    "probabilities": {
+     "ginger": 0,
+     "NONE": 0,
+     "garlic": 0,
+     "butter": 0,
+     "parmesan": 0,
+     "eggs": 0,
+     "ground beef": 0,
+     "cucumber": 0,
+     "parsley": 0,
+     "bagels": 0,
+     "chicken breast": 0,
+     "salmon filets": 0,
+     "rice": 1,
+     "basil": 0,
+     "marinara": 0,
+     "lemons": 0,
+     "sweet potatoes": 0,
+     "pasta": 0,
+     "stir-fry vegetables": 0,
+     "chicken thighs": 0,
+     "sourdough": 0,
+     "bananas": 0,
+     "avocados": 0,
+     "spinach": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 238
+  }
+ },
+ "40465f938f76b80d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "pasta",
+    "confidence": 1,
+    "probabilities": {
+     "bananas": 0,
+     "bagels": 0,
+     "chicken breast": 0,
+     "NONE": 0,
+     "pasta": 1,
+     "chicken thighs": 0,
+     "sourdough": 0,
+     "marinara": 0,
+     "parmesan": 0,
+     "avocados": 0,
+     "rice": 0,
+     "garlic": 0,
+     "basil": 0,
+     "stir-fry vegetables": 0,
+     "eggs": 0,
+     "ground beef": 0,
+     "salmon filets": 0,
+     "lemons": 0,
+     "butter": 0,
+     "sweet potatoes": 0,
+     "cucumber": 0,
+     "parsley": 0,
+     "spinach": 0,
+     "ginger": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 239
+  }
+ },
+ "d215bbde14563530": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "garlic",
+    "confidence": 1,
+    "probabilities": {
+     "butter": 0,
+     "garlic": 1,
+     "parsley": 0,
+     "lemons": 0,
+     "ground beef": 0,
+     "bagels": 0,
+     "basil": 0,
+     "sourdough": 0,
+     "avocados": 0,
+     "chicken breast": 0,
+     "chicken thighs": 0,
+     "salmon filets": 0,
+     "stir-fry vegetables": 0,
+     "sweet potatoes": 0,
+     "eggs": 0,
+     "ginger": 0,
+     "NONE": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "marinara": 0,
+     "rice": 0,
+     "spinach": 0,
+     "cucumber": 0,
+     "pasta": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 659,
+   "output_tokens": 239
+  }
+ },
+ "31aa5ce5bd0f33e6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "lemons",
+    "confidence": 1,
+    "probabilities": {
+     "parsley": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "butter": 0,
+     "rice": 0,
+     "salmon filets": 0,
+     "basil": 0,
+     "chicken thighs": 0,
+     "eggs": 0,
+     "bagels": 0,
+     "cucumber": 0,
+     "spinach": 0,
+     "sweet potatoes": 0,
+     "lemons": 1,
+     "NONE": 0,
+     "sourdough": 0,
+     "ginger": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "avocados": 0,
+     "ground beef": 0,
+     "marinara": 0,
+     "garlic": 0,
+     "stir-fry vegetables": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 659,
+   "output_tokens": 239
+  }
+ },
+ "670697e478884fc9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 419,
+   "output_tokens": 17
+  }
+ },
+ "453d3e2eeb9a517d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "parsley",
+    "confidence": 1,
+    "probabilities": {
+     "parsley": 1,
+     "butter": 0,
+     "parmesan": 0,
+     "bananas": 0,
+     "salmon filets": 0,
+     "chicken thighs": 0,
+     "basil": 0,
+     "rice": 0,
+     "sweet potatoes": 0,
+     "bagels": 0,
+     "cucumber": 0,
+     "eggs": 0,
+     "spinach": 0,
+     "lemons": 0,
+     "NONE": 0,
+     "sourdough": 0,
+     "ginger": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "avocados": 0,
+     "ground beef": 0,
+     "marinara": 0,
+     "garlic": 0,
+     "stir-fry vegetables": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.96
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 239
+  }
+ },
+ "e2bcb86ec836b79c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "basil",
+    "confidence": 1,
+    "probabilities": {
+     "ginger": 0,
+     "chicken thighs": 0,
+     "eggs": 0,
+     "butter": 0,
+     "cucumber": 0,
+     "ground beef": 0,
+     "parmesan": 0,
+     "marinara": 0,
+     "rice": 0,
+     "basil": 1,
+     "stir-fry vegetables": 0,
+     "sweet potatoes": 0,
+     "lemons": 0,
+     "salmon filets": 0,
+     "avocados": 0,
+     "pasta": 0,
+     "spinach": 0,
+     "bananas": 0,
+     "bagels": 0,
+     "NONE": 0,
+     "chicken breast": 0,
+     "sourdough": 0,
+     "garlic": 0,
+     "parsley": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.95
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 239
+  }
+ },
+ "5f4433b182bae580": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.73,
+    "confidence": 0.61,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.26,
+     "2": 0.74
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 422,
+   "output_tokens": 17
+  }
+ },
+ "b41d2414de6d7db5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.98,
+    "confidence": 0.97,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.02,
+     "2": 0.98
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 418,
+   "output_tokens": 17
+  }
+ },
+ "75b0d44150107bc3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.89,
+    "confidence": 0.83,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.11,
+     "2": 0.89
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 420,
+   "output_tokens": 17
+  }
+ },
+ "e9d4b52e2e2efacb": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 416,
+   "output_tokens": 17
+  }
+ },
+ "2c348be814545e98": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.99,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 416,
+   "output_tokens": 17
+  }
+ },
+ "ac3485a011220c2d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.92,
+    "confidence": 0.88,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.08,
+     "2": 0.92
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 420,
+   "output_tokens": 17
+  }
+ },
+ "a5f6a9bf2fe6d861": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "ginger",
+    "confidence": 1,
+    "probabilities": {
+     "parmesan": 0,
+     "eggs": 0,
+     "garlic": 0,
+     "chicken thighs": 0,
+     "rice": 0,
+     "NONE": 0,
+     "pasta": 0,
+     "lemons": 0,
+     "cucumber": 0,
+     "marinara": 0,
+     "chicken breast": 0,
+     "spinach": 0,
+     "stir-fry vegetables": 0,
+     "ground beef": 0,
+     "sourdough": 0,
+     "bagels": 0,
+     "basil": 0,
+     "butter": 0,
+     "ginger": 1,
+     "sweet potatoes": 0,
+     "avocados": 0,
+     "salmon filets": 0,
+     "bananas": 0,
+     "parsley": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.92
+   }
+  },
+  "usage": {
+   "input_tokens": 659,
+   "output_tokens": 239
+  }
+ },
+ "9663c4e8a89eb9da": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.96,
+    "confidence": 0.94,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.04,
+     "2": 0.96
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 418,
+   "output_tokens": 17
+  }
+ },
+ "014645aac047996a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "stir-fry vegetables",
+    "confidence": 1,
+    "probabilities": {
+     "eggs": 0,
+     "bananas": 0,
+     "salmon filets": 0,
+     "pasta": 0,
+     "stir-fry vegetables": 1,
+     "bagels": 0,
+     "NONE": 0,
+     "sweet potatoes": 0,
+     "avocados": 0,
+     "ground beef": 0,
+     "marinara": 0,
+     "parmesan": 0,
+     "sourdough": 0,
+     "rice": 0,
+     "garlic": 0,
+     "ginger": 0,
+     "lemons": 0,
+     "spinach": 0,
+     "chicken breast": 0,
+     "basil": 0,
+     "parsley": 0,
+     "chicken thighs": 0,
+     "cucumber": 0,
+     "butter": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.95
+   }
+  },
+  "usage": {
+   "input_tokens": 665,
+   "output_tokens": 242
+  }
+ },
+ "f7f91ba94027e5a8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.93,
+    "probabilities": {
+     "lemons": 0,
+     "ginger": 0,
+     "parsley": 0,
+     "NONE": 0.93,
+     "salmon filets": 0,
+     "chicken thighs": 0,
+     "sourdough": 0.01,
+     "garlic": 0,
+     "eggs": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "rice": 0,
+     "spinach": 0,
+     "sweet potatoes": 0,
+     "stir-fry vegetables": 0,
+     "cucumber": 0.03,
+     "basil": 0,
+     "marinara": 0,
+     "butter": 0,
+     "chicken breast": 0,
+     "pasta": 0,
+     "bagels": 0.03,
+     "avocados": 0,
+     "ground beef": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.96
+   }
+  },
+  "usage": {
+   "input_tokens": 666,
+   "output_tokens": 238
+  }
+ },
+ "1b2146b5ed773da8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "sweet potatoes",
+    "confidence": 0.96,
+    "probabilities": {
+     "sourdough": 0,
+     "rice": 0,
+     "chicken breast": 0,
+     "sweet potatoes": 0.96,
+     "ground beef": 0,
+     "lemons": 0,
+     "basil": 0,
+     "NONE": 0.04,
+     "garlic": 0,
+     "eggs": 0,
+     "stir-fry vegetables": 0,
+     "cucumber": 0,
+     "pasta": 0,
+     "salmon filets": 0,
+     "avocados": 0,
+     "spinach": 0,
+     "butter": 0,
+     "bagels": 0,
+     "marinara": 0,
+     "parmesan": 0,
+     "bananas": 0,
+     "ginger": 0,
+     "parsley": 0,
+     "chicken thighs": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 239
+  }
+ },
+ "c2a046f8cdb6696e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.69,
+    "probabilities": {
+     "chicken thighs": 0,
+     "spinach": 0,
+     "parsley": 0,
+     "bagels": 0,
+     "eggs": 0,
+     "sourdough": 0,
+     "lemons": 0.3,
+     "avocados": 0,
+     "bananas": 0,
+     "sweet potatoes": 0,
+     "salmon filets": 0,
+     "butter": 0,
+     "NONE": 0.7,
+     "basil": 0,
+     "rice": 0,
+     "cucumber": 0,
+     "parmesan": 0,
+     "pasta": 0,
+     "ground beef": 0,
+     "ginger": 0,
+     "stir-fry vegetables": 0,
+     "marinara": 0,
+     "chicken breast": 0,
+     "garlic": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.96
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "62fdd56719fa3d0e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "avocados",
+    "confidence": 0.91,
+    "probabilities": {
+     "avocados": 0.91,
+     "garlic": 0,
+     "parsley": 0,
+     "lemons": 0,
+     "sweet potatoes": 0,
+     "butter": 0,
+     "eggs": 0,
+     "ground beef": 0,
+     "rice": 0,
+     "bananas": 0,
+     "marinara": 0,
+     "pasta": 0,
+     "parmesan": 0,
+     "chicken breast": 0,
+     "bagels": 0,
+     "NONE": 0.08,
+     "sourdough": 0.01,
+     "basil": 0,
+     "stir-fry vegetables": 0,
+     "chicken thighs": 0,
+     "spinach": 0,
+     "ginger": 0,
+     "cucumber": 0,
+     "salmon filets": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.95
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 240
+  }
+ },
+ "e0906a86129798d9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.94,
+    "probabilities": {
+     "parmesan": 0,
+     "sourdough": 0,
+     "parsley": 0,
+     "eggs": 0,
+     "chicken breast": 0,
+     "spinach": 0,
+     "avocados": 0,
+     "pasta": 0,
+     "basil": 0,
+     "bananas": 0,
+     "marinara": 0,
+     "salmon filets": 0,
+     "ginger": 0,
+     "lemons": 0.06,
+     "stir-fry vegetables": 0,
+     "bagels": 0,
+     "ground beef": 0,
+     "butter": 0,
+     "cucumber": 0,
+     "garlic": 0,
+     "sweet potatoes": 0,
+     "NONE": 0.9400000000000001,
+     "rice": 0,
+     "chicken thighs": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.95
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "e5b494b37b2b9cf3": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.92,
+    "probabilities": {
+     "parsley": 0,
+     "bananas": 0.08,
+     "garlic": 0,
+     "ginger": 0,
+     "sweet potatoes": 0,
+     "stir-fry vegetables": 0,
+     "rice": 0,
+     "ground beef": 0,
+     "NONE": 0.92,
+     "parmesan": 0,
+     "pasta": 0,
+     "salmon filets": 0,
+     "spinach": 0,
+     "lemons": 0,
+     "eggs": 0,
+     "chicken breast": 0,
+     "butter": 0,
+     "sourdough": 0,
+     "basil": 0,
+     "cucumber": 0,
+     "chicken thighs": 0,
+     "avocados": 0,
+     "bagels": 0,
+     "marinara": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.96
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 238
+  }
+ },
+ "896ff71cfce8ff2d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 2,
+    "confidence": 1,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 416,
+   "output_tokens": 17
+  }
+ },
+ "0d9dc8cd7c5fc26c": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.03,
+    "confidence": 0.94,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.96,
+     "2": 0.04
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 421,
+   "output_tokens": 17
+  }
+ },
+ "26597db763f2db5e": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.86,
+    "probabilities": {
+     "avocados": 0,
+     "garlic": 0,
+     "bananas": 0,
+     "lemons": 0,
+     "ground beef": 0,
+     "eggs": 0,
+     "butter": 0.13,
+     "sweet potatoes": 0,
+     "rice": 0,
+     "parsley": 0,
+     "marinara": 0,
+     "ginger": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "sourdough": 0,
+     "NONE": 0.87,
+     "stir-fry vegetables": 0,
+     "basil": 0,
+     "parmesan": 0,
+     "chicken thighs": 0,
+     "spinach": 0,
+     "bagels": 0,
+     "cucumber": 0,
+     "salmon filets": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "dc3d9f9da0be6d11": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 1.92,
+    "confidence": 0.9,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.07,
+     "2": 0.93
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 425,
+   "output_tokens": 17
+  }
+ },
+ "2ed666a4bdddfd90": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.72,
+    "probabilities": {
+     "chicken breast": 0,
+     "salmon filets": 0,
+     "ginger": 0,
+     "bagels": 0,
+     "avocados": 0,
+     "butter": 0.27,
+     "basil": 0,
+     "stir-fry vegetables": 0,
+     "chicken thighs": 0,
+     "marinara": 0,
+     "garlic": 0,
+     "parsley": 0,
+     "lemons": 0,
+     "NONE": 0.73,
+     "pasta": 0,
+     "sweet potatoes": 0,
+     "spinach": 0,
+     "parmesan": 0,
+     "bananas": 0,
+     "ground beef": 0,
+     "eggs": 0,
+     "cucumber": 0,
+     "rice": 0,
+     "sourdough": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 238
+  }
+ },
+ "9e48487f1bbfacb6": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.87,
+    "probabilities": {
+     "marinara": 0,
+     "eggs": 0,
+     "ground beef": 0,
+     "sourdough": 0,
+     "garlic": 0,
+     "spinach": 0,
+     "chicken thighs": 0,
+     "ginger": 0,
+     "butter": 0,
+     "chicken breast": 0,
+     "stir-fry vegetables": 0,
+     "cucumber": 0,
+     "NONE": 0.88,
+     "basil": 0,
+     "rice": 0.12,
+     "salmon filets": 0,
+     "avocados": 0,
+     "parmesan": 0,
+     "sweet potatoes": 0,
+     "bagels": 0,
+     "parsley": 0,
+     "lemons": 0,
+     "bananas": 0,
+     "pasta": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.84
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 238
+  }
+ },
+ "d2be86bc9e8859a8": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "same": {
+    "type": "score",
+    "score": 0.89,
+    "confidence": 0.75,
+    "legend": {
+     "0": "Different product: not the shopping-list item",
+     "1": "Related but a different product: made from the item, flavored with it, a snack or sauce based on it, or a different cut or part",
+     "2": "Same product: the shopping-list item itself, in any brand, size, count, or variety"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.83,
+     "2": 0.03
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 421,
+   "output_tokens": 17
+  }
+ },
+ "eaf282aa38724a63": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.71,
+    "probabilities": {
+     "parmesan": 0,
+     "eggs": 0,
+     "garlic": 0.26,
+     "chicken thighs": 0,
+     "rice": 0,
+     "NONE": 0.72,
+     "pasta": 0,
+     "lemons": 0,
+     "cucumber": 0,
+     "marinara": 0,
+     "chicken breast": 0,
+     "spinach": 0,
+     "stir-fry vegetables": 0,
+     "ground beef": 0,
+     "sourdough": 0.02,
+     "bagels": 0,
+     "basil": 0,
+     "butter": 0,
+     "ginger": 0,
+     "sweet potatoes": 0,
+     "avocados": 0,
+     "salmon filets": 0,
+     "bananas": 0,
+     "parsley": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 238
+  }
+ },
+ "c07c7a1463599aa4": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.95,
+    "probabilities": {
+     "NONE": 0.95,
+     "cucumber": 0,
+     "bagels": 0,
+     "salmon filets": 0,
+     "sweet potatoes": 0,
+     "ground beef": 0,
+     "parmesan": 0,
+     "chicken thighs": 0,
+     "bananas": 0,
+     "pasta": 0,
+     "ginger": 0,
+     "sourdough": 0,
+     "spinach": 0,
+     "garlic": 0,
+     "basil": 0,
+     "butter": 0,
+     "stir-fry vegetables": 0,
+     "chicken breast": 0.05,
+     "rice": 0,
+     "lemons": 0,
+     "eggs": 0,
+     "avocados": 0,
+     "marinara": 0,
+     "parsley": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 238
+  }
+ },
+ "4abd5419b38f3daf": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.95,
+    "probabilities": {
+     "basil": 0,
+     "parsley": 0,
+     "NONE": 0.95,
+     "chicken breast": 0.05,
+     "chicken thighs": 0,
+     "sweet potatoes": 0,
+     "salmon filets": 0,
+     "eggs": 0,
+     "butter": 0,
+     "parmesan": 0,
+     "cucumber": 0,
+     "garlic": 0,
+     "bagels": 0,
+     "marinara": 0,
+     "rice": 0,
+     "ground beef": 0,
+     "lemons": 0,
+     "pasta": 0,
+     "spinach": 0,
+     "sourdough": 0,
+     "bananas": 0,
+     "ginger": 0,
+     "stir-fry vegetables": 0,
+     "avocados": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "8f927b76e43a1383": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "avocados": 0,
+     "basil": 0,
+     "bagels": 0,
+     "chicken thighs": 0,
+     "spinach": 0,
+     "lemons": 0,
+     "NONE": 1,
+     "ground beef": 0,
+     "sourdough": 0,
+     "cucumber": 0,
+     "garlic": 0,
+     "rice": 0,
+     "ginger": 0,
+     "pasta": 0,
+     "butter": 0,
+     "salmon filets": 0,
+     "parmesan": 0,
+     "chicken breast": 0,
+     "sweet potatoes": 0,
+     "bananas": 0,
+     "marinara": 0,
+     "stir-fry vegetables": 0,
+     "eggs": 0,
+     "parsley": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 238
+  }
+ },
+ "dbf6768160bc42a9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "pasta": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "salmon filets": 0,
+     "sourdough": 0,
+     "rice": 0,
+     "eggs": 0,
+     "cucumber": 0,
+     "spinach": 0,
+     "avocados": 0,
+     "NONE": 1,
+     "butter": 0,
+     "basil": 0,
+     "garlic": 0,
+     "stir-fry vegetables": 0,
+     "ground beef": 0,
+     "bagels": 0,
+     "lemons": 0,
+     "marinara": 0,
+     "chicken breast": 0,
+     "chicken thighs": 0,
+     "parsley": 0,
+     "ginger": 0,
+     "sweet potatoes": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 665,
+   "output_tokens": 238
+  }
+ },
+ "f7115014955a938d": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.89,
+    "probabilities": {
+     "cucumber": 0,
+     "basil": 0,
+     "rice": 0,
+     "spinach": 0,
+     "eggs": 0,
+     "avocados": 0,
+     "parmesan": 0.11,
+     "marinara": 0,
+     "bananas": 0,
+     "stir-fry vegetables": 0,
+     "NONE": 0.89,
+     "ginger": 0,
+     "sourdough": 0,
+     "chicken thighs": 0,
+     "parsley": 0,
+     "garlic": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "ground beef": 0,
+     "lemons": 0,
+     "salmon filets": 0,
+     "bagels": 0,
+     "sweet potatoes": 0,
+     "butter": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 238
+  }
+ },
+ "52af4de42190c4b5": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 0.99,
+    "probabilities": {
+     "chicken thighs": 0,
+     "eggs": 0,
+     "sourdough": 0,
+     "rice": 0,
+     "marinara": 0,
+     "stir-fry vegetables": 0,
+     "parmesan": 0,
+     "lemons": 0,
+     "ginger": 0.01,
+     "parsley": 0,
+     "bananas": 0,
+     "sweet potatoes": 0,
+     "salmon filets": 0,
+     "pasta": 0,
+     "garlic": 0,
+     "bagels": 0,
+     "basil": 0,
+     "cucumber": 0,
+     "avocados": 0,
+     "butter": 0,
+     "NONE": 0.99,
+     "chicken breast": 0,
+     "spinach": 0,
+     "ground beef": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "f0cbdd73224bb423": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "salmon filets": 0,
+     "stir-fry vegetables": 0,
+     "bananas": 0,
+     "pasta": 0,
+     "cucumber": 0,
+     "basil": 0,
+     "garlic": 0,
+     "sourdough": 0,
+     "rice": 0,
+     "spinach": 0,
+     "ground beef": 0,
+     "chicken breast": 0,
+     "parmesan": 0,
+     "parsley": 0,
+     "lemons": 0,
+     "ginger": 0,
+     "sweet potatoes": 0,
+     "avocados": 0,
+     "NONE": 1,
+     "chicken thighs": 0,
+     "eggs": 0,
+     "bagels": 0,
+     "butter": 0,
+     "marinara": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "2a8bb2e0ff793658": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "ginger": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "salmon filets": 0,
+     "basil": 0,
+     "rice": 0,
+     "parsley": 0,
+     "eggs": 0,
+     "sourdough": 0,
+     "cucumber": 0,
+     "lemons": 0,
+     "bananas": 0,
+     "ground beef": 0,
+     "NONE": 1,
+     "avocados": 0,
+     "stir-fry vegetables": 0,
+     "marinara": 0,
+     "bagels": 0,
+     "butter": 0,
+     "sweet potatoes": 0,
+     "chicken thighs": 0,
+     "garlic": 0,
+     "spinach": 0,
+     "parmesan": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 238
+  }
+ },
+ "644b9b41f80de704": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "chicken thighs": 0,
+     "avocados": 0,
+     "rice": 0,
+     "garlic": 0,
+     "marinara": 0,
+     "parsley": 0,
+     "stir-fry vegetables": 0,
+     "eggs": 0,
+     "parmesan": 0,
+     "butter": 0,
+     "cucumber": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "NONE": 1,
+     "basil": 0,
+     "ground beef": 0,
+     "ginger": 0,
+     "spinach": 0,
+     "salmon filets": 0,
+     "sourdough": 0,
+     "sweet potatoes": 0,
+     "bagels": 0,
+     "lemons": 0,
+     "bananas": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.02
+   }
+  },
+  "usage": {
+   "input_tokens": 659,
+   "output_tokens": 238
+  }
+ },
+ "f55bc61ffe83ea4a": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "butter": 0,
+     "avocados": 0,
+     "marinara": 0,
+     "stir-fry vegetables": 0,
+     "lemons": 0,
+     "chicken breast": 0,
+     "garlic": 0,
+     "bananas": 0,
+     "spinach": 0,
+     "sourdough": 0,
+     "pasta": 0,
+     "basil": 0,
+     "rice": 0,
+     "cucumber": 0,
+     "ground beef": 0,
+     "parmesan": 0,
+     "bagels": 0,
+     "ginger": 0,
+     "eggs": 0,
+     "chicken thighs": 0,
+     "sweet potatoes": 0,
+     "parsley": 0,
+     "salmon filets": 0,
+     "NONE": 1
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.02
+   }
+  },
+  "usage": {
+   "input_tokens": 661,
+   "output_tokens": 238
+  }
+ },
+ "1c0d457a532b68a1": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "butter": 0,
+     "lemons": 0,
+     "salmon filets": 0,
+     "ground beef": 0,
+     "bagels": 0,
+     "bananas": 0,
+     "parmesan": 0,
+     "chicken breast": 0,
+     "basil": 0,
+     "stir-fry vegetables": 0,
+     "parsley": 0,
+     "NONE": 1,
+     "sourdough": 0,
+     "sweet potatoes": 0,
+     "ginger": 0,
+     "garlic": 0,
+     "cucumber": 0,
+     "spinach": 0,
+     "rice": 0,
+     "chicken thighs": 0,
+     "avocados": 0,
+     "marinara": 0,
+     "pasta": 0,
+     "eggs": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.02
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 238
+  }
+ },
+ "0b80651c15c4ad8f": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "chicken thighs": 0,
+     "stir-fry vegetables": 0,
+     "parsley": 0,
+     "marinara": 0,
+     "eggs": 0,
+     "sourdough": 0,
+     "lemons": 0,
+     "avocados": 0,
+     "bananas": 0,
+     "sweet potatoes": 0,
+     "salmon filets": 0,
+     "butter": 0,
+     "NONE": 1,
+     "basil": 0,
+     "rice": 0,
+     "cucumber": 0,
+     "parmesan": 0,
+     "pasta": 0,
+     "spinach": 0,
+     "ginger": 0,
+     "bagels": 0,
+     "chicken breast": 0,
+     "ground beef": 0,
+     "garlic": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.03
+   }
+  },
+  "usage": {
+   "input_tokens": 662,
+   "output_tokens": 238
+  }
+ },
+ "f0eae6e635b957ea": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "parmesan": 0,
+     "sourdough": 0,
+     "avocados": 0,
+     "eggs": 0,
+     "chicken breast": 0,
+     "spinach": 0,
+     "pasta": 0,
+     "parsley": 0,
+     "basil": 0,
+     "bananas": 0,
+     "marinara": 0,
+     "salmon filets": 0,
+     "ginger": 0,
+     "lemons": 0,
+     "stir-fry vegetables": 0,
+     "rice": 0,
+     "sweet potatoes": 0,
+     "butter": 0,
+     "cucumber": 0,
+     "garlic": 0,
+     "ground beef": 0,
+     "NONE": 1,
+     "bagels": 0,
+     "chicken thighs": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.02
+   }
+  },
+  "usage": {
+   "input_tokens": 663,
+   "output_tokens": 238
+  }
+ },
+ "e081d86d214231c9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "pasta": 0,
+     "bananas": 0,
+     "salmon filets": 0,
+     "parmesan": 0,
+     "rice": 0,
+     "sourdough": 0,
+     "cucumber": 0,
+     "eggs": 0,
+     "spinach": 0,
+     "avocados": 0,
+     "NONE": 1,
+     "stir-fry vegetables": 0,
+     "basil": 0,
+     "garlic": 0,
+     "chicken thighs": 0,
+     "butter": 0,
+     "chicken breast": 0,
+     "marinara": 0,
+     "lemons": 0,
+     "bagels": 0,
+     "ground beef": 0,
+     "parsley": 0,
+     "ginger": 0,
+     "sweet potatoes": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.03
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 238
+  }
+ },
+ "3e1d3ac3b43ffae9": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "lemons": 0,
+     "avocados": 0,
+     "salmon filets": 0,
+     "ground beef": 0,
+     "parmesan": 0,
+     "bagels": 0,
+     "chicken breast": 0,
+     "rice": 0,
+     "basil": 0,
+     "marinara": 0,
+     "cucumber": 0,
+     "butter": 0,
+     "sourdough": 0,
+     "sweet potatoes": 0,
+     "ginger": 0,
+     "garlic": 0,
+     "spinach": 0,
+     "NONE": 1,
+     "stir-fry vegetables": 0,
+     "bananas": 0,
+     "parsley": 0,
+     "chicken thighs": 0,
+     "pasta": 0,
+     "eggs": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.02
+   }
+  },
+  "usage": {
+   "input_tokens": 664,
+   "output_tokens": 238
+  }
+ },
+ "c46c769e52639212": {
+  "model": "jev-1.13.0",
+  "answers": {
+   "match": {
+    "type": "choice",
+    "choice": "NONE",
+    "confidence": 1,
+    "probabilities": {
+     "cucumber": 0,
+     "spinach": 0,
+     "rice": 0,
+     "basil": 0,
+     "avocados": 0,
+     "eggs": 0,
+     "parmesan": 0,
+     "marinara": 0,
+     "bananas": 0,
+     "ginger": 0,
+     "NONE": 1,
+     "stir-fry vegetables": 0,
+     "sourdough": 0,
+     "chicken thighs": 0,
+     "sweet potatoes": 0,
+     "garlic": 0,
+     "pasta": 0,
+     "chicken breast": 0,
+     "salmon filets": 0,
+     "lemons": 0,
+     "ground beef": 0,
+     "bagels": 0,
+     "parsley": 0,
+     "butter": 0
+    }
+   },
+   "is_food": {
+    "type": "noul",
+    "noul": 0.03
+   }
+  },
+  "usage": {
+   "input_tokens": 659,
+   "output_tokens": 238
+  }
+ }
+}

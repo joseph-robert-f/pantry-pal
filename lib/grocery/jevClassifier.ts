@@ -1,5 +1,5 @@
 import { lookupCatalogue, normalizeName } from "./catalogue.ts";
-import { asChoice, type Answer, type SystemOneRequest, type SystemOneResponse } from "../jev/api.ts";
+import { asChoice, type Answer, type JevTransport } from "../jev/api.ts";
 import { SECTION_CRITERIA_V2, singleItemRequest } from "./jevQuestions.ts";
 import { classifyWithRules } from "./rulesClassifier.ts";
 import { SECTION_ORDER, type Classification, type ItemClassifier, type Section } from "./types.ts";
@@ -12,9 +12,7 @@ import { SECTION_ORDER, type Classification, type ItemClassifier, type Section }
 
 export const CONFIDENCE_THRESHOLD = 0.7;
 
-// Sends one request to Jev. Injected so the key and fetch stay in the server
-// route, and tests run without a network.
-export type JevTransport = (body: SystemOneRequest) => Promise<SystemOneResponse>;
+export type { JevTransport };
 
 export type JevClassifierOptions = {
   send: JevTransport;

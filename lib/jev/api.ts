@@ -8,7 +8,7 @@ export const JEV_MODEL = "jev-1.13.0";
 export type ChoiceQuestion = {
   type: "choice";
   instructions: string;
-  criteria: Record<string, string>; // option → description
+  criteria: Record<string, string | null>; // option → description (null: none needed)
 };
 
 export type ScoreQuestion = {
@@ -57,6 +57,10 @@ export type SystemOneResponse = {
   answers: Record<string, Answer>;
   usage?: { input_tokens?: number; output_tokens?: number };
 };
+
+// Sends one request to Jev. Injected so the key and fetch stay server-side
+// and tests run without a network. Shared by every Jev feature.
+export type JevTransport = (body: SystemOneRequest) => Promise<SystemOneResponse>;
 
 export function asChoice(a: Answer | undefined): ChoiceAnswer | undefined {
   return a?.type === "choice" ? a : undefined;
